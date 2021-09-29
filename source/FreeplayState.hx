@@ -61,6 +61,7 @@ class FreeplayState extends MusicBeatState
 			addSong('GOD-EATER', 3, 'pshaggy');
 			addSong('Insomnia', 4, 'keko');
 			addSong('Caffeine', 4, 'keko');
+			addSong('Showdown', 4, 'keko');
 
 		// LOAD MUSIC
 
