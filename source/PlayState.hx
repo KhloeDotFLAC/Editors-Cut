@@ -1041,6 +1041,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 	}
+	
 	function faceRender():Void
 	{
 		jx = tb_fx;
@@ -1055,6 +1056,7 @@ class PlayState extends MusicBeatState
 		fsprite.scrollFactor.set();
 		add(fsprite);
 	}
+	
 	function superShaggy()
 	{
 		new FlxTimer().start(0.008, function(ct:FlxTimer)
@@ -1142,7 +1144,7 @@ class PlayState extends MusicBeatState
 		{
 			new FlxTimer().start(0.002, function(cbt:FlxTimer)
 			{
-				if (ctrTi00me == 0)
+				if (ctrTime == 0)
 				{
 					var cText = "S      D      F      J      K      L";
 
