@@ -34,7 +34,7 @@ class OptionsMenu extends MusicBeatState
 		*/
 
 		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
-		controlsStrings = CoolUtil.coolStringFile(inputStr[FlxG.save.data.dfjk] + "\n" + (FlxG.save.data.newInput ? "Virgin input easy" : "Chad input normal") + "\n" + (FlxG.save.data.downscroll ? 'Downscroll' : 'Upscroll') + "\nAccuracy " + (!FlxG.save.data.accuracyDisplay ? "off" : "on") + "\n" + (FlxG.save.data.mash_punish ? 'Anti-Mash on' : 'Anti-Mash off'));
+		controlsStrings = CoolUtil.coolStringFile(inputStr[FlxG.save.data.dfjk] + "\n" + (FlxG.save.data.newInput ? "Ghost-Tapping on" : "Ghost-Tapping off") + "\n" + (FlxG.save.data.downscroll ? 'Downscroll' : 'Upscroll') + "\nAccuracy " + (!FlxG.save.data.accuracyDisplay ? "off" : "on") + "\n" + (FlxG.save.data.mash_punish ? 'Anti-Mash on' : 'Anti-Mash off'));
 		
 		trace(controlsStrings);
 
@@ -103,7 +103,7 @@ class OptionsMenu extends MusicBeatState
 
 					if (!FlxG.save.data.newInput)
 					{
-						infoTxt = "Not cringe B)";
+						infoTxt = "Pop off my guy!";
 					}
 
 					info = new FlxText(108, FlxG.height - 290, 0, infoTxt, 20);
@@ -111,7 +111,7 @@ class OptionsMenu extends MusicBeatState
 					info.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 					add(info);
 				case 4:
-					var infoTxt:String = "Only acts on Virgin Input";
+					var infoTxt:String = "Only acts when ghost-tapping is on";
 
 					info = new FlxText(108, FlxG.height - 290, 0, infoTxt, 20);
 					info.scrollFactor.set();
@@ -146,7 +146,7 @@ class OptionsMenu extends MusicBeatState
 						
 					case 1:
 						FlxG.save.data.newInput = !FlxG.save.data.newInput;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.newInput ? "Virgin input easy" : "Chad input normal"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, (FlxG.save.data.newInput ? "Ghost-Tapping on" : "Ghost-Tapping off"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 1;
 						grpControls.add(ctrl);
