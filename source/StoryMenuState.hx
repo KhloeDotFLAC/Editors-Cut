@@ -20,24 +20,21 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		['Where-are-you', 'Eruption', 'Kaio-ken'],
-		['Whats-new', 'Blast', 'Super-saiyan'],
-		['GOD-EATER']
+		['Insomnia', 'Caffeine', 'Showdown'],
+		['???']
 	];
 	var curDifficulty:Int = 2;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, false, false];
+	public static var weekUnlocked:Array<Bool> = [true, false, false, false];
 
 	var weekCharacters:Array<Dynamic> = [
-		['dad', 'bf', 'gf'],
-		['dad', 'bf', 'gf'],
+		['noone', 'bf', 'gf'],
 		['noone', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
-		"Less than 0.001%",
-		"Up to 0.001%",
-		"???%"
+		"The editor's cut",
+		"???"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -76,14 +73,14 @@ class StoryMenuState extends MusicBeatState
 				}
 			}
 		}
-		if (FlxG.save.data.progress > 0)
+		/*if (FlxG.save.data.progress > 0)
 		{
 			weekUnlocked[2] = true;
 			if (FlxG.save.data.progress > 1)
 			{
 				weekUnlocked[3] = true;
 			}
-		}
+		}*/
 
 		persistentUpdate = persistentDraw = true;
 
@@ -250,15 +247,7 @@ class StoryMenuState extends MusicBeatState
 		moNotice.text = "";
 		if (curWeek == 1)
 		{
-			moNotice.text = "First song has copyright :(\nPress P for drums cover";
-			if (Main.drums) moNotice.text += "\n(drums cover active)";
-
-			if (FlxG.keys.justPressed.P)
-			{
-				Main.drums = !Main.drums;
-				if (Main.drums) FlxG.sound.play(Paths.sound('cancelMenu'));
-				else FlxG.sound.play(Paths.sound('scrollMenu'));
-			}
+			moNotice.text = "Work in progress";
 		}
 
 

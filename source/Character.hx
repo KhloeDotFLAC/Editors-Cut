@@ -66,96 +66,6 @@ class Character extends FlxSprite
 
 				playAnim('danceRight');
 
-			case 'dad':
-				// DAD ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('shaggy');
-				frames = tex;
-				animation.addByPrefix('idle', 'shaggy_idle', 24);
-				animation.addByPrefix('idle2', 'shaggy_idle2', 24);
-				animation.addByPrefix('singUP', 'shaggy_up', 20);
-				animation.addByPrefix('singRIGHT', 'shaggy_right', 20);
-				animation.addByPrefix('singDOWN', 'shaggy_down', 24);
-				animation.addByPrefix('singLEFT', 'shaggy_left', 24);
-				animation.addByPrefix('catch', 'shaggy_catch', 30);
-				animation.addByPrefix('hold', 'shaggy_hold', 30);
-				animation.addByPrefix('h_half', 'shaggy_h_half', 30);
-				animation.addByPrefix('fall', 'shaggy_fall', 30);
-				animation.addByPrefix('kneel', 'shaggy_half_ground', 30);
-
-				animation.addByPrefix('power', 'shaggy_powerup', 30);
-				animation.addByPrefix('idle_s', 'shaggy_super_idle', 24);
-				animation.addByPrefix('singUP_s', 'shaggy_sup2', 20);
-				animation.addByPrefix('singRIGHT_s', 'shaggy_sright', 20);
-				animation.addByPrefix('singDOWN_s', 'shaggy_sdown', 24);
-				animation.addByPrefix('singLEFT_s', 'shaggy_sleft', 24);
-
-				addOffset('idle');
-				addOffset('idle2');
-				addOffset("singUP", -6, 0);
-				addOffset("singRIGHT", -20, -40);
-				addOffset("singLEFT", 100, -120);
-				addOffset("singDOWN", 0, -170);
-				addOffset("catch", 140, 90);
-				addOffset("hold", 90, 100);
-				addOffset("h_half", 90, 0);
-				addOffset("fall", 130, 0);
-				addOffset("kneel", 110, -123);
-
-				addOffset('idle_s');
-				addOffset('power', 10, 0);
-				addOffset("singUP_s", -6, 0);
-				addOffset("singRIGHT_s", -20, -40);
-				addOffset("singLEFT_s", 100, -120);
-				addOffset("singDOWN_s", 0, -170);
-
-				playAnim('idle');
-
-			case 'scooby':
-				tex = Paths.getSparrowAtlas('scooby');
-				frames = tex;
-				animation.addByPrefix('walk', 'scoob_walk', 30, false);
-				animation.addByPrefix('idle', 'scoob_idle', 30, false);
-				animation.addByPrefix('scare', 'scoob_scare', 24, false);
-				animation.addByPrefix('blur', 'scoob_blur', 30, false);
-				animation.addByPrefix('half', 'scoob_half', 30, false);
-				animation.addByPrefix('fall', 'scoob_fall', 30, false);
-
-				addOffset("walk", 100, 60);
-				addOffset("idle");
-				addOffset("scare", 40);
-				addOffset("blur");
-				addOffset("half");
-				addOffset("fall", 420, 0);
-
-				playAnim('walk', true);
-			case 'pshaggy':
-				tex = Paths.getSparrowAtlas('pshaggy');
-				frames = tex;
-				animation.addByPrefix('idle', 'pshaggy_idle', 7, false);
-				animation.addByPrefix('singUP', 'pshaggy_up', 28, false);
-				animation.addByPrefix('singDOWN', 'pshaggy_down', 28, false);
-				animation.addByPrefix('singLEFT', 'pshaggy_left', 28, false);
-				animation.addByPrefix('singRIGHT', 'pshaggy_right', 28, false);
-				animation.addByPrefix('back', 'pshaggy_back', 28, false);
-				animation.addByPrefix('snap', 'pshaggy_snap', 7, false);
-				animation.addByPrefix('snapped', 'pshaggy_did_snap', 28, false);
-				animation.addByPrefix('smile', 'pshaggy_smile', 7, false);
-				animation.addByPrefix('stand', 'pshaggy_stand', 7, false);
-
-				addOffset("idle");
-				addOffset("smile");
-				var sOff = 20;
-				addOffset("back", 0, -20 + sOff);
-				addOffset("stand", 0, -20 + sOff);
-				addOffset("snap", 10, 72 + sOff);
-				addOffset("snapped", 0, 60 + sOff);
-				addOffset("singUP", -6, 0);
-				addOffset("singRIGHT", 0, 0);
-				addOffset("singLEFT", 10, 0);
-				addOffset("singDOWN", 60, -100);
-
-				playAnim('idle', true);
-
 			case 'bf':
 				var tex = Paths.getSparrowAtlas('BOYFRIEND');
 				frames = tex;
@@ -205,13 +115,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Keko Sing note LEFT', 24, false);
 				animation.addByPrefix('singRIGHT', 'Keko Sing note RIGHT', 24, false);
 				animation.addByPrefix('singDOWN', 'Keko Sing note DOWN', 24, false);
+				animation.addByPrefix('tauntC', 'Keko Taunt caffeine', 24, false);
 
-				addOffset('idle', 0,0);
-				addOffset("singUP", 169, 10);
-				addOffset("singRIGHT", 128, -42);
-				addOffset("singLEFT", 21, -23);
-				addOffset("singDOWN", 0, -156);
-		
 				playAnim('idle');
 
 				flipX = false;

@@ -408,7 +408,11 @@ class TitleState extends MusicBeatState
             case 5:
                 createCoolText(["Using Kade dev engine"]);
             case 7:
-                addMoreText('Forever');
+				#if debug
+                	addMoreText('Sadly');
+				#else
+					addMoreText('Forever');
+				#end
                 ngSpr.visible = false;
             // credTextShit.text += '\nNewgrounds';
             case 8:

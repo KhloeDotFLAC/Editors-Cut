@@ -110,7 +110,7 @@ class PlayState extends MusicBeatState
 	private var camGame:FlxCamera;
 
 	private var cutTime:Float;
-	private var shaggyT:FlxTrail;
+	private var kekoT:FlxTrail;
 	private var ctrTime:Float = 0;
 	private var notice:FlxText;
 	private var nShadow:FlxText;
@@ -227,6 +227,21 @@ class PlayState extends MusicBeatState
 		{
 			case 'tutorial':
 				dialogue = ["Hey you're pretty cute.", 'suck my clit or you die.'];
+			case 'Insomnia':
+				//the text to appear;
+				dialogue = [
+					"Sup, BF?",
+					"Bring it on!",
+					"beep bap boop" //na man, haven't seen any dog. Hey are u good at singing? we came here for a battle.
+				];
+				//the sprites to go along with text (n for no change)
+				dface = [
+						"f_kek",
+						"f_kek_smug",
+						"f_bf",
+						];
+				//the sides of the faces (1=left, -1=right and flipped)
+				dside = [1, 1, -1];
 			case 'where-are-you':
 				//the text to appear;
 				dialogue = [
@@ -250,104 +265,9 @@ class PlayState extends MusicBeatState
 						];
 				//the sides of the faces (1=left, -1=right and flipped)
 				dside = [1, 1, 1, -1, 1, -1, 1, 1];
-			case 'eruption':
-				dialogue = [
-					"Zoinks! I lost control for a second...",
-					"I'm sorry man, don't wanna make it\nunfair for you or anything.",
-					"beep boop", //adequate sentiment bitch. uh i mean let's keep singing bro!!
-					"Okay, like, get ready now and stuff"
-				];
-				dface = [
-						"f_sh",
-						"f_sh",
-						"f_bf",
-						"f_sh_smug"
-						];
-				dside = [1, 1, -1, 1];
-			case 'kaio-ken':
-				dialogue = [
-					"You're like, actually good and stuff",
-					"I don't wanna like bore you, so I'll\nsing faster this time",
-					"beep boop boop bap bee", //yeah like that's gonna make it harder for me. ur too easy man! come up with something... not boring!
-					"...",
-					"Alright, alright...\nHere we go man!",
-				];
-				dface = [
-						"f_sh",
-						"f_sh",
-						"f_bf",
-						"f_sh_ser",
-						"f_sh_smug"
-						];
-				dside = [1, 1, -1, 1, 1];
-			case 'whats-new':
-				dialogue = [
-					"You haven't seen scoob around?",
-					"bap boop",
-					"Oh gosh! I haven't like, found him either!\nHe must be so scared...",
-					"boop bap",
-					"Huh? sing again?", //Did I fuckin stutter? Bring it on bitch, I'm tired of your shit. I didn't even care for your dog.
-					"You know, maybe singing Scooby's\nfavorite song might call his attention\nand stuff",
-					"If he can hear us...",
-					"Alright, here we go."
-				];
-				dface = [
-						"f_sh_ser",
-						"f_bf",
-						"f_sh_con",
-						"f_bf",
-						"f_sh_con",
-						"f_sh_ser",
-						"f_sh_con",
-						"f_sh"
-						];
-				dside = [1, -1, 1, -1, 1, 1, 1, 1];
-			case 'blast':
-				dialogue = [
-					"...",
-					"...",
-					"...",
-					"Scooby's my closest friend y'know",
-					"We've been together for the last 70 years!",
-					"I stopped my aging when I was like 17.",
-					"I didn't do the same to my friends because it\nwould be selfish for me to not let them\nrest and stuff...",
-					"But zoinks! Scooby was so insistent.\nhe told me he'd never regret his decision if\nit meant to spend eternity side by side.",
-					"Now he's the only one I have left...",
-					"beep bee bap!",
-					"...",
-					"I'm uh.. gonna make some noise."
-				];
-				dface = [
-						"f_sh", "f_sh_ser",
-						"f_bf",
-						"f_sh_ser", "f_sh", "f_sh_ser", "f_sh_con", "f_sh_pens", "f_sh_sad",
-						"f_bf",
-						"f_sh_ang", "f_sh_smug"
-						];
-				dside = [1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, 1];
-			case 'super-saiyan':
-				dialogue = [
-					"beep boo baa", 
-					"bap bee beep boop bee", 
-					"bap bap bee pop", 
-					"That's like, really rude man...\nI really-",
-					"bee boop",
-					"...",
-					"Heh.",
-					"Prick."
-				];
-				dface = [
-						"f_bf", "n", "n",
-						"f_sh_con",
-						"f_bf",
-						"f_sh_ang", "f_sh_smug", "n"
-						];
-				dside = [-1, -1, -1, 1, -1, 1, 1, 1, 1];
-			case 'dadbattle':
-				
-			case 'garden-havoc':
 		}
 
+		//Setting the stage, quite literally. Haha *Snort*
 		if (SONG.song.toLowerCase() == 'caffeine' || SONG.song.toLowerCase() == 'insomnia' || SONG.song.toLowerCase() == 'showdown')
 		{
 			curStage = "bedroom";
@@ -358,107 +278,6 @@ class PlayState extends MusicBeatState
 			add(bg);
 
 			defaultCamZoom = 0.80;
-		}
-		else if (SONG.song.toLowerCase() == 'where-are-you' || SONG.song.toLowerCase() == 'kaio-ken' || SONG.song.toLowerCase() == 'eruption' || SONG.song.toLowerCase() == 'blast' || SONG.song.toLowerCase() == 'whats-new' || SONG.song.toLowerCase() == 'super-saiyan')
-		{
-			//dad.powerup = true;
-			defaultCamZoom = 0.9;
-			curStage = 'stage_2';
-			var bg:FlxSprite = new FlxSprite(-400, -160).loadGraphic(Paths.image('bg_lemon'));
-			bg.setGraphicSize(Std.int(bg.width * 1.5));
-			bg.antialiasing = true;
-			bg.scrollFactor.set(0.95, 0.95);
-			bg.active = false;
-			add(bg);
-
-			if (SONG.song.toLowerCase() == 'kaio-ken')
-			{
-				var waveEffectBG = new FlxWaveEffect(FlxWaveMode.ALL, 2, -1, 3, 2); //creo que esta weá no hace nada
-			}
-		}
-		else if (SONG.song.toLowerCase() == 'god-eater')
-		{
-			defaultCamZoom = 0.65;
-			curStage = 'sky';
-
-			var sky = new FlxSprite(-850, -850);
-			sky.frames = Paths.getSparrowAtlas('god_bg');
-			sky.animation.addByPrefix('sky', "bg", 30);
-			sky.setGraphicSize(Std.int(sky.width * 0.8));
-			sky.animation.play('sky');
-			sky.scrollFactor.set(0.1, 0.1);
-			sky.antialiasing = true;
-			add(sky);
-
-			var bgcloud = new FlxSprite(-850, -1250);
-			bgcloud.frames = Paths.getSparrowAtlas('god_bg');
-			bgcloud.animation.addByPrefix('c', "cloud_smol", 30);
-			//bgcloud.setGraphicSize(Std.int(bgcloud.width * 0.8));
-			bgcloud.animation.play('c');
-			bgcloud.scrollFactor.set(0.3, 0.3);
-			bgcloud.antialiasing = true;
-			add(bgcloud);
-
-			add(new MansionDebris(300, -800, 'norm', 0.4, 1, 0, 1));
-			add(new MansionDebris(600, -300, 'tiny', 0.4, 1.5, 0, 1));
-			add(new MansionDebris(-150, -400, 'spike', 0.4, 1.1, 0, 1));
-			add(new MansionDebris(-750, -850, 'small', 0.4, 1.5, 0, 1));
-
-			/*
-			add(new MansionDebris(-300, -1700, 'norm', 0.5, 1, 0, 1));
-			add(new MansionDebris(-600, -1100, 'tiny', 0.5, 1.5, 0, 1));
-			add(new MansionDebris(900, -1850, 'spike', 0.5, 1.2, 0, 1));
-			add(new MansionDebris(1500, -1300, 'small', 0.5, 1.5, 0, 1));
-			*/
-
-			add(new MansionDebris(-300, -1700, 'norm', 0.75, 1, 0, 1));
-			add(new MansionDebris(-1000, -1750, 'rect', 0.75, 2, 0, 1));
-			add(new MansionDebris(-600, -1100, 'tiny', 0.75, 1.5, 0, 1));
-			add(new MansionDebris(900, -1850, 'spike', 0.75, 1.2, 0, 1));
-			add(new MansionDebris(1500, -1300, 'small', 0.75, 1.5, 0, 1));
-			add(new MansionDebris(-600, -800, 'spike', 0.75, 1.3, 0, 1));
-			add(new MansionDebris(-1000, -900, 'small', 0.75, 1.7, 0, 1));
-
-			var fgcloud = new FlxSprite(-1150, -2900);
-			fgcloud.frames = Paths.getSparrowAtlas('god_bg');
-			fgcloud.animation.addByPrefix('c', "cloud_big", 30);
-			//bgcloud.setGraphicSize(Std.int(bgcloud.width * 0.8));
-			fgcloud.animation.play('c');
-			fgcloud.scrollFactor.set(0.9, 0.9);
-			fgcloud.antialiasing = true;
-			add(fgcloud);
-
-			var bg:FlxSprite = new FlxSprite(-400, -160).loadGraphic(Paths.image('bg_lemon'));
-			bg.setGraphicSize(Std.int(bg.width * 1.5));
-			bg.antialiasing = true;
-			bg.scrollFactor.set(0.95, 0.95);
-			bg.active = false;
-			add(bg);
-
-			var techo = new FlxSprite(0, -20);
-			techo.frames = Paths.getSparrowAtlas('god_bg');
-			techo.animation.addByPrefix('r', "broken_techo", 30);
-			techo.setGraphicSize(Std.int(techo.frameWidth * 1.5));
-			techo.animation.play('r');
-			techo.scrollFactor.set(0.95, 0.95);
-			techo.antialiasing = true;
-			add(techo);
-
-			gf_rock = new FlxSprite(20, 20);
-			gf_rock.frames = Paths.getSparrowAtlas('god_bg');
-			gf_rock.animation.addByPrefix('rock', "gf_rock", 30);
-			gf_rock.animation.play('rock');
-			gf_rock.scrollFactor.set(0.8, 0.8);
-			gf_rock.antialiasing = true;
-			add(gf_rock);
-
-			rock = new FlxSprite(20, 20);
-			rock.frames = Paths.getSparrowAtlas('god_bg');
-			rock.animation.addByPrefix('rock', "rock", 30);
-			rock.animation.play('rock');
-			rock.scrollFactor.set(1, 1);
-			rock.antialiasing = true;
-			add(rock);
 		}
 		else
 		{
@@ -510,7 +329,7 @@ class PlayState extends MusicBeatState
 
 		dad = new Character(100, 100, SONG.player2);
 
-		scoob = new Character(9000, 290, 'scooby', false);
+		//scoob = new Character(9000, 290, 'scooby', false);
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 
@@ -544,59 +363,18 @@ class PlayState extends MusicBeatState
 		// REPOSITIONING PER STAGE
 		switch (curStage)
 		{
-			case 'mall':
-				boyfriend.x += 200;
-
-			case 'mallEvil':
-				boyfriend.x += 320;
-				dad.y -= 80;
-			case 'school':
-				boyfriend.x += 200;
-				boyfriend.y += 220;
-				gf.x += 180;
-				gf.y += 300;
-			case 'schoolEvil':
-				// trailArea.scrollFactor.set();
-
-				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069);
-				// evilTrail.changeValuesEnabled(false, false, false, false);
-				// evilTrail.changeGraphic()
-				add(evilTrail);
-				// evilTrail.scrollFactor.set(1.1, 1.1);
-
-				boyfriend.x += 200;
-				boyfriend.y += 220;
-				gf.x += 180;
-				gf.y += 300;
-			case 'stage_2':
-				//
-			case 'sky':
-				//
 			case 'bedroom':
-				boyfriend.setPosition(786.55, 444);
-				dad.setPosition(-4.2, 261.55);
+				boyfriend.setPosition(786, 444);
+				dad.setPosition(-160, 250);
 		}
 
 		add(gf);
 
-		if (SONG.player2 == 'pshaggy')
+		/*if (SONG.player2 == 'keko')
 		{
-			shaggyT = new FlxTrail(dad, null, 5, 7, 0.3, 0.001);
-			add(shaggyT);
-
-			doorFrame = new FlxSprite(-160, 160).loadGraphic(Paths.image('doorframe'));
-			doorFrame.updateHitbox();
-			doorFrame.setGraphicSize(1);
-			doorFrame.alpha = 0;
-			doorFrame.antialiasing = true;
-			doorFrame.scrollFactor.set(1, 1);
-			doorFrame.active = false;
-			add(doorFrame);
-		}
-
-		// Shitty layering but whatev it works LOL
-		if (curStage == 'limo')
-			add(limo);
+			kekoT = new FlxTrail(dad, null, 5, 10, 0.3, 0.001);
+			add(kekoT);
+		}*/
 
 		add(dad);
 
@@ -606,9 +384,9 @@ class PlayState extends MusicBeatState
 	
 		add(boyfriend);
 
-		add(scoob);
+		//add(scoob);
 
-		foreground();
+		//foreground();
 
 		var doof:DialogueBox = new DialogueBox(false, dialogue);
 		// doof.x += 70;
@@ -775,6 +553,8 @@ class PlayState extends MusicBeatState
 							startCountdown();
 						});
 					}
+				case "insomnia" | "Caffeine" | "Showdown":
+					startCountdown();
 				default:
 					schoolIntro(0);
 			}
@@ -999,11 +779,6 @@ class PlayState extends MusicBeatState
 									{
 										startCountdown();
 									}
-									else
-									{
-										cutTime = 0;
-										superShaggy();
-									}
 								}
 								talk = 0;
 								dropText.alpha = 0;
@@ -1051,62 +826,6 @@ class PlayState extends MusicBeatState
 		add(fsprite);
 	}
 	
-	function superShaggy()
-	{
-		new FlxTimer().start(0.008, function(ct:FlxTimer)
-		{
-			switch (cutTime)
-			{
-				case 0:
-					camFollow = new FlxObject(0, 0, 1, 1);
-
-					camFollow.setPosition(dad.getMidpoint().x - 100, dad.getMidpoint().y - 0);
-
-					add(camFollow);
-					FlxG.camera.follow(camFollow, LOCKON, 0.04);
-				case 15:
-					dad.playAnim('power');
-				case 48:
-					dad.playAnim('idle_s');
-					dad.powerup = true;
-					burst = new FlxSprite(-1110, 0);
-					FlxG.sound.play(Paths.sound('burst'));
-					remove(burst);
-					burst = new FlxSprite(dad.getMidpoint().x - 1000, dad.getMidpoint().y - 100);
-					burst.frames = Paths.getSparrowAtlas('shaggy');
-					burst.animation.addByPrefix('burst', "burst", 30);
-					burst.animation.play('burst');
-					//burst.setGraphicSize(Std.int(burst.width * 1.5));
-					burst.antialiasing = true;
-					add(burst);
-
-					FlxG.sound.play(Paths.sound('powerup'), 1);
-				case 62:
-					burst.y = 0;
-					remove(burst);
-				case 95:
-					FlxG.camera.angle = 0;
-				case 130:
-					startCountdown();
-			}
-
-			var ssh:Float = 45;
-			var stime:Float = 30;
-			var corneta:Float = (stime - (cutTime - ssh)) / stime;
-
-			if (cutTime % 6 >= 3)
-			{
-				corneta *= -1;
-			}
-			if (cutTime >= ssh && cutTime <= ssh + stime)
-			{
-				FlxG.camera.angle = corneta * 5;
-			}
-			cutTime ++;
-			ct.reset(0.008);
-		});
-	}
-
 	var startTimer:FlxTimer;
 	var perfectMode:Bool = false;
 	var noticeB:Array<FlxText> = [];
@@ -1270,7 +989,7 @@ class PlayState extends MusicBeatState
 
 		startTimer = new FlxTimer().start(Conductor.crochet / (1000 / c_div), function(tmr:FlxTimer)
 		{
-			dad.dance();
+			dad.playAnim('tauntC');
 			gf.dance();
 			boyfriend.playAnim('idle');
 
@@ -2116,20 +1835,6 @@ class PlayState extends MusicBeatState
 					remove(burst);
 			}
 		}
-		if (curSong.toLowerCase() == 'kaio-ken')
-		{
-			if (curBeat == 48 || curBeat == 144 || curBeat == 56 * 4 || curBeat == 84 * 4 || curBeat == 104 * 4)
-			{
-				remove(shaggyT);
-				shaggyT = new FlxTrail(dad, null, 4, 1, 0.3, 0.005);
-				add(shaggyT);
-				shaggyT.delay = Std.int(Math.round(1 / (FlxG.elapsed / (1/60))));
-			}
-			else if (curBeat == 80 || curBeat == 192 || curBeat == 60 * 4 || curBeat == 96 * 4 || curBeat == 108 * 4)
-			{
-				remove(shaggyT);
-			}
-		}
 
 		if (false)//curSong == 'Bopeebo')
 		{
@@ -2439,7 +2144,7 @@ class PlayState extends MusicBeatState
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
 			}
-			else
+			/*else
 			{
 				s_ending = false;
 				switch (SONG.song.toLowerCase())
@@ -2460,7 +2165,7 @@ class PlayState extends MusicBeatState
 						}
 						finalCutscene();
 				}
-			}
+			}*/
 		}
 		else
 		{
@@ -3605,7 +3310,7 @@ class PlayState extends MusicBeatState
 	}
 
 	var curLight:Int = 0;
-	var scoob:Character;
+	//var scoob:Character;
 	var cs_time:Int = 0;
 	var cs_wait:Bool = false;
 	var cs_zoom:Float = 1;
@@ -3621,7 +3326,7 @@ class PlayState extends MusicBeatState
 	var cs_bg:FlxSprite;
 	var nex:Float = 1;
 
-	public function ssCutscene()
+	/*public function ssCutscene()
 	{
 		cs_cam = new FlxObject(0, 0, 1, 1);
 		cs_cam.x = 605;
@@ -3877,10 +3582,10 @@ class PlayState extends MusicBeatState
 			}
 			tmr.reset(0.002);
 		});
-	}
+	}*/
 
 	var toDfS:Float = 1;
-	public function finalCutscene()
+	/*public function finalCutscene()
 	{
 		cs_zoom = defaultCamZoom;
 		cs_cam = new FlxObject(0, 0, 1, 1);
@@ -3997,7 +3702,7 @@ class PlayState extends MusicBeatState
 			doorFrame.setGraphicSize(Std.int(dfS));
 			tmr.reset(0.002);
 		});
-	}
+	}*/
 	var title:FlxSprite;
 	var thanks:Alphabet;
 	var endtxt:Alphabet;
