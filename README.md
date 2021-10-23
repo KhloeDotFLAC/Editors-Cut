@@ -1,35 +1,86 @@
-# Editor's Cut (vsKeko) source code
+# Friday Night Funkin' - Psych Engine
+Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
 
-This is the repository for Editor's Cut (vsKeko) source code
+## Installation:
+Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
 
-### Installing the Required Programs (Stole this from the FNF source code lmao, i'm lazy)
+You can do this with: `haxelib install linc_luajit` on a Command prompt/PowerShell
 
-First, you need to install Haxe and HaxeFlixel. I'm too lazy to write and keep updated with that setup (which is pretty simple). 
-1. [Install Haxe 4.1.5](https://haxe.org/download/version/4.1.5/) (Download 4.1.5 instead of 4.2.0 because 4.2.0 is broken and is not working with gits properly...)
-2. [Install HaxeFlixel](https://haxeflixel.com/documentation/install-haxeflixel/) after downloading Haxe
+...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
 
-Other installations you'd need are the additional libraries, a fully updated list will be in `Project.xml` in the project root. Currently, these are all of the things you need to install:
-```
-flixel
-flixel-addons
-flixel-ui
-hscript
-newgrounds
-```
-So for each of those type `haxelib install [library]` so shit like `haxelib install newgrounds`
+## Credits:
+* Shadow Mario - Coding
+* RiverOaken - Arts and Animations
 
-You'll also need to install a couple things that involve Gits. To do this, you need to do a few things first.
-1. Download [git-scm](https://git-scm.com/downloads). Works for Windows, Mac, and Linux, just select your build.
-2. Follow instructions to install the application properly.
-3. Run `haxelib git polymod https://github.com/larsiusprime/polymod.git` to install Polymod.
-4. Run `haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc` to install Discord RPC.
+### Special Thanks
+* Keoiki - Note Splash Animations
 
-### Compiling game
+WARNING: This engine is still very early in development! You can request new features though
+_____________________________________
 
-Once you have all those installed, it's pretty easy to compile the game. You just need to run 'lime test html5 -debug' in the root of the project to build and run the HTML5 version. (command prompt navigation guide can be found here: [https://ninjamuffin99.newgrounds.com/news/post/1090480](https://ninjamuffin99.newgrounds.com/news/post/1090480))
-To run it from your desktop (Windows, Mac, Linux) it can be a bit more involved. For Linux, you only need to open a terminal in the project directory and run 'lime test linux -debug' and then run the executable file in export/release/linux/bin. For Windows, you need to install Visual Studio Community 2019. While installing VSC, don't click on any of the options to install workloads. Instead, go to the individual components tab and choose the following:
-* MSVC v142 - VS 2019 C++ x64/x86 build tools
-* Windows SDK (10.0.17763.0)
+# Features
 
-Once that is done you can open up a command line in the project's directory and run `lime test windows -debug`. Once that command finishes (it takes forever even on a higher end PC), you can run FNF from the .exe file under export\release\windows\bin
-As for Mac, 'lime test mac -debug' should work, if not the internet surely has a guide on how to compile Haxe stuff for Mac.
+## Attractive animated dialogue boxes:
+
+![](https://user-images.githubusercontent.com/44785097/127706669-71cd5cdb-5c2a-4ecc-871b-98a276ae8070.gif)
+
+
+## Atleast one change to every week:
+### Week 1:
+  * New Dad Left sing sprite 
+  * Unused stage lights are now used
+### Week 2:
+  * Both BF and Skid & Pump does "Hey!" animations
+  * Thunders does a quick light flash and zooms the camera in slightly
+  * Added a quick transition/cutscene to Monster
+### Week 3:
+  * BF does "Hey!" during Philly Nice
+  * Blammed has a cool new colors flash during that sick part of the song
+### Week 4:
+  * Better hair physics for Mom/Boyfriend (Maybe even slightly better than Week 7's :eyes:)
+  * Henchmen die during all songs. Yeah :(
+### Week 5:
+  * Bottom Boppers and GF does "Hey!" animations during Cocoa and Eggnog
+  * On Winter Horrorland, GF bops her head slower in some parts of the song.
+### Week 6:
+  * On Thorns, the HUD is hidden during the cutscene
+  * Also there's the Background girls being spooky during the "Hey!" parts of the Instrumental
+
+## Cool new Chart Editor changes and countless bug fixes
+![](https://i.imgur.com/h6Ja7eT.png)
+* You can now chart "Event" notes, which are bookmarks that trigger specific actions that usually were hardcoded on the vanilla version of the game.
+* Your song's BPM can now have decimal values
+* You can manually adjust a Note's strum time if you're really going for milisecond precision
+* You can change a note's type on the Editor, it comes with two example types:
+  * Alt Animation: Forces an alt animation to play, useful for songs like Ugh/Stress
+  * Hey: Forces a "Hey" animation instead of the base Sing animation, if Boyfriend hits this note, Girlfriend will do a "Hey!" too.
+
+## Improved Animation Debug menu (Press 8 in-game on a Debug build)
+![](https://user-images.githubusercontent.com/44785097/127721062-f912853c-2513-41b8-bd66-fd80d9d4ee0f.png)
+* You can now press Save Offsets to save a .txt file with the editted offsets
+* You can also now change the characters while on the Menu
+* Go back to the game by pressing Escape
+NOTE: This should be used for fixing your character floating or being slightly under the ground! It's not for texture editting.
+
+## Story mode menu rework:
+![](https://i.imgur.com/UB2EKpV.png)
+* Added a different BG to every song (less Tutorial)
+* All menu characters are now in individual spritesheets, makes modding it easier.
+
+## Credits menu
+![](https://i.imgur.com/NdIQt3d.png)
+* You can add a head icon, name, description and a Redirect link for when the player presses Enter while the item is currently selected.
+
+## Awards/Achievements
+* The engine comes with 16 example achievements that you can mess with and learn how it works (Check Achievements.hx and search for "checkForAchievement" on PlayState.hx)
+
+## Options menu:
+* You can change Note colors, Controls and Preferences there.
+ * On Preferences you can toggle Downscroll, Anti-Aliasing, Framerate, Low Quality, Note Splashes, Hide Hud elements, Flashing Lights, etc.
+
+## Other gameplay features:
+* When the enemy hits a note, it plays the note hit animation on their strum, just like when the player hits a note.
+* Lag doesn't impact the camera movement and player icon scaling anymore.
+* Some stuff based on Week 7's changes has been put in (Background colors on Freeplay, Note splashes)
+* You can reset your Score on Freeplay/Story Mode by pressing Reset button.
+* You can listen to a song on Freeplay by pressing Space once.
