@@ -2257,6 +2257,11 @@ class PlayState extends MusicBeatState
 
 					if (SONG.needsVoices)
 						vocals.volume = 1;
+					if (health > 0.1)
+					{
+						//health drain shit
+						health -= 0.023;
+					}
 
 					var time:Float = 0.15;
 					if(daNote.isSustainNote && !daNote.animation.curAnim.name.endsWith('tail')) {
