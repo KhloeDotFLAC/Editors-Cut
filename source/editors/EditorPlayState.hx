@@ -395,7 +395,7 @@ class EditorPlayState extends MusicBeatState
 					if(daNote.isSustainNote && !daNote.animation.curAnim.name.endsWith('end')) {
 						time += 0.15;
 					}
-					StrumPlayAnim(true, Std.int(Math.abs(daNote.noteData)) % 4, time);
+					StrumPlayAnim(true, Std.int(Math.abs(daNote.noteData)) % Main.ammo[PlayState.mania], time);
 					daNote.hitByOpponent = true;
 
 					if (!daNote.isSustainNote)
