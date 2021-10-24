@@ -6,7 +6,7 @@ This is obviously the repository for Editor's Cut (vsKeko) source code..........
 If you haven't already, follow the Build Instruction section on the [Friday Night Funkin' Repository](https://github.com/ninjamuffin99/Funkin), 
 for the Psych Engine stuff, you will also need to install LuaJIT. You can do this with:
 ```
-haxelib install linc_luajit`
+haxelib install linc_luajit
 ```
 ...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
 
