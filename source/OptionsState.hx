@@ -690,6 +690,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 		'Low Quality',
 		'Anti-Aliasing',
 		'Persistent Cached Data',
+		#if !html5
+		'Framerate', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
+		#end
 		'GAMEPLAY',
 		'Downscroll',
 		'Middlescroll',
