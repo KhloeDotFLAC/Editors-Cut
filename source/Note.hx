@@ -36,8 +36,8 @@ class Note extends FlxSprite
 	public var inEditor:Bool = false;
 	private var earlyHitMult:Float = 0.5;
 
-	public static var scales:Array<Float> = [0.7, 0.6, 0.55, 0.46];
-	public static var swidths:Array<Float> = [160, 150, 130, 110];
+	public static var scales:Array<Float> = [0.7, 0.6, 0.55, 0.50];
+	public static var swidths:Array<Float> = [160, 148, 140, 130];
 	public static var posRest:Array<Int> = [0, 35, 50, 70];
 
 	public static var swagWidth:Float = 160 * 0.7;
