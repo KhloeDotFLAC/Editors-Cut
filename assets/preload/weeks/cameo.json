@@ -1,0 +1,20 @@
+{
+	"songs": [
+		["God Editor", "keko", [146, 113, 253]]
+	],
+
+	"weekCharacters": [
+		"keko",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Musician's cut",
+	"weekBefore": "bside",
+	"weekName": "Cameos",
+	"startUnlocked": false,
+
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}
