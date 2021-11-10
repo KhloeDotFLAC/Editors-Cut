@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="New_Keko_Sprite_Cansado.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Keko Idle dance0000" x="2" y="2" width="387" height="614" frameX="-174" frameY="-18" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0001" x="2" y="2" width="387" height="614" frameX="-174" frameY="-18" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0002" x="391" y="2" width="376" height="619" frameX="-180" frameY="-13" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0003" x="391" y="2" width="376" height="619" frameX="-180" frameY="-13" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0004" x="769" y="2" width="372" height="621" frameX="-182" frameY="-11" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0005" x="769" y="2" width="372" height="621" frameX="-182" frameY="-11" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0006" x="1143" y="2" width="372" height="624" frameX="-182" frameY="-8" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0007" x="1143" y="2" width="372" height="624" frameX="-182" frameY="-8" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0008" x="1517" y="2" width="372" height="623" frameX="-182" frameY="-9" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0009" x="1517" y="2" width="372" height="623" frameX="-182" frameY="-9" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0010" x="1517" y="2" width="372" height="623" frameX="-182" frameY="-9" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0011" x="1517" y="2" width="372" height="623" frameX="-182" frameY="-9" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0012" x="1891" y="2" width="372" height="623" frameX="-182" frameY="-9" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Idle dance0013" x="2265" y="2" width="372" height="623" frameX="-182" frameY="-9" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0014" x="2639" y="2" width="385" height="599" frameX="-142" frameY="-33" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0015" x="2639" y="2" width="385" height="599" frameX="-142" frameY="-33" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0016" x="3026" y="2" width="369" height="600" frameX="-159" frameY="-32" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0017" x="3397" y="2" width="369" height="600" frameX="-159" frameY="-32" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0018" x="2" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0019" x="2" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0020" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0021" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0022" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0023" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0024" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0025" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0026" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note LEFT0027" x="371" y="628" width="367" height="601" frameX="-161" frameY="-31" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0028" x="740" y="628" width="533" height="570" frameX="-61" frameY="-61" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0029" x="740" y="628" width="533" height="570" frameX="-61" frameY="-61" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0030" x="1275" y="628" width="511" height="574" frameX="-54" frameY="-57" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0031" x="1788" y="628" width="511" height="574" frameX="-54" frameY="-57" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0032" x="2301" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0033" x="2301" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0034" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0035" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0036" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0037" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0038" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0039" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0040" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note RIGHT0041" x="2817" y="628" width="514" height="575" frameX="-53" frameY="-56" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0042" x="3333" y="628" width="529" height="629" frameX="0" frameY="0" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0043" x="3333" y="628" width="529" height="629" frameX="0" frameY="0" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0044" x="2" y="1259" width="527" height="623" frameX="-2" frameY="-6" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0045" x="531" y="1259" width="527" height="623" frameX="-2" frameY="-6" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0046" x="1060" y="1259" width="529" height="621" frameX="0" frameY="-8" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0047" x="1060" y="1259" width="529" height="621" frameX="0" frameY="-8" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0048" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0049" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0050" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0051" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0052" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0053" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0054" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note UP0055" x="1591" y="1259" width="528" height="622" frameX="-1" frameY="-7" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0056" x="2121" y="1259" width="374" height="458" frameX="-172" frameY="-170" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0057" x="2121" y="1259" width="374" height="458" frameX="-172" frameY="-170" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0058" x="2497" y="1259" width="375" height="465" frameX="-172" frameY="-163" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0059" x="2874" y="1259" width="375" height="465" frameX="-172" frameY="-163" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0060" x="3251" y="1259" width="374" height="463" frameX="-172" frameY="-165" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0061" x="3251" y="1259" width="374" height="463" frameX="-172" frameY="-165" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0062" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0063" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0064" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0065" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0066" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0067" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0068" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Sing note DOWN0069" x="3627" y="1259" width="374" height="464" frameX="-172" frameY="-164" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0070" x="2" y="1884" width="380" height="618" frameX="-187" frameY="-14" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0071" x="2" y="1884" width="380" height="618" frameX="-187" frameY="-14" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0072" x="384" y="1884" width="387" height="608" frameX="-187" frameY="-24" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0073" x="384" y="1884" width="387" height="608" frameX="-187" frameY="-24" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0074" x="773" y="1884" width="361" height="626" frameX="-186" frameY="-6" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0075" x="773" y="1884" width="361" height="626" frameX="-186" frameY="-6" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0076" x="1136" y="1884" width="360" height="630" frameX="-182" frameY="-2" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0077" x="1136" y="1884" width="360" height="630" frameX="-182" frameY="-2" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0078" x="1136" y="1884" width="360" height="630" frameX="-182" frameY="-2" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0079" x="1136" y="1884" width="360" height="630" frameX="-182" frameY="-2" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0080" x="1498" y="1884" width="360" height="631" frameX="-180" frameY="-1" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0081" x="1498" y="1884" width="360" height="631" frameX="-180" frameY="-1" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0082" x="1498" y="1884" width="360" height="631" frameX="-180" frameY="-1" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0083" x="1498" y="1884" width="360" height="631" frameX="-180" frameY="-1" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0084" x="1860" y="1884" width="360" height="629" frameX="-179" frameY="-3" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0085" x="1860" y="1884" width="360" height="629" frameX="-179" frameY="-3" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0086" x="2222" y="1884" width="375" height="615" frameX="-143" frameY="-17" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0087" x="2599" y="1884" width="375" height="615" frameX="-143" frameY="-17" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0088" x="2976" y="1884" width="362" height="612" frameX="-161" frameY="-20" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0089" x="3340" y="1884" width="362" height="612" frameX="-161" frameY="-20" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0090" x="3704" y="1884" width="361" height="618" frameX="-175" frameY="-14" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0091" x="3704" y="1884" width="361" height="618" frameX="-175" frameY="-14" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0092" x="2" y="2517" width="360" height="619" frameX="-179" frameY="-13" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0093" x="2" y="2517" width="360" height="619" frameX="-179" frameY="-13" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0094" x="2" y="2517" width="360" height="619" frameX="-179" frameY="-13" frameWidth="594" frameHeight="632"/>
+	<SubTexture name="Keko Taunt0095" x="2" y="2517" width="360" height="619" frameX="-179" frameY="-13" frameWidth="594" frameHeight="632"/>
+</TextureAtlas>
