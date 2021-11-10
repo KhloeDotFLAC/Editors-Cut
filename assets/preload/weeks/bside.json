@@ -1,0 +1,20 @@
+{
+	"songs": [
+		["Showdown B", "keko", [146, 113, 253]]
+	],
+
+	"weekCharacters": [
+		"keko",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Musician's cut",
+	"weekBefore": "week1",
+	"weekName": "B-Siding",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}
