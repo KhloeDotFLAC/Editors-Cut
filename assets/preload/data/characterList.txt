@@ -7,3 +7,4 @@ bf-pixel
 gf-pixel
 bf-pixel-opponent
 keko
+sleepy-keko
