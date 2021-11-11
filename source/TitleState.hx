@@ -474,7 +474,23 @@ class TitleState extends MusicBeatState
 				// credTextShit.text = "Friday";
 				// credTextShit.screenCenter();
 				case 13:
-					addMoreText('Friday');
+					switch (Date.now().getDay())
+					{
+						case 0:
+							addMoreText('Sunday');
+						case 1:
+							addMoreText('Monday');
+						case 2:
+							addMoreText('Tuesday');
+						case 3:
+							addMoreText('Wednesday');
+						case 4:
+							addMoreText('Thursday');
+						case 5:
+							addMoreText('Friday');
+						case 6:
+							addMoreText('Saturday');
+					}
 				// credTextShit.visible = true;
 				case 14:
 					addMoreText('Night');
