@@ -150,9 +150,15 @@ class TitleState extends MusicBeatState
 			// FlxG.sound.list.add(music);
 			// music.play();
 
-			if(FlxG.sound.music == null) {
-				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-
+			if(FlxG.sound.music == null)
+			{
+				switch (Date.now().getDay()) 
+				{
+					case 5:
+						FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+					default: 
+						FlxG.sound.playMusic(Paths.music('editorMenu'), 0);
+				}
 				FlxG.sound.music.fadeIn(4, 0, 0.7);
 			}
 		}
