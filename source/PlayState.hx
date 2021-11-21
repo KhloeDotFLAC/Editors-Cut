@@ -2365,7 +2365,8 @@ class PlayState extends MusicBeatState
 			case 'Kill Henchmen':
 				killHenchmen();
 
-			case 'Add Camera Zoom':
+			case 'Camera Beat' | 'Add Camera Zoom' :
+				//The name of the function is now "Camera Beat", the "Add Camera Zoom" is there just for backward compatibility
 				if(ClientPrefs.camZooms && FlxG.camera.zoom < 1.35) {
 					var camZoom:Float = Std.parseFloat(value1);
 					var hudZoom:Float = Std.parseFloat(value2);
@@ -2375,6 +2376,12 @@ class PlayState extends MusicBeatState
 					FlxG.camera.zoom += camZoom;
 					camHUD.zoom += hudZoom;
 				}
+			
+			case 'Camera Zoom':
+				var value:Int = Std.parseInt(value1);
+				if(Math.isNaN(value)) value = 1;
+				
+				defaultCamZoom = value;
 
 			case 'Trigger BG Ghouls':
 				if(curStage == 'schoolEvil' && !ClientPrefs.lowQuality) {
