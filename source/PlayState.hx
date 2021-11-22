@@ -250,6 +250,10 @@ class PlayState extends MusicBeatState
 	// more keys
 	public static var mania = 0;
 
+	//Bedroom's speakers
+	public var bedroomSpeakers:BGSprite;
+
+
 	override public function create()
 	{
 		#if MODS_ALLOWED
@@ -389,12 +393,19 @@ class PlayState extends MusicBeatState
 				}
 	
 			case 'bedroom': //Keko week
-				var bedroomBG:BGSprite = new BGSprite('bedroom/bg', -600, -200, 0.9, 0.9);
-					bedroomBG.scrollFactor.set(1, 1);
+		
+				bedroomSpeakers = new BGSprite('bedroom/speakers', -88.7, -28.55, 1, 1, ['speakerBeat'], false);	
+				bedroomSpeakers.animation.addByPrefix('speakersHit','speakerBeat', 24, false);
+				add(bedroomSpeakers);
+
+				var bedroomBG:BGSprite = new BGSprite('bedroom/bg', -600, -200, 1, 1);
 				add(bedroomBG);
 
-				var bulbShine:BGSprite = new BGSprite('bedroom/bulbLight', 398.85, 497.7, 0.9, 0.9);
-					bulbShine.scrollFactor.set(1, 1);
+				var fanHeli:BGSprite = new BGSprite('bedroom/fanHeli', 908.8, 291.25, 1, 1, ['fanSpin'], true);
+					fanHeli.blend = HARDLIGHT;
+				add(fanHeli);
+
+				var bulbShine:BGSprite = new BGSprite('bedroom/bulbLight', 398.85, 497.7, 1, 1);
 					bulbShine.blend = ADD;
 				add(bulbShine);
 		}
@@ -3671,51 +3682,8 @@ class PlayState extends MusicBeatState
 
 		switch (curStage)
 		{
-			case 'school':
-				if(!ClientPrefs.lowQuality) {
-					bgGirls.dance();
-				}
-
-			case 'mall':
-				if(!ClientPrefs.lowQuality) {
-					upperBoppers.dance(true);
-				}
-
-				if(heyTimer <= 0) bottomBoppers.dance(true);
-				santa.dance(true);
-
-			case 'limo':
-				if(!ClientPrefs.lowQuality) {
-					grpLimoDancers.forEach(function(dancer:BackgroundDancer)
-					{
-						dancer.dance();
-					});
-				}
-
-				if (FlxG.random.bool(10) && fastCarCanDrive)
-					fastCarDrive();
-			case "philly":
-				if (!trainMoving)
-					trainCooldown += 1;
-
-				if (curBeat % 4 == 0)
-				{
-					phillyCityLights.forEach(function(light:BGSprite)
-					{
-						light.visible = false;
-					});
-
-					curLight = FlxG.random.int(0, phillyCityLights.length - 1, [curLight]);
-
-					phillyCityLights.members[curLight].visible = true;
-					phillyCityLights.members[curLight].alpha = 1;
-				}
-
-				if (curBeat % 8 == 4 && FlxG.random.bool(30) && !trainMoving && trainCooldown > 8)
-				{
-					trainCooldown = FlxG.random.int(-4, 0);
-					trainStart();
-				}
+			case 'bedroom':
+				bedroomSpeakers.dance(true);
 		}
 
 		if (curStage == 'spooky' && FlxG.random.bool(10) && curBeat > lightningStrikeBeat + lightningOffset)

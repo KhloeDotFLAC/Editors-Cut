@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="speakers.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="speakerBeat0000" x="1" y="1" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0001" x="1" y="1" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0002" x="1" y="450" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0003" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0004" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0005" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0006" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0007" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0008" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0009" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0010" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0011" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0012" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0013" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0014" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0015" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0016" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0017" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0018" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0019" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0020" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0021" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0022" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0023" x="1" y="899" width="1304" height="448"/>
+	<SubTexture name="speakerBeat0024" x="1" y="899" width="1304" height="448"/>
+</TextureAtlas>

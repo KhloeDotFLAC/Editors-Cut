@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fanHeli.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fanSpin0000" x="1" y="1" width="118" height="117"/>
+	<SubTexture name="fanSpin0001" x="120" y="1" width="118" height="117"/>
+</TextureAtlas>
