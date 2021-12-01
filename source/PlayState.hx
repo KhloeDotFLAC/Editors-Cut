@@ -2601,6 +2601,7 @@ class PlayState extends MusicBeatState
 				}
 				
 				remove(overlayShit);
+				overlayShit = new BGSprite('bedroom/overlay/' + image, 0, 0, 0, 0, [animation], true);
 				overlayShit.blend = ADD;
 				overlayShit.cameras = [camHUD];
 				add(overlayShit);
