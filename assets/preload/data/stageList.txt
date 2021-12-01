@@ -1,2 +1,3 @@
 stage
-bedroom
+bedroomDAY
+bedroomNIGHT
