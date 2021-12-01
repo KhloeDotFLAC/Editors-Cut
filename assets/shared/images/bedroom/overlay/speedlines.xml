@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="speedlines.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="speedlines0000" x="1" y="1" width="1280" height="720"/>
+	<SubTexture name="speedlines0001" x="1282" y="1" width="1280" height="720"/>
+	<SubTexture name="speedlines0002" x="2563" y="1" width="1280" height="720"/>
+	<SubTexture name="speedlines0003" x="1" y="722" width="1280" height="720"/>
+	<SubTexture name="speedlines0004" x="1282" y="722" width="1280" height="720"/>
+</TextureAtlas>
