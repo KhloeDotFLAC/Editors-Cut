@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="TL2.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TL200004.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="TL200005.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="TL200006.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="TL200007.png" x="3848" y="2" width="1280" height="720"/>
+	<SubTexture name="TL200008.png" x="5130" y="2" width="1280" height="720"/>
+	<SubTexture name="TL200009.png" x="6412" y="2" width="1280" height="720"/>
+	<SubTexture name="TL200010.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="TL200011.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="TL200012.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="TL200013.png" x="3848" y="724" width="1280" height="720"/>
+	<SubTexture name="TL200014.png" x="5130" y="724" width="1280" height="720"/>
+	<SubTexture name="TL200015.png" x="5130" y="724" width="1280" height="720"/>
+	<SubTexture name="TL200016.png" x="6412" y="724" width="1280" height="720"/>
+	<SubTexture name="TL200017.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="TL200018.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="TL200019.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="TL200020.png" x="3848" y="1446" width="1280" height="720"/>
+	<SubTexture name="TL200021.png" x="5130" y="1446" width="1280" height="720"/>
+	<SubTexture name="TL200022.png" x="6412" y="1446" width="1280" height="720"/>
+	<SubTexture name="TL200023.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="TL200024.png" x="1284" y="2168" width="1280" height="720"/>
+	<SubTexture name="TL200025.png" x="2566" y="2168" width="1280" height="720"/>
+	<SubTexture name="TL200026.png" x="3848" y="2168" width="1280" height="720"/>
+	<SubTexture name="TL200027.png" x="5130" y="2168" width="1280" height="720"/>
+	<SubTexture name="TL200028.png" x="6412" y="2168" width="1280" height="720"/>
+	<SubTexture name="TL200029.png" x="2" y="2890" width="1280" height="720"/>
+</TextureAtlas>

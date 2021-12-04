@@ -1,77 +1,77 @@
 {
 	"animations": [
 		{
+			"loop": true,
 			"offsets": [
 				0,
-				0
+				40
 			],
-			"loop": true,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "Keko Idle dance"
+			"fps": 24,
+			"name": "Keko Idle dance",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
 				0,
-				0
+				-117
 			],
-			"loop": false,
-			"fps": 24,
-			"anim": "taunt",
-			"indices": [],
-			"name": "Keko Taunt caffeine"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": true,
-			"name": "Keko Sing note DOWN"
+			"fps": 24,
+			"name": "Keko Sing note DOWN",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				0,
-				0
+				171,
+				40
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": true,
-			"name": "Keko Sing note UP"
+			"fps": 24,
+			"name": "Keko Sing note UP",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				0,
-				0
+				20,
+				20
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": true,
-			"name": "Keko Sing note LEFT"
+			"fps": 24,
+			"name": "Keko Sing note LEFT",
+			"indices": []
 		},
 		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
 			"loop": true,
-			"name": "Keko Sing note RIGHT"
+			"offsets": [
+				120,
+				-10
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Keko Sing note RIGHT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				40
+			],
+			"anim": "snap",
+			"fps": 24,
+			"name": "Keko snap0",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Keko_assets",
 	"position": [
-		0,
-		110
+		170,
+		160
 	],
 	"healthicon": "keko",
 	"flip_x": false,
@@ -81,8 +81,8 @@
 		135
 	],
 	"camera_position": [
-		30,
-		20
+		-20,
+		-30
 	],
 	"sing_duration": 4,
 	"scale": 1
