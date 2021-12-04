@@ -2,10 +2,10 @@
 <TextureAtlas imagePath="CVG.png">
 	<!-- Created with Adobe Animate version 21.0.0.35450 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="caffeineVg0.png" x="2" y="2" width="1280" height="720"/>
-	<SubTexture name="caffeineVg1.png" x="1284" y="2" width="1280" height="720"/>
-	<SubTexture name="caffeineVg2.png" x="2566" y="2" width="1280" height="720"/>
-	<SubTexture name="caffeineVg3.png" x="2" y="724" width="1280" height="720"/>
-	<SubTexture name="caffeineVg4.png" x="1284" y="724" width="1280" height="720"/>
-	<SubTexture name="caffeineVg5.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="CVG0.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="CVG1.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="CVG2.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="CVG3.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="CVG4.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="CVG5.png" x="2566" y="724" width="1280" height="720"/>
 </TextureAtlas>

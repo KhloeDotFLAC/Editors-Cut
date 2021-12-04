@@ -83,7 +83,7 @@ class ChartingState extends MusicBeatState
 		['Play Animation', "Plays an animation on a Character,\nonce the animation is completed,\nthe animation changes to Idle\n\nValue 1: Animation to play.\nValue 2: Character (Dad, BF, GF)"],
 		['Play BG Animation', "Value 1: Name of the animation\nValue 2: Is it looped?\n0 for false, 1 for true\n\nThat shit obviously only works in the bedroom stage."],
 		['Alt Idle Animation', "Sets a speciied suffix after the idle animation name.\nYou can use this to trigger 'idle-alt' if you set\nValue 2 to -alt\n\nValue 1: Character to set (Dad, BF or GF)\nValue 2: New suffix (Leave it blank to disable)"],
-		['Play Overlay Animation', "Value 1: Name of the PNG\nValue 2: Name of the animation"],
+		['Play Overlay Animation', "Value 1: Name of the XML and animation (Has to be the same)\nValue 2: Name of the blend mode to be applied\n\n0 = Normal\n1 = Add\n2 = Darken\n3 = Differences\n4 = Hardlight\n5 = Invert\n6 = Lighten\n7 = Multiply\n8 = Screen\n9 = Subtract"],
 		['Stop Overlay Animation', "Stops the Play Overlay Animation, duh."],
 		['', "Nothing. Yep, that's right."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],

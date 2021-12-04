@@ -263,6 +263,7 @@ class PlayState extends MusicBeatState
 	public var monitorBloom:BGSprite;
 
 	public var overlayShit:BGSprite;
+	public var FDalpha:Int;
 
 	override public function create()
 	{
@@ -421,10 +422,13 @@ class PlayState extends MusicBeatState
 					monitorBloom.blend = ADD;
 				add(monitorBloom);
 
-				var bulbShine = new BGSprite('bedroom/bulbLight', 399, 498, 1, 1);
-					bulbShine.blend = ADD;
-				add(bulbShine);
-			
+				if (FlxG.random.bool(0.1))
+				{
+					var bulbShine = new BGSprite('bedroom/bulbLight', 399, 498, 1, 1);
+				    bulbShine.blend = ADD;
+					add(bulbShine);
+				}
+		
 			case 'bedroomNIGHT': //Keko week
 		
 				bedroomSpeakers = new BGSprite('bedroom/speakers', -88, -28, 1, 1, ['speakerBeat'], false);	
@@ -2592,17 +2596,34 @@ class PlayState extends MusicBeatState
 				
 			case 'Play Overlay Animation':
 				var image:String = value1;
-				var animation:String = value2;
-
-				if (value2 != null) {
-					animation = value2;
-				}  else {
-					animation = image;
-				}
+				var blendtype:Int = Std.parseInt(value2);
+				if (Math.isNaN(blendtype)) blendtype = 1;
 				
 				remove(overlayShit);
-				overlayShit = new BGSprite('bedroom/overlay/' + image, 0, 0, 0, 0, [animation], true);
-				overlayShit.blend = ADD;
+				overlayShit = new BGSprite('bedroom/overlay/' + image, 0, 0, 0, 0, [image], true);
+				switch blendtype 
+				{
+					default:
+						overlayShit.blend = NORMAL;
+					case 1:
+						overlayShit.blend = ADD;
+					case 2:
+						overlayShit.blend = DARKEN;
+					case 3:
+						overlayShit.blend = DIFFERENCE;
+					case 4:
+						overlayShit.blend = HARDLIGHT;
+					case 5:
+						overlayShit.blend = INVERT;
+					case 6:
+						overlayShit.blend = LIGHTEN;
+					case 7:
+						overlayShit.blend = MULTIPLY;
+					case 8:
+						overlayShit.blend = SCREEN;
+					case 9:
+						overlayShit.blend = SUBTRACT;
+				}
 				overlayShit.cameras = [camHUD];
 				add(overlayShit);
 				overlayShit.dance(true);
