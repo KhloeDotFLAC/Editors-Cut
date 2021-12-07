@@ -89,7 +89,7 @@ class ChartingState extends MusicBeatState
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Monitors Screen', "Value 1: Name of the image\nValue 2: Is it animated? (Single roll/Multiple rolls)\n0 for false, 1 for true\n\nThat shit obviously only works in the bedroom stage."],
 		['', "Nothing. Yep, that's right."],
-		['FULLDARK', "Value 1: Name of the image\n0 deactivated, 1 activated\n\nThat shit obviously only works in the bedroom stage."],
+		['FULLDARK', "Everything goes dark! Value 1: 1 to activate it, 0 to deactivate it\n\nThat shit obviously only works in the bedroom stage."]
 	];
 
 	var _file:FileReference;
@@ -267,7 +267,7 @@ class ChartingState extends MusicBeatState
 		bpmTxt.scrollFactor.set();
 		add(bpmTxt);
 
-		strumLine = new FlxSprite(0, 50).makeGraphic(Std.int(GRID_SIZE * 9), 4);
+		strumLine = new FlxSprite(0, 50).makeGraphic(Std.int(GRID_SIZE * Main.ammo[_song.mania] * 2), 4);
 		add(strumLine);
 
 		camPos = new FlxObject(0, 0, 1, 1);
@@ -1141,7 +1141,7 @@ class ChartingState extends MusicBeatState
 	{
 		curStep = recalculateSteps();
 
-		var gWidth = GRID_SIZE * (Main.ammo[_song.mania] * 2);
+		var gWidth = Std.int(GRID_SIZE * Main.ammo[_song.mania] * 2);
 		camPos.x = -80 + gWidth;
 		strumLine.width = gWidth;
 		rightIcon.x = gWidth / 2 + GRID_SIZE * 2;
@@ -1509,7 +1509,7 @@ class ChartingState extends MusicBeatState
 		#end
 
 		var gridBlack:FlxSprite = new FlxSprite(0, gridBG.height / 2).makeGraphic(Std.int(GRID_SIZE + GRID_SIZE * Main.ammo[_song.mania] * 2), Std.int(gridBG.height / 2), FlxColor.BLACK);
-		gridBlack.alpha = 0.4;
+		gridBlack.alpha = 0.7;
 		gridLayer.add(gridBlack);
 
 		var gridBlackLine:FlxSprite = new FlxSprite(gridBG.x + gridBG.width - (GRID_SIZE * Main.ammo[_song.mania])).makeGraphic(2, Std.int(gridBG.height), FlxColor.BLACK);
