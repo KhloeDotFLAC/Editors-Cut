@@ -1,70 +1,70 @@
 {
 	"animations": [
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				40
 			],
-			"anim": "idle",
+			"loop": true,
 			"fps": 24,
-			"name": "Keko Idle dance",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "Keko Idle dance"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				-117
 			],
-			"anim": "singDOWN",
+			"loop": true,
 			"fps": 24,
-			"name": "Keko Sing note DOWN",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Keko Sing note DOWN"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				171,
 				40
 			],
-			"anim": "singUP",
+			"loop": true,
 			"fps": 24,
-			"name": "Keko Sing note UP",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Keko Sing note UP"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				20,
 				20
 			],
-			"anim": "singLEFT",
+			"loop": true,
 			"fps": 24,
-			"name": "Keko Sing note LEFT",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Keko Sing note LEFT"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				120,
 				-10
 			],
-			"anim": "singRIGHT",
+			"loop": true,
 			"fps": 24,
-			"name": "Keko Sing note RIGHT",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Keko Sing note RIGHT"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				8,
-				40
+				5,
+				41
 			],
-			"anim": "snap",
+			"loop": false,
 			"fps": 24,
-			"name": "Keko snap0",
-			"indices": []
+			"anim": "snap",
+			"indices": [],
+			"name": "Keko snap0"
 		}
 	],
 	"no_antialiasing": false,
