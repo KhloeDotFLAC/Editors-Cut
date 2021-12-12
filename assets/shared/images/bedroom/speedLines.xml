@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="speedLines.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SLduet0000" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="SLduet0001" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="SLduet0002" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="SLduet0003" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="SLduet0004" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="SLbf0000" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="SLbf0001" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="SLbf0002" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="SLbf0003" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="SLbf0004" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="SLkeko0000" x="1284" y="2168" width="1280" height="720"/>
+	<SubTexture name="SLkeko0001" x="2566" y="2168" width="1280" height="720"/>
+	<SubTexture name="SLkeko0002" x="2" y="2890" width="1280" height="720"/>
+	<SubTexture name="SLkeko0003" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="SLkeko0004" x="2" y="2168" width="1280" height="720"/>
+</TextureAtlas>

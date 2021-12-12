@@ -238,12 +238,13 @@ class PlayState extends MusicBeatState
 	public var monitorScreens:BGSprite;
 	public var monitorBloom:BGSprite;
 
+	public var fanHeli:BGSprite;
+
 	public var overlayShit:BGSprite;
 	public var FDalpha:Int;
 
-	//Trail vars
-	public var goodTrail:FlxTrail;
-	public var evilTrail:FlxTrail;
+	public var fogScroll:BGSprite;
+	public var speedLines:BGSprite;
 
 	override public function create()
 	{
@@ -381,7 +382,7 @@ class PlayState extends MusicBeatState
 				bedroomBG = new BGSprite('bedroom/BGDay', -600, -200, 1, 1);
 				add(bedroomBG);
 
-				var fanHeli:BGSprite = new BGSprite('bedroom/fanHeli', 910, 291, 1, 1, ['fanSpin'], true);
+				fanHeli = new BGSprite('bedroom/fanHeli', 910, 291, 1, 1, ['fanSpin'], true);
 					fanHeli.blend = HARDLIGHT;
 				add(fanHeli);
 
@@ -389,7 +390,7 @@ class PlayState extends MusicBeatState
 					monitorBloom.blend = ADD;
 				add(monitorBloom);
 
-				if (FlxG.random.bool(0.1))
+				if (FlxG.random.bool(20))
 				{
 					var bulbShine = new BGSprite('bedroom/bulbLight', 399, 498, 1, 1);
 				    bulbShine.blend = ADD;
@@ -409,6 +410,7 @@ class PlayState extends MusicBeatState
 
 				var fanHeli:BGSprite = new BGSprite('bedroom/fanHeli', 910, 291, 1, 1, ['fanSpin'], true);
 					fanHeli.blend = HARDLIGHT;
+					fanHeli.visible = true;
 				add(fanHeli);
 
 				monitorBloom = new BGSprite('bedroom/monitors/defaultBloom', 264, -119, 1, 1);	
@@ -487,6 +489,22 @@ class PlayState extends MusicBeatState
 		if(dad.curCharacter.startsWith('gf')) {
 			dad.setPosition(GF_X, GF_Y);
 			gf.visible = false;
+		}
+
+		//Fog 'n' speedlines
+		if (curStage == "bedroomDAY" || curStage == "bedroomNIGHT") {
+			fogScroll = new BGSprite('bedroom/fogScroll', -601, -201, 1, 1);
+			fogScroll.setGraphicSize(11782, 1322);
+			fogScroll.updateHitbox();
+			fogScroll.blend = ADD;
+			fogScroll.visible = false;
+			add(fogScroll);
+
+			speedLines = new BGSprite('bedroom/speedLines', 0, 0, 1, 1, ['SLduet', 'SLbf', 'SLkeko'], true);
+			speedLines.blend = ADD;
+			speedLines.visible = false;
+			speedLines.cameras = [camHUD];
+			add(speedLines);
 		}
 
 		//Custom cursor stuff
@@ -2005,6 +2023,14 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+	if (curStage == 'bedroomDAY' || curStage == 'bedroomNIGHT') {
+			if (fogScroll.x >= -7093) {
+				fogScroll.x -= 1;
+			} else {
+				fogScroll.x = -601;
+			}	
+		}
+
 		#if debug
 		if(!endingSong && !startingSong) {
 			if (FlxG.keys.justPressed.ONE) {
@@ -2412,9 +2438,11 @@ class PlayState extends MusicBeatState
 					boyfriendGroup.color = 0xFF000000;
 					dadGroup.color = 0xFF000000;
 					bedroomBG.loadGraphic(Paths.image('bedroom/BGDark'));
+					fogScroll.visible = true;
 				} else if (state == 0) {
 					boyfriendGroup.color = 0xFFFFFFFF;
 					dadGroup.color = 0xFFFFFFFF;
+					fogScroll.visible = false;
 
 					switch (curStage)
 					{
@@ -2424,6 +2452,31 @@ class PlayState extends MusicBeatState
 							bedroomBG.loadGraphic(Paths.image('bedroom/BGNight'));
 					}
 				}
+			case 'SPEEDLINES':
+				var type:Int = Std.parseInt(value1);
+				var state:String = value2.toLowerCase();
+				if(Math.isNaN(type)) type = 1;
+				if(state == null) state = 'n';
+
+				switch state
+				{
+					case 'y':
+						switch type
+						{
+							case 0:
+								speedLines.animation.play('SLduet');
+							case 1:
+								speedLines.animation.play('SLbf');
+							case 2:
+								speedLines.animation.play('SLkeko');
+						}
+						speedLines.visible = true;
+					case 'n':
+						speedLines.visible = false;
+				}
+				
+
+
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
