@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kex.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kex00.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="kex01.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="kex02.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="kex03.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="kex04.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="kex05.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="kex06.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="kex07.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="kex08.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="kex09.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="kex10.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="kex11.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="kex12.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="kex13.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="kex14.png" x="2" y="2168" width="1280" height="720"/>
+</TextureAtlas>

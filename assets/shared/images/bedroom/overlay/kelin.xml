@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kelin.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kelin_00001.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="kelin_00002.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="kelin_00003.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="kelin_00004.png" x="3848" y="2" width="1280" height="720"/>
+	<SubTexture name="kelin_00005.png" x="5130" y="2" width="1280" height="720"/>
+	<SubTexture name="kelin_00006.png" x="6412" y="2" width="1280" height="720"/>
+	<SubTexture name="kelin_00007.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="kelin_00008.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="kelin_00009.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="kelin_00010.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="kelin_00011.png" x="3848" y="724" width="1280" height="720"/>
+	<SubTexture name="kelin_00012.png" x="5130" y="724" width="1280" height="720"/>
+	<SubTexture name="kelin_00013.png" x="6412" y="724" width="1280" height="720"/>
+	<SubTexture name="kelin_00014.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="kelin_00015.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="kelin_00016.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="kelin_00017.png" x="3848" y="1446" width="1280" height="720"/>
+	<SubTexture name="kelin_00018.png" x="5130" y="1446" width="1280" height="720"/>
+	<SubTexture name="kelin_00019.png" x="5130" y="1446" width="1280" height="720"/>
+</TextureAtlas>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="solo.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="solo00.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="solo01.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="solo02.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="solo03.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="solo04.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="solo05.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo06.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo07.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="solo08.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="solo09.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="solo10.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="solo11.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="solo12.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="solo13.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="solo14.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo15.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo16.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo17.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="solo18.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="solo19.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="solo20.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="solo21.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="solo22.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="solo23.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="solo24.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo25.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo26.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo27.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo28.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo29.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo30.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo31.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo32.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo33.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="solo34.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="solo35.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="solo36.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="solo37.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo38.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo39.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="solo40.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="solo41.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="solo42.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="solo43.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="solo44.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="solo45.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo46.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="solo47.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="solo48.png" x="2" y="2168" width="1280" height="720"/>
+</TextureAtlas>

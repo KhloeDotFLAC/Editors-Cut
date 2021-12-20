@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kplay.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kplay00.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay01.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay02.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay03.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay04.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay05.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay06.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay07.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay08.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay09.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay10.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay11.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay12.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay13.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="kplay14.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay15.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay16.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay17.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="kplay18.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay19.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay20.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay21.png" x="1284" y="2168" width="1280" height="720"/>
+	<SubTexture name="kplay22.png" x="1284" y="2168" width="1280" height="720"/>
+	<SubTexture name="kplay23.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay24.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay25.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay26.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="kplay27.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="kplay28.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay29.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="kplay30.png" x="1284" y="2168" width="1280" height="720"/>
+	<SubTexture name="kplay31.png" x="1284" y="2168" width="1280" height="720"/>
+</TextureAtlas>
