@@ -2386,7 +2386,7 @@ class PlayState extends MusicBeatState
 				if (Math.isNaN(blendtype)) blendtype = 1;
 				
 				remove(overlayShit);
-				overlayShit = new BGSprite('bedroom/overlay/' + image, 0, 0, 0, 0, [image], true);
+				overlayShit = new BGSprite('overlayAnims' + image, 0, 0, 0, 0, [image], true);
 				switch blendtype 
 				{
 					default:
