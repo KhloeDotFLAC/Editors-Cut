@@ -90,7 +90,8 @@ class ChartingState extends MusicBeatState
 		['Change Monitors Screen', "Value 1: Name of the image\nValue 2: Is it animated? (Single roll/Multiple rolls)\n0 for false, 1 for true\n\nThat shit obviously only works in the bedroom stage."],
 		['', "Nothing. Yep, that's right."],
 		['FULLDARK', "Everything goes dark! Value 1: 1 to activate it, 0 to deactivate it\n\nThat shit obviously only works in the bedroom stage."],
-		['SPEEDLINES', "Neat little anime effect, lol\n\nValue 1: Type of the speedlines\n   0 = Faded middle\n   1 = Normal\n   2 = Mirrored\nValue 2: State of the speedline\n   \"y\" = activate it\n   \"n\" = deactivate it"]
+		['SPEEDLINES', "Neat little anime effect, lol\n\nValue 1: Type of the speedlines\n   0 = Faded middle\n   1 = Normal\n   2 = Mirrored\nValue 2: State of the speedline\n   \"y\" = activate it\n   \"n\" = deactivate it"],
+	    ['REAL TIME EVENTS', "Ah great Premiere Effects\n\nValue 1: Type of the effect\n   0 = Flash\n   1 = Speedlines\n\nValue 2: State of the effect\n   \"y\" = activate it\n   \"n\" = deactivate it"]
 	];
 
 	var _file:FileReference;

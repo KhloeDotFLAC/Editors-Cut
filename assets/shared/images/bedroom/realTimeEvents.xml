@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="realTimeEvents.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="flash00004.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="flash00005.png" x="1284" y="2" width="1280" height="720"/>
+	<SubTexture name="flash00006.png" x="2566" y="2" width="1280" height="720"/>
+	<SubTexture name="flash00007.png" x="3848" y="2" width="1280" height="720"/>
+	<SubTexture name="flash00008.png" x="5130" y="2" width="1280" height="720"/>
+	<SubTexture name="flash00009.png" x="6412" y="2" width="1280" height="720"/>
+	<SubTexture name="flash00010.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="flash00011.png" x="1284" y="724" width="1280" height="720"/>
+	<SubTexture name="flash00012.png" x="2566" y="724" width="1280" height="720"/>
+	<SubTexture name="flash00013.png" x="3848" y="724" width="1280" height="720"/>
+	<SubTexture name="flash00014.png" x="5130" y="724" width="1280" height="720"/>
+	<SubTexture name="flash00015.png" x="5130" y="724" width="1280" height="720"/>
+	<SubTexture name="flash00016.png" x="6412" y="724" width="1280" height="720"/>
+	<SubTexture name="flash00017.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="flash00018.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="flash00019.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="flash00020.png" x="3848" y="1446" width="1280" height="720"/>
+	<SubTexture name="flash00021.png" x="5130" y="1446" width="1280" height="720"/>
+	<SubTexture name="flash00022.png" x="6412" y="1446" width="1280" height="720"/>
+	<SubTexture name="flash00023.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="flash00024.png" x="1284" y="2168" width="1280" height="720"/>
+	<SubTexture name="flash00025.png" x="2566" y="2168" width="1280" height="720"/>
+	<SubTexture name="flash00026.png" x="3848" y="2168" width="1280" height="720"/>
+	<SubTexture name="sl_00004.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="sl_00005.png" x="5130" y="2168" width="1280" height="720"/>
+	<SubTexture name="sl_00006.png" x="6412" y="2168" width="1280" height="720"/>
+	<SubTexture name="sl_00007.png" x="2" y="2890" width="1280" height="720"/>
+	<SubTexture name="sl_00008.png" x="1284" y="2890" width="1280" height="720"/>
+	<SubTexture name="sl_00009.png" x="2566" y="2890" width="1280" height="720"/>
+	<SubTexture name="sl_00010.png" x="3848" y="2890" width="1280" height="720"/>
+	<SubTexture name="sl_00011.png" x="5130" y="2890" width="1280" height="720"/>
+	<SubTexture name="sl_00012.png" x="6412" y="2890" width="1280" height="720"/>
+	<SubTexture name="sl_00013.png" x="2" y="3612" width="1280" height="720"/>
+	<SubTexture name="sl_00014.png" x="2" y="3612" width="1280" height="720"/>
+	<SubTexture name="sl_00015.png" x="1284" y="3612" width="1280" height="720"/>
+	<SubTexture name="sl_00016.png" x="1284" y="3612" width="1280" height="720"/>
+	<SubTexture name="sl_00017.png" x="2566" y="3612" width="1280" height="720"/>
+	<SubTexture name="sl_00018.png" x="1284" y="1446" width="1280" height="720"/>
+	<SubTexture name="sl_00019.png" x="2566" y="1446" width="1280" height="720"/>
+	<SubTexture name="sl_00020.png" x="3848" y="1446" width="1280" height="720"/>
+	<SubTexture name="sl_00021.png" x="5130" y="1446" width="1280" height="720"/>
+	<SubTexture name="sl_00022.png" x="6412" y="1446" width="1280" height="720"/>
+	<SubTexture name="sl_00023.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="sl_00024.png" x="1284" y="2168" width="1280" height="720"/>
+	<SubTexture name="sl_00025.png" x="2566" y="2168" width="1280" height="720"/>
+	<SubTexture name="sl_00026.png" x="3848" y="2168" width="1280" height="720"/>
+</TextureAtlas>

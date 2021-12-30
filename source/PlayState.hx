@@ -245,6 +245,7 @@ class PlayState extends MusicBeatState
 
 	public var fogScroll:BGSprite;
 	public var speedLines:BGSprite;
+	public var realTimeEvents:BGSprite;
 
 	override public function create()
 	{
@@ -505,6 +506,13 @@ class PlayState extends MusicBeatState
 			speedLines.visible = false;
 			speedLines.cameras = [camHUD];
 			add(speedLines);
+
+			realTimeEvents = new BGSprite('bedroom/realTimeEvents', 0, 0, 1, 1, ['flash', 'sl'], false);
+			realTimeEvents.blend = NORMAL;
+			realTimeEvents.visible = false;
+			realTimeEvents.cameras = [camHUD];
+			add(realTimeEvents);
+
 		}
 
 		//Custom cursor stuff
@@ -2474,7 +2482,26 @@ class PlayState extends MusicBeatState
 					case 'n':
 						speedLines.visible = false;
 				}
-				
+				case 'REAL TIME EVENTS':
+				var type:Int = Std.parseInt(value1);
+				var state:String = value2.toLowerCase();
+				if(Math.isNaN(type)) type = 1;
+				if(state == null) state = 'n';
+
+				switch state
+				{
+					case 'y':
+						switch type
+						{
+							case 0:
+								realTimeEvents.animation.play('flash');
+							case 1:
+								realTimeEvents.animation.play('sl');
+						}
+						realTimeEvents.visible = true;
+					case 'n':
+						realTimeEvents.visible = false;
+				}
 
 
 		}
