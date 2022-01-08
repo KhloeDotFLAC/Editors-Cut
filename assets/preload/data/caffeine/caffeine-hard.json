@@ -5,22 +5,7 @@
 		"player2": "sleepykeko",
 		"notes": [
 			{
-				"sectionNotes": [
-					[
-						416.666666666667,
-						-1,
-						"REAL TIME EVENTS",
-						"0",
-						"y"
-					],
-					[
-						421.875,
-						-1,
-						"REAL TIME EVENTS",
-						"0",
-						"n"
-					]
-				],
+				"sectionNotes": [],
 				"lengthInSteps": 16,
 				"typeOfSection": 0,
 				"bpm": 170,
@@ -147,13 +132,6 @@
 						16833.3333333333,
 						2,
 						0
-					],
-					[
-						16000,
-						-1,
-						"Screen Shake",
-						"0.4, 0.0090",
-						""
 					]
 				],
 				"lengthInSteps": 16,
@@ -1277,20 +1255,6 @@
 						38583.3333333333,
 						3,
 						0
-					],
-					[
-						37333.3333333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						37583.3333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"altAnim": false,
@@ -1419,20 +1383,6 @@
 						40750,
 						1,
 						0
-					],
-					[
-						40000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						40250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -1558,20 +1508,6 @@
 						43916.6666666667,
 						1,
 						0
-					],
-					[
-						42666.6666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						42916.6666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -1707,20 +1643,6 @@
 						46583.3333333333,
 						3,
 						0
-					],
-					[
-						45333.3333333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						45583.3333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -1883,20 +1805,6 @@
 						49250,
 						0,
 						0
-					],
-					[
-						48000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						48250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"altAnim": false,
@@ -2027,20 +1935,6 @@
 						51666.6666666667,
 						1,
 						0
-					],
-					[
-						50666.6666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						50916.6666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"altAnim": false,
@@ -2166,20 +2060,6 @@
 						54083.3333333334,
 						1,
 						0
-					],
-					[
-						53333.3333333334,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						53583.3333333334,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"altAnim": false,
@@ -2315,20 +2195,6 @@
 						57083.3333333334,
 						1,
 						0
-					],
-					[
-						56000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						56250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"altAnim": false,
@@ -2449,20 +2315,6 @@
 						58666.6666666667,
 						5,
 						500
-					],
-					[
-						58666.6666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						58916.6666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"altAnim": false,
@@ -3284,13 +3136,6 @@
 						75166.6666666667,
 						3,
 						0
-					],
-					[
-						74666.6666666667,
-						-1,
-						"Camera Follow Pos",
-						"850",
-						"550"
 					]
 				],
 				"typeOfSection": 0,
@@ -3571,27 +3416,6 @@
 						80000,
 						5,
 						1250
-					],
-					[
-						80010.4166666667,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0025",
-						""
-					],
-					[
-						80000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						80250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -3673,13 +3497,6 @@
 						81333.3333333333,
 						3,
 						0
-					],
-					[
-						81333.3333333333,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0025",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -3751,13 +3568,6 @@
 						4,
 						1250,
 						"Alt Animation"
-					],
-					[
-						82666.6666666667,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0025",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -3833,20 +3643,6 @@
 						84000,
 						7,
 						1083.33333333333
-					],
-					[
-						84000,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0025",
-						""
-					],
-					[
-						84750,
-						-1,
-						"REAL TIME EVENTS",
-						"0",
-						"y"
 					]
 				],
 				"typeOfSection": 0,
@@ -3917,41 +3713,6 @@
 						85333.3333333333,
 						5,
 						1166.66666666667
-					],
-					[
-						85500,
-						-1,
-						"Camera Zoom",
-						"1.2",
-						""
-					],
-					[
-						85416.6666666666,
-						-1,
-						"Camera Follow Pos",
-						"900",
-						"600"
-					],
-					[
-						85333.3333333333,
-						-1,
-						"Flash Camera",
-						"1.5, 0xffffffff",
-						""
-					],
-					[
-						85458.3333333333,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
-						85750,
-						-1,
-						"REAL TIME EVENTS",
-						"0",
-						"n"
 					]
 				],
 				"typeOfSection": 0,
@@ -4027,20 +3788,6 @@
 						86666.6666666666,
 						6,
 						1166.66666666667
-					],
-					[
-						86687.5,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
-						87416.6666666666,
-						-1,
-						"REAL TIME EVENTS",
-						"1",
-						"y"
 					]
 				],
 				"typeOfSection": 0,
@@ -4109,27 +3856,6 @@
 					],
 					[
 						88000,
-						-1,
-						"Screen Flash",
-						"0.7, 0xffffffff",
-						""
-					],
-					[
-						88083.3333333333,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
-						88041.6666666666,
-						-1,
-						"SPEEDLINES",
-						"2",
-						"y"
-					],
-					[
-						88000,
 						4,
 						833.333333333333
 					],
@@ -4142,13 +3868,6 @@
 						89166.6666666666,
 						7,
 						0
-					],
-					[
-						88333.3333333333,
-						-1,
-						"REAL TIME EVENTS",
-						"1",
-						"n"
 					]
 				],
 				"typeOfSection": 0,
@@ -4217,13 +3936,6 @@
 						1083.33333333333
 					],
 					[
-						89333.3333333333,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
 						90416.6666666666,
 						1,
 						0,
@@ -4234,13 +3946,6 @@
 						1,
 						0,
 						"Alt Animation"
-					],
-					[
-						90083.3333333333,
-						-1,
-						"REAL TIME EVENTS",
-						"0",
-						"y"
 					]
 				],
 				"typeOfSection": 0,
@@ -4311,48 +4016,6 @@
 						90666.6666666666,
 						5,
 						1250
-					],
-					[
-						90666.6666666666,
-						-1,
-						"Flash Camera",
-						"1.5, 0xffffffff",
-						""
-					],
-					[
-						90750,
-						-1,
-						"Camera Zoom",
-						"1",
-						""
-					],
-					[
-						90708.3333333333,
-						-1,
-						"Camera Follow Pos",
-						"70",
-						"450"
-					],
-					[
-						90833.3333333333,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
-						90729.1666666666,
-						-1,
-						"SPEEDLINES",
-						"2",
-						"n"
-					],
-					[
-						91083.3333333333,
-						-1,
-						"REAL TIME EVENTS",
-						"0",
-						"n"
 					]
 				],
 				"typeOfSection": 0,
@@ -4429,20 +4092,6 @@
 						4,
 						1250,
 						"Alt Animation"
-					],
-					[
-						92000,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
-						92750,
-						-1,
-						"REAL TIME EVENTS",
-						"1",
-						"y"
 					]
 				],
 				"typeOfSection": 0,
@@ -4501,27 +4150,6 @@
 						"Alt Animation"
 					],
 					[
-						93333.3333333333,
-						-1,
-						"Screen Flash",
-						"0.7, 0xffffffff",
-						""
-					],
-					[
-						93354.1666666666,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
-						93343.75,
-						-1,
-						"SPEEDLINES",
-						"1",
-						"y"
-					],
-					[
 						94500,
 						0,
 						0
@@ -4535,13 +4163,6 @@
 						94333.3333333333,
 						2,
 						0
-					],
-					[
-						93666.6666666666,
-						-1,
-						"REAL TIME EVENTS",
-						"1",
-						"n"
 					]
 				],
 				"typeOfSection": 0,
@@ -4615,13 +4236,6 @@
 						0
 					],
 					[
-						94666.6666666666,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
 						95666.6666666666,
 						0,
 						0
@@ -4635,13 +4249,6 @@
 						95916.6666666666,
 						3,
 						0
-					],
-					[
-						95416.6666666666,
-						-1,
-						"REAL TIME EVENTS",
-						"1",
-						"y"
 					]
 				],
 				"typeOfSection": 0,
@@ -4657,34 +4264,6 @@
 						95999.9999999999,
 						1,
 						1166.66666666667
-					],
-					[
-						96083.3333333333,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
-					],
-					[
-						95999.9999999999,
-						-1,
-						"Camera Follow Pos",
-						"470",
-						"470"
-					],
-					[
-						96010.4166666666,
-						-1,
-						"Screen Flash",
-						"1.5, 0xffffffff",
-						""
-					],
-					[
-						96020.8333333333,
-						-1,
-						"SPEEDLINES",
-						"0",
-						"y"
 					],
 					[
 						95999.9999999999,
@@ -4740,13 +4319,6 @@
 						97166.6666666666,
 						4,
 						0
-					],
-					[
-						96333.3333333333,
-						-1,
-						"REAL TIME EVENTS",
-						"1",
-						"n"
 					]
 				],
 				"typeOfSection": 0,
@@ -4762,13 +4334,6 @@
 						97333.3333333333,
 						2,
 						1166.66666666667
-					],
-					[
-						97333.3333333333,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
 					],
 					[
 						97333.3333333333,
@@ -4849,13 +4414,6 @@
 						99833.3333333333,
 						2,
 						0
-					],
-					[
-						98666.6666666666,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
 					],
 					[
 						99666.6666666666,
@@ -4957,13 +4515,6 @@
 						99999.9999999999,
 						1,
 						500
-					],
-					[
-						99999.9999999999,
-						-1,
-						"Screen Shake",
-						"1.5, 0.0050",
-						""
 					],
 					[
 						101083.333333333,
@@ -5099,69 +4650,6 @@
 						0
 					],
 					[
-						101333.333333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						101583.333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						101416.666666667,
-						-1,
-						"Camera Follow Pos",
-						"100",
-						"470"
-					],
-					[
-						101375,
-						-1,
-						"Camera Zoom",
-						"1",
-						""
-					],
-					[
-						101833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.01",
-						""
-					],
-					[
-						102083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.015",
-						""
-					],
-					[
-						102333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.02",
-						""
-					],
-					[
-						102583.333333333,
-						-1,
-						"Camera Zoom",
-						"1.025",
-						""
-					],
-					[
-						101354.166666667,
-						-1,
-						"SPEEDLINES",
-						"0",
-						"n"
-					],
-					[
 						102500,
 						1,
 						0
@@ -5255,41 +4743,6 @@
 						103916.666666667,
 						0,
 						0
-					],
-					[
-						102833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.03",
-						""
-					],
-					[
-						103083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.035",
-						""
-					],
-					[
-						103333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.04",
-						""
-					],
-					[
-						103583.333333333,
-						-1,
-						"Camera Zoom",
-						"1.045",
-						""
-					],
-					[
-						103833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.05",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -5360,55 +4813,6 @@
 						105250,
 						0,
 						0
-					],
-					[
-						104000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						104250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						104083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.05",
-						""
-					],
-					[
-						104333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.055",
-						""
-					],
-					[
-						104583.333333333,
-						-1,
-						"Camera Zoom",
-						"1.06",
-						""
-					],
-					[
-						104833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.065",
-						""
-					],
-					[
-						105083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.07",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -5474,41 +4878,6 @@
 						106333.333333333,
 						0,
 						0
-					],
-					[
-						105333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.075",
-						""
-					],
-					[
-						105583.333333333,
-						-1,
-						"Camera Zoom",
-						"1.08",
-						""
-					],
-					[
-						105833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.085",
-						""
-					],
-					[
-						106083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.09",
-						""
-					],
-					[
-						106333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.1",
-						""
 					],
 					[
 						105750,
@@ -5599,69 +4968,6 @@
 						107916.666666667,
 						2,
 						0
-					],
-					[
-						106666.666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						106916.666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						106750,
-						-1,
-						"Camera Follow Pos",
-						"850",
-						"550"
-					],
-					[
-						106708.333333333,
-						-1,
-						"Camera Zoom",
-						"1",
-						""
-					],
-					[
-						106833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.01",
-						""
-					],
-					[
-						107083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.015",
-						""
-					],
-					[
-						107333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.02",
-						""
-					],
-					[
-						107583.333333333,
-						-1,
-						"Camera Zoom",
-						"1.025",
-						""
-					],
-					[
-						107833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.03",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -5752,41 +5058,6 @@
 						108166.666666667,
 						3,
 						0
-					],
-					[
-						108083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.035",
-						""
-					],
-					[
-						108333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.04",
-						""
-					],
-					[
-						108583.333333333,
-						-1,
-						"Camera Zoom",
-						"1.045",
-						""
-					],
-					[
-						108833.333333333,
-						-1,
-						"Camera Zoom",
-						"1.05",
-						""
-					],
-					[
-						109083.333333333,
-						-1,
-						"Camera Zoom",
-						"1.055",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -5859,55 +5130,6 @@
 						110583.333333333,
 						0,
 						0
-					],
-					[
-						109333.333333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						109583.333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						109416.666666667,
-						-1,
-						"Camera Zoom",
-						"1.06",
-						""
-					],
-					[
-						109666.666666667,
-						-1,
-						"Camera Zoom",
-						"1.065",
-						""
-					],
-					[
-						109916.666666667,
-						-1,
-						"Camera Zoom",
-						"1.07",
-						""
-					],
-					[
-						110166.666666667,
-						-1,
-						"Camera Zoom",
-						"1.075",
-						""
-					],
-					[
-						110416.666666667,
-						-1,
-						"Camera Zoom",
-						"1.08",
-						""
 					]
 				],
 				"altAnim": false,
@@ -5963,48 +5185,6 @@
 						111833.333333333,
 						2,
 						0
-					],
-					[
-						110666.666666667,
-						-1,
-						"Camera Zoom",
-						"1.085",
-						""
-					],
-					[
-						110916.666666667,
-						-1,
-						"Camera Zoom",
-						"1.09",
-						""
-					],
-					[
-						111166.666666667,
-						-1,
-						"Camera Zoom",
-						"1.095",
-						""
-					],
-					[
-						111416.666666667,
-						-1,
-						"Camera Zoom",
-						"1.1",
-						""
-					],
-					[
-						111666.666666667,
-						-1,
-						"Camera Zoom",
-						"1.15",
-						""
-					],
-					[
-						111916.666666667,
-						-1,
-						"Camera Zoom",
-						"1.2",
-						""
 					],
 					[
 						111000,
@@ -6105,34 +5285,6 @@
 						113250,
 						3,
 						0
-					],
-					[
-						112250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						112166.666666667,
-						-1,
-						"Camera Zoom",
-						"0.9",
-						""
-					],
-					[
-						112020.833333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						112000,
-						-1,
-						"Camera Follow Pos",
-						"",
-						""
 					]
 				],
 				"altAnim": false,
@@ -6288,20 +5440,6 @@
 						115916.666666667,
 						0,
 						0
-					],
-					[
-						114666.666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						114916.666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"altAnim": false,
@@ -6440,34 +5578,6 @@
 						118416.666666667,
 						3,
 						0
-					],
-					[
-						117416.666666667,
-						-1,
-						"Camera Follow Pos",
-						"900",
-						"550"
-					],
-					[
-						117333.333333333,
-						-1,
-						"Camera Zoom",
-						"1",
-						""
-					],
-					[
-						117354.166666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						117583.333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -6666,69 +5776,6 @@
 						"Alt Animation"
 					],
 					[
-						121333.333333333,
-						-1,
-						"Camera Zoom",
-						"1.02",
-						""
-					],
-					[
-						121666.666666667,
-						-1,
-						"Camera Zoom",
-						"1.08",
-						""
-					],
-					[
-						122000,
-						-1,
-						"Camera Zoom",
-						"1.12",
-						""
-					],
-					[
-						122333.333333333,
-						-1,
-						"Camera Zoom",
-						"0.9",
-						""
-					],
-					[
-						121500,
-						-1,
-						"Camera Beat",
-						"0.1",
-						""
-					],
-					[
-						121833.333333333,
-						-1,
-						"Camera Beat",
-						"0.1",
-						""
-					],
-					[
-						122166.666666667,
-						-1,
-						"Camera Beat",
-						"0.1",
-						""
-					],
-					[
-						122500,
-						-1,
-						"Camera Beat",
-						"0.1",
-						""
-					],
-					[
-						121416.666666667,
-						-1,
-						"Play Overlay Animation",
-						"speedlines",
-						"9"
-					],
-					[
 						121916.666666667,
 						1,
 						0,
@@ -6859,34 +5906,6 @@
 						6,
 						500,
 						"Alt Animation"
-					],
-					[
-						122673.611111111,
-						-1,
-						"Camera Beat",
-						"0.4",
-						""
-					],
-					[
-						122677.083333333,
-						-1,
-						"Stop Overlay Animation",
-						"speedlines",
-						""
-					],
-					[
-						122666.666666667,
-						-1,
-						"Camera Follow Pos",
-						"",
-						""
-					],
-					[
-						122670.138888889,
-						-1,
-						"Screen Flash",
-						"1, 0xffffffff",
-						""
 					]
 				],
 				"typeOfSection": 0,
@@ -7947,13 +6966,6 @@
 						142500,
 						0,
 						0
-					],
-					[
-						141333.333333333,
-						-1,
-						"SPEEDLINES",
-						"0",
-						"y"
 					]
 				],
 				"typeOfSection": 0,
@@ -8064,34 +7076,6 @@
 						144000,
 						5,
 						666.666666666667
-					],
-					[
-						144000,
-						-1,
-						"Screen Flash",
-						"1, 0xffffffff",
-						""
-					],
-					[
-						144041.666666667,
-						-1,
-						"Camera Zoom",
-						"0.8",
-						""
-					],
-					[
-						144583.333333333,
-						-1,
-						"Camera Zoom",
-						"0.77",
-						""
-					],
-					[
-						144083.333333333,
-						-1,
-						"SPEEDLINES",
-						"0",
-						"n"
 					]
 				],
 				"typeOfSection": 0,
@@ -11700,6 +10684,141 @@
 				"mustHitSection": true,
 				"changeBPM": false,
 				"bpm": 180
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 180
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 180
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 180
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 180,
+				"changeBPM": false,
+				"mustHitSection": true
 			},
 			{
 				"lengthInSteps": 16,
