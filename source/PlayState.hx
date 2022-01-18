@@ -110,6 +110,10 @@ class PlayState extends MusicBeatState
 	public var GF_X:Float = 400;
 	public var GF_Y:Float = 130;
 
+	public var songSpeedTween:FlxTween;
+	public var songSpeed(default, set):Float = 1;
+	public var songSpeedType:String = "multiplicative";
+
 	public var boyfriendGroup:FlxSpriteGroup;
 	public var dadGroup:FlxSpriteGroup;
 	public var gfGroup:FlxSpriteGroup;
@@ -151,6 +155,8 @@ class PlayState extends MusicBeatState
 
 	public var gfSpeed:Int = 1;
 	public var health:Float = 1;
+	public var kekoDrain:Float = 0;
+	public var bfDrain:Float = 0.025;
 	public var combo:Int = 0;
 
 	private var healthBarBG:AttachedSprite;
@@ -245,6 +251,7 @@ class PlayState extends MusicBeatState
 
 	public var fogScroll:BGSprite;
 	public var speedLines:BGSprite;
+	public var vignette:BGSprite;
 	public var realTimeEvents:BGSprite;
 
 	override public function create()
@@ -506,6 +513,12 @@ class PlayState extends MusicBeatState
 			speedLines.visible = false;
 			speedLines.cameras = [camHUD];
 			add(speedLines);
+
+			vignette = new BGSprite('bedroom/vignette', 0, 0, 1, 1);
+			vignette.blend = ADD;
+			vignette.alpha = 0;
+			vignette.cameras = [camHUD];
+			add(vignette);
 
 			realTimeEvents = new BGSprite('bedroom/realTimeEvents', 0, 0, 1, 1, ['flash', 'sl'], false);
 			realTimeEvents.blend = NORMAL;
@@ -797,6 +810,32 @@ class PlayState extends MusicBeatState
 		#end
 		
 		super.create();
+	}
+	
+	function set_songSpeed(value:Float):Float
+	{
+		if(generatedMusic)
+		{
+			var ratio:Float = value / songSpeed; //funny word huh
+			for (note in notes)
+			{
+				if(note.isSustainNote && !note.animation.curAnim.name.endsWith('end'))
+				{
+					note.scale.y *= ratio;
+					note.updateHitbox();
+				}
+			}
+			for (note in unspawnNotes)
+			{
+				if(note.isSustainNote && !note.animation.curAnim.name.endsWith('end'))
+				{
+					note.scale.y *= ratio;
+					note.updateHitbox();
+				}
+			}
+		}
+			songSpeed = value;
+			return value;
 	}
 
 	public function addTextToDebug(text:String) {
@@ -1312,6 +1351,15 @@ class PlayState extends MusicBeatState
 	private function generateSong(dataPath:String):Void
 	{
 		// FlxG.log.add(ChartParser.parse());
+		songSpeedType = ClientPrefs.getGameplaySetting('scrolltype','multiplicative');
+
+		switch(songSpeedType)
+		{
+			case "multiplicative":
+				songSpeed = SONG.speed * ClientPrefs.getGameplaySetting('scrollspeed', 1);
+			case "constant":
+				songSpeed = ClientPrefs.getGameplaySetting('scrollspeed', 1);
+		}
 
 		var songData = SONG;
 		Conductor.changeBPM(songData.bpm);
@@ -1397,7 +1445,7 @@ class PlayState extends MusicBeatState
 						{
 							oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 
-							var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + (Conductor.stepCrochet / FlxMath.roundDecimal(SONG.speed, 2)), daNoteData, oldNote, true);
+							var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + (Conductor.stepCrochet / FlxMath.roundDecimal(songSpeed, 2)), daNoteData, oldNote, true);
 							sustainNote.mustPress = gottaHitNote;
 							sustainNote.noteType = swagNote.noteType;
 							sustainNote.scrollFactor.set();
@@ -1520,8 +1568,12 @@ class PlayState extends MusicBeatState
 
 			if (!startTimer.finished)
 				startTimer.active = false;
+			
 			if (finishTimer != null && !finishTimer.finished)
 				finishTimer.active = false;
+			
+			if (songSpeedTween != null)
+				songSpeedTween.active = false;
 
 			var chars:Array<Character> = [boyfriend, gf, dad];
 			for (i in 0...chars.length) {
@@ -1552,8 +1604,12 @@ class PlayState extends MusicBeatState
 
 			if (!startTimer.finished)
 				startTimer.active = true;
+
 			if (finishTimer != null && !finishTimer.finished)
 				finishTimer.active = true;
+
+			if (songSpeedTween != null)
+				songSpeedTween.active = true;
 
 			var chars:Array<Character> = [boyfriend, gf, dad];
 			for (i in 0...chars.length) {
@@ -1811,10 +1867,10 @@ class PlayState extends MusicBeatState
 		}
 		doDeathCheck();
 
-		var roundedSpeed:Float = FlxMath.roundDecimal(SONG.speed, 2);
+		var roundedSpeed:Float = FlxMath.roundDecimal(songSpeed, 2);
 		if (unspawnNotes[0] != null)
 		{
-			var time:Float = 1500;
+			var time:Float = 3000;//Thanks BB
 			if(roundedSpeed < 1) time /= roundedSpeed;
 
 			while (unspawnNotes.length > 0 && unspawnNotes[0].strumTime - Conductor.songPosition < time)
@@ -1967,7 +2023,7 @@ class PlayState extends MusicBeatState
 					if (health > 0.1)
 					{
 						//health drain shit
-						health -= 0.023;
+						health -= kekoDrain;
 					}
 
 					var time:Float = 0.15;
@@ -1998,7 +2054,7 @@ class PlayState extends MusicBeatState
 				}
 
 				// WIP interpolation shit? Need to fix the pause issue
-				// daNote.y = (strumLine.y - (songTime - daNote.strumTime) * (0.45 * PlayState.SONG.speed));
+				//daNote.y = (strumLine.y - (songTime - daNote.strumTime) * (0.45 * songSpeed));
 
 				var doKill:Bool = daNote.y < -daNote.height;
 				if(ClientPrefs.downScroll) doKill = daNote.y > FlxG.height;
@@ -2482,7 +2538,7 @@ class PlayState extends MusicBeatState
 					case 'n':
 						speedLines.visible = false;
 				}
-				case 'REAL TIME EVENTS':
+			case 'REAL TIME EVENTS':
 				var type:Int = Std.parseInt(value1);
 				var state:String = value2.toLowerCase();
 				if(Math.isNaN(type)) type = 1;
@@ -2502,8 +2558,66 @@ class PlayState extends MusicBeatState
 					case 'n':
 						realTimeEvents.visible = false;
 				}
-
-
+			case 'HEALTH DRAIN':
+				var kekoAmmo:Float = Std.parseFloat(value1);
+				if (Math.isNaN(kekoAmmo))
+					kekoDrain = 0.025;
+				else {
+					kekoDrain = kekoAmmo / 100;
+				}
+				var bfAmmo:Float = Std.parseFloat(value2);
+				if (Math.isNaN(bfAmmo))
+					bfDrain = 0.025;
+				else {
+					bfDrain = bfAmmo / 100;
+				}
+			case 'Change Scroll Speed':
+					if (songSpeedType == "constant")
+						return;
+					var val1:Float = Std.parseFloat(value1);
+					var val2:Float = Std.parseFloat(value2);
+					if(Math.isNaN(val1)) val1 = 1;
+					if(Math.isNaN(val2)) val2 = 0;
+	
+					var newValue:Float = SONG.speed * ClientPrefs.getGameplaySetting('scrollspeed', 1) * val1;
+	
+					if(val2 <= 0)
+					{
+						songSpeed = newValue;
+					}
+					else
+					{
+						songSpeedTween = FlxTween.tween(this, {songSpeed: newValue}, val2, {ease: FlxEase.linear, onComplete:
+							function (twn:FlxTween)
+							{
+								songSpeedTween = null;
+							}
+						});
+					}
+			case 'VIGNETTE':
+				var vigColor:Int = Std.parseInt(value1);
+				var vigType:Int = Std.parseInt(value2);
+				if(Math.isNaN(vigColor)) vigColor = 0xFF000000;
+				if(Math.isNaN(vigType)) vigType = 0;
+								
+				FlxTween.cancelTweensOf(vignette);
+				
+				switch vigType
+				{ 
+					case 0:
+						vignette.color = vigColor; 
+						if (vignette.alpha == 1) {
+							vignette.alpha = 0;
+						} else {
+							vignette.alpha = 1;
+						}
+						
+					case 1:
+						vignette.color = vigColor; 
+						vignette.alpha = 1;
+						FlxTween.tween(vignette, {alpha: 0}, 0.5, {type:PERSIST}); 
+				}
+				
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -3304,7 +3418,7 @@ class PlayState extends MusicBeatState
 				combo += 1;
 				if(combo > 9999) combo = 9999;
 			}
-			health += note.hitHealth;
+			health += bfDrain;
 
 			if(!note.noAnimation) {
 				var daAlt = '';
@@ -3593,55 +3707,82 @@ class PlayState extends MusicBeatState
 		for (i in 0...arrayIDs.length) {
 			if(!Achievements.achievementsUnlocked[arrayIDs[i]][1]) {
 				switch(arrayIDs[i]) {
-					case 1 | 2 | 3 | 4 | 5 | 6 | 7:
-						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' &&
-						storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week' + arrayIDs[i]) && !changedDifficulty && !usedPractice) {
+					case 1:
+						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' && storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week1') && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 2:
+						if(Paths.formatToSongPath(SONG.song) == 'insomnia' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 3:
+						if(Paths.formatToSongPath(SONG.song) == 'caffeine' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 4:
+						if(Paths.formatToSongPath(SONG.song) == 'showdown' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 5:
+						if(Paths.formatToSongPath(SONG.song) == 'animal' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 6:
+						if(Paths.formatToSongPath(SONG.song) == 'beethoven' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 7:
+						if(Paths.formatToSongPath(SONG.song) == 'eruption' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 8:
-						if(ratingPercent < 0.2 && !practiceMode && !cpuControlled) {
+						if(Paths.formatToSongPath(SONG.song) == 'god-eater' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 9:
-						if(ratingPercent >= 1 && !usedPractice && !cpuControlled) {
+						if(Paths.formatToSongPath(SONG.song) == 'tylenol' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 10:
-						if(Achievements.henchmenDeath >= 100) {
+						if(ratingPercent < 0.2 && !practiceMode && !cpuControlled) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 11:
-						if(boyfriend.holdTimer >= 20 && !usedPractice) {
+						if(ratingPercent >= 1 && !usedPractice && !cpuControlled) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 12:
-						if(!boyfriendIdled && !usedPractice) {
+						if(songMisses > 999 && !usedPractice && !cpuControlled) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 13:
-						if(!usedPractice) {
-							var howManyPresses:Int = 0;
-							for (j in 0...keysPressed.length) {
-								if(keysPressed[j]) howManyPresses++;
-							}
-
-							if(howManyPresses <= 2) {
-								Achievements.unlockAchievement(arrayIDs[i]);
-								return arrayIDs[i];
-							}
+						if(boyfriend.holdTimer >= 20 && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
 						}
 					case 14:
-						if(/*ClientPrefs.framerate <= 60 &&*/ ClientPrefs.lowQuality && !ClientPrefs.globalAntialiasing && !ClientPrefs.imagesPersist) {
+						if(!boyfriendIdled && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 15:
+						if(/*ClientPrefs.framerate <= 60 &&*/ ClientPrefs.lowQuality && !ClientPrefs.globalAntialiasing && !ClientPrefs.imagesPersist) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 16:
 						if(Paths.formatToSongPath(SONG.song) == 'test' && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];

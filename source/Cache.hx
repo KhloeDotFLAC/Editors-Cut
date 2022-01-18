@@ -36,7 +36,7 @@ class Cache extends MusicBeatState
 	var music = [];
 
 	var shitz:FlxText;
-
+	
 	override function create()
 	{
 		FlxG.mouse.visible = false;
@@ -63,7 +63,7 @@ class Cache extends MusicBeatState
 				continue;
 			images.push(i);
 		}
-
+		
 		for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/songs")))
 		{
 			music.push(i);

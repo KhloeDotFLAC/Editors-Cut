@@ -75,7 +75,7 @@ class ChartingState extends MusicBeatState
 		['Camera Zoom', "Modifies the global value of the zoom\nValue 1: Zoom ammount (Default: 0.015)\nLeave the values blank if you want to use Default."],
 		['Camera Follow Pos', "Value 1: X\nValue 2: Y\n\nThe camera won't change the follow point\nafter using this, for getting it back\nto normal, leave both values blank."],
 		['', "Nothing. Yep, that's right."],
-		['Screen Flash', "Value 1: Camera flash\nValue 2: HUD flash\n\nEvery value works as the following example: \"1, 0xFF0\n00000\".\nThe first number (1) is the duration.\nThe second number (0xFF000000) is the color.\n\nBlack: 0xFF000000\nWHITE: 0xFFFFFFFF\nRED: 0xFFFF0000\nGREEN:0xFF008000\nBLUE:0xFF0000FF"],
+		['Screen Flash', "Value 1: Camera flash\nValue 2: HUD flash\n\nEvery value works as the following example: \"1, 0xFF0\n00000\".\nThe first number (1) is the duration.\nThe second number (0xFF000000) is the color.\n\nBLACK: 0xFF000000\nWHITE: 0xFFFFFFFF\nRED: 0xFFFF0000\nGREEN:0xFF008000\nBLUE:0xFF0000FF"],
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
 		['', "Nothing. Yep, that's right."],
 		//['BG Freaks Expression', "Should be used only in \"school\" Stage!"],
@@ -86,12 +86,15 @@ class ChartingState extends MusicBeatState
 		['Play Overlay Animation', "Value 1: Name of the XML and animation (Has to be the same)\nValue 2: Name of the blend mode to be applied\n\n0 = Normal\n1 = Add\n2 = Darken\n3 = Differences\n4 = Hardlight\n5 = Invert\n6 = Lighten\n7 = Multiply\n8 = Screen\n9 = Subtract"],
 		['Stop Overlay Animation', "Stops the Play Overlay Animation, duh."],
 		['', "Nothing. Yep, that's right."],
+		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Monitors Screen', "Value 1: Name of the image\nValue 2: Is it animated? (Single roll/Multiple rolls)\n0 for false, 1 for true\n\nThat shit obviously only works in the bedroom stage."],
 		['', "Nothing. Yep, that's right."],
 		['FULLDARK', "Everything goes dark! Value 1: 1 to activate it, 0 to deactivate it\n\nThat shit obviously only works in the bedroom stage."],
 		['SPEEDLINES', "Neat little anime effect, lol\n\nValue 1: Type of the speedlines\n   0 = Faded middle\n   1 = Normal\n   2 = Mirrored\nValue 2: State of the speedline\n   \"y\" = activate it\n   \"n\" = deactivate it"],
-	    ['REAL TIME EVENTS', "Ah great Premiere Effects\n\nValue 1: Type of the effect\n   0 = Flash\n   1 = Speedlines\n\nValue 2: State of the effect\n   \"y\" = activate it\n   \"n\" = deactivate it"]
+	    ['REAL TIME EVENTS', "Ah great Premiere Effects\n\nValue 1: Type of the effect\n   0 = Flash\n   1 = Speedlines\n\nValue 2: State of the effect\n   \"y\" = activate it\n   \"n\" = deactivate it"],
+		['HEALTH DRAIN', "Yep. Here it's.\n\nValue 1: The amount of health Keko drain\nValue 2: The amount of health BF gain\n\nLeave it blank for Keko's or BF's default, which is 2.5."],
+		['VIGNETTE', "Activates cliché vignette.\nValue 1: The color of the vignette.\nValue 2: The type of the vignette.\n    0 = Simple vignette\n    1 = A beating vignette\n\nBLACK: 0xFF000000\nWHITE: 0xFFFFFFFF\nRED: 0xFFFF0000\nGREEN:0xFF008000\nBLUE:0xFF0000FF"]
 	];
 
 	var _file:FileReference;
@@ -110,6 +113,7 @@ class ChartingState extends MusicBeatState
 
 	var camPos:FlxObject;
 	var strumLine:FlxSprite;
+	
 	var curSong:String = 'Dadbattle';
 	var amountSteps:Int = 0;
 	var bullshitUI:FlxGroup;
@@ -1261,7 +1265,6 @@ class ChartingState extends MusicBeatState
 			if (FlxG.keys.justPressed.ENTER)
 			{
 				autosaveSong();
-				FlxG.mouse.visible = false;
 				PlayState.SONG = _song;
 				FlxG.sound.music.stop();
 				if(vocals != null) vocals.stop();
@@ -1471,8 +1474,8 @@ class ChartingState extends MusicBeatState
 			//trace('Custom vocals found');
 		}
 		else { #end
-			var leVocals:Dynamic = Paths.inst(currentSongName);
-			if (!Std.isOfType(leVocals, Sound) && OpenFlAssets.exists(leVocals)) { //Vanilla inst
+			var leVocals:String = Paths.getPath(currentSongName + '/Inst.' + Paths.SOUND_EXT, SOUND, 'songs');
+			if (OpenFlAssets.exists(leVocals)) { //Vanilla inst
 				audioBuffers[0] = AudioBuffer.fromFile('./' + leVocals.substr(6));
 				//trace('Inst found');
 			}
@@ -1489,8 +1492,8 @@ class ChartingState extends MusicBeatState
 			audioBuffers[1] = AudioBuffer.fromFile(Paths.modFolders('songs/' + currentSongName + '/Voices.ogg'));
 			//trace('Custom vocals found');
 		} else { #end
-			var leVocals:Dynamic = Paths.voices(currentSongName);
-			if (!Std.isOfType(leVocals, Sound) && OpenFlAssets.exists(leVocals)) { //Vanilla voices
+			var leVocals:String = Paths.getPath(currentSongName + '/Voices.' + Paths.SOUND_EXT, SOUND, 'songs');
+			if (OpenFlAssets.exists(leVocals)) { //Vanilla voices
 				audioBuffers[1] = AudioBuffer.fromFile('./' + leVocals.substr(6));
 				//trace('Voices found, LETS FUCKING GOOOO');
 			}

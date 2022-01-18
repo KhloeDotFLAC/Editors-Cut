@@ -64,6 +64,7 @@ class MainMenuState extends MusicBeatState
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
+		bg.color = TitleState.randomColor;
 		add(bg);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
@@ -106,14 +107,21 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
+		var editorVersion:FlxText = new FlxText(3, 666, 500, "Editor's Cut v" + "0");
+			editorVersion.setFormat("VCR OSD Mono", 16, TitleState.randomColor, LEFT);
+			editorVersion.alpha = 0.5;
+			editorVersion.scrollFactor.set();
+		add(editorVersion);
+		var psychVersion:FlxText = new FlxText(3, 682, 500, "Psych Engine v" + "0.4.2");
+			psychVersion.setFormat("VCR OSD Mono", 16, TitleState.randomColor, LEFT);
+			psychVersion.alpha = 0.5;
+			psychVersion.scrollFactor.set();
+		add(psychVersion);
+		var fnfVersion:FlxText = new FlxText(3, 698, 500, "Friday Night Funkin' v" + Application.current.meta.get('version'));
+			fnfVersion.setFormat("VCR OSD Mono", 16, TitleState.randomColor, LEFT);
+			fnfVersion.alpha = 0.5;
+			fnfVersion.scrollFactor.set();
+		add(fnfVersion);
 
 		// NG.core.calls.event.logEvent('swag').send();
 

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="titleLines.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="titleLines0001.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="titleLines0002.png" x="2" y="2" width="1280" height="720"/>
+	<SubTexture name="titleLines0003.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="titleLines0004.png" x="2" y="724" width="1280" height="720"/>
+	<SubTexture name="titleLines0005.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="titleLines0006.png" x="2" y="1446" width="1280" height="720"/>
+	<SubTexture name="titleLines0007.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="titleLines0008.png" x="2" y="2168" width="1280" height="720"/>
+	<SubTexture name="titleLines0009.png" x="2" y="2890" width="1280" height="720"/>
+	<SubTexture name="titleLines0010.png" x="2" y="2890" width="1280" height="720"/>
+	<SubTexture name="titleLines0011.png" x="2" y="2890" width="1280" height="720"/>
+	<SubTexture name="titleLines0012.png" x="2" y="2890" width="1280" height="720"/>
+</TextureAtlas>

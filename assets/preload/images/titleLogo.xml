@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="titleLogo.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="logoBUMPING0000" x="2" y="499" width="651" height="448" frameX="-34" frameY="-23" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0001" x="723" y="489" width="693" height="477" frameX="-13" frameY="-9" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0002" x="2" y="2" width="719" height="495"/>
+	<SubTexture name="logoBUMPING0003" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0004" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0005" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0006" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0007" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0008" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0009" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0010" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0011" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0012" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0013" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+	<SubTexture name="logoBUMPING0014" x="723" y="2" width="705" height="485" frameX="-7" frameY="-5" frameWidth="719" frameHeight="495"/>
+</TextureAtlas>
