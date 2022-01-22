@@ -426,13 +426,8 @@ class PlayState extends MusicBeatState
 				add(monitorBloom);
 		}
 
-		if(curStage == "bedroomDAY" || curStage == "bedroomNIGHT") //temporary fix for not showing GF, cuz who cares
-		{
-			remove(gfGroup);
-		} else {
-			add(gfGroup);
-		}
-
+		
+		add(gfGroup);
 		add(dadGroup);
 		add(boyfriendGroup);
 		
@@ -2500,11 +2495,13 @@ class PlayState extends MusicBeatState
 
 				if (state == 1) {
 					boyfriendGroup.color = 0xFF000000;
+					gfGroup.color = 0xFF000000;
 					dadGroup.color = 0xFF000000;
 					bedroomBG.loadGraphic(Paths.image('bedroom/BGDark'));
 					fogScroll.visible = true;
 				} else if (state == 0) {
 					boyfriendGroup.color = 0xFFFFFFFF;
+					gfGroup.color = 0xFFFFFFFF;
 					dadGroup.color = 0xFFFFFFFF;
 					fogScroll.visible = false;
 
@@ -3733,7 +3730,7 @@ class PlayState extends MusicBeatState
 							return arrayIDs[i];
 						}
 					case 6:
-						if(Paths.formatToSongPath(SONG.song) == 'beethoven' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'beathoven' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}

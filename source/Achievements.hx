@@ -17,7 +17,7 @@ class Achievements {
 		["Caffeinated!",				"Beat Caffeine on Hard with no Misses.",						false],
 		["The show is done.",			"Beat Showdown on Hard with no Misses.",						false],
 		["You ANIMAL!",					"Beat Animal on Hard with no Misses.",							true],
-		["get BEAThoeven! ...heh",		"Beat Beethoven on Hard with no Misses.",					   	 true],
+		["get BEAThoeven! ...heh",		"Beat Beathoven on Hard with no Misses.",					   	 true],
 		["You got a sense of humor.",	"Beat Eruption on Hard with no Misses.",					   	 true],
 		["Two ways? I make a third.",	"Beat God-Eater on Hard with no Misses.",					   	 true],
 		["You're gonna need a tylenol..",	"Beat God-Eater on Hard with no Misses.",				   	 true],
@@ -37,7 +37,7 @@ class Achievements {
 		['caffeine_nomiss', false],		//3
 		['showdown_nomiss', false],		//4
 		['animal_nomiss', false],		//5
-		['beetho_nomiss', false],		//6
+		['beatho_nomiss', false],		//6
 		['eruption_nomiss', false],		//7
 		['god_nomiss', false],			//8
 		['tyle_nomiss', false],			//9
