@@ -249,7 +249,7 @@ class Character extends FlxSprite
 	/**
 	 * FOR GF DANCING SHIT
 	 */
-	public function dance()
+	public function dance(?isAlt:Bool)
 	{
 		if (!debugMode && !specialAnim)
 		{
@@ -257,10 +257,25 @@ class Character extends FlxSprite
 			{
 				danced = !danced;
 
-				if (danced)
-					playAnim('danceRight' + idleSuffix);
-				else
-					playAnim('danceLeft' + idleSuffix);
+				switch isAlt
+				{
+					case true:
+						if (danced)
+							playAnim('danceRightALT' + idleSuffix);
+						else
+							playAnim('danceLeftALT' + idleSuffix);	
+					case false:
+						if (danced)
+							playAnim('danceRight' + idleSuffix);
+						else
+							playAnim('danceLeft' + idleSuffix);	
+					default:
+						if (danced)
+							playAnim('danceRight' + idleSuffix);
+						else
+							playAnim('danceLeft' + idleSuffix);	
+				}
+				
 			}
 			else if(animation.getByName('idle' + idleSuffix) != null) {
 					playAnim('idle' + idleSuffix);

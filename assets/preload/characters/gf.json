@@ -1,55 +1,109 @@
 {
 	"animations": [
 		{
+			"offsets": [
+				-167,
+				-160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "sad",
+			"indices": [],
+			"name": "sad"
+		},
+		{
+			"offsets": [
+				-167,
+				-160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "cheer",
+			"indices": [],
+			"name": "cheer"
+		},
+		{
+			"offsets": [
+				-169,
+				-160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeftALT",
+			"indices": [],
+			"name": "danceLeftALT"
+		},
+		{
+			"offsets": [
+				-169,
+				-160
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRightALT",
+			"indices": [],
+			"name": "danceRightALT"
+		},
+		{
 			"loop": false,
 			"offsets": [
-				-170,
-				-159
+				-167,
+				-160
 			],
 			"anim": "danceLeft",
 			"fps": 24,
 			"name": "danceLeft",
-			"indices": []
+			"indices": [
+				14,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-170,
-				-159
+				-167,
+				-160
 			],
 			"anim": "danceRight",
 			"fps": 24,
 			"name": "danceRight",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-167,
-				-160
-			],
-			"anim": "sad",
-			"fps": 24,
-			"name": "sad",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-167,
-				-160
-			],
-			"anim": "cheer",
-			"fps": 24,
-			"name": "cheer",
-			"indices": []
+			"indices": [
+				14,
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/GF_assets",
 	"position": [
 		0,
-		0
+		30
 	],
 	"healthicon": "gf",
 	"flip_x": false,
@@ -63,5 +117,5 @@
 		0
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 0.9
 }

@@ -254,6 +254,8 @@ class PlayState extends MusicBeatState
 	public var vignette:BGSprite;
 	public var realTimeEvents:BGSprite;
 
+	public var isGFLookingLeft:Bool;
+	
 	override public function create()
 	{
 		#if MODS_ALLOWED
@@ -2624,11 +2626,13 @@ class PlayState extends MusicBeatState
 
 		if (!SONG.notes[id].mustHitSection)
 		{
+			isGFLookingLeft = true;
 			moveCamera(true);
 			callOnLuas('onMoveCamera', ['dad']);
 		}
 		else
 		{
+			isGFLookingLeft = false;
 			moveCamera(false);
 			callOnLuas('onMoveCamera', ['boyfriend']);
 		}
@@ -3601,7 +3605,15 @@ class PlayState extends MusicBeatState
 
 		if (curBeat % gfSpeed == 0 && !gf.stunned && gf.animation.curAnim.name != null && !gf.animation.curAnim.name.startsWith("sing"))
 		{
-			gf.dance();
+			switch isGFLookingLeft
+			{
+				case true:
+					gf.dance(true);
+				case false:
+					gf.dance(false);
+			}
+			
+			
 		}
 
 		if(curBeat % 2 == 0) {

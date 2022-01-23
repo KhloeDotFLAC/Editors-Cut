@@ -1,6 +1,6 @@
 {
 	"song": {
-		"speed": 3.4,
+		"speed": 3.1,
 		"stage": "bedroomNIGHT",
 		"player1": "bf",
 		"player2": "sleepykeko",
@@ -19,7 +19,7 @@
 						"y"
 					],
 					[
-						421.875,
+						432.291666666667,
 						-1,
 						"REAL TIME EVENTS",
 						"0",
@@ -138,6 +138,13 @@
 						"Change Character",
 						"1",
 						"keko"
+					],
+					[
+						15500,
+						-1,
+						"Change Scroll Speed",
+						"1.3",
+						""
 					]
 				],
 				"bpm": 0,
@@ -206,18 +213,11 @@
 						""
 					],
 					[
-						16010.4166666667,
+						16333.3333333333,
 						-1,
-						"Play Overlay Animation",
-						"speedlines",
-						"0"
-					],
-					[
-						16013.8888888889,
-						-1,
-						"Stop Overlay Animation",
-						"speedlines",
-						""
+						"Change Scroll Speed",
+						"1.05",
+						"0.5"
 					]
 				],
 				"bpm": 0,
@@ -351,34 +351,29 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						32000,
+						-1,
+						"Camera Follow Pos",
+						"520",
+						"470"
+					],
+					[
+						32003.4722222222,
+						-1,
+						"Camera Zoom",
+						"0.85",
+						""
+					],
+					[
+						32006.9444444444,
+						-1,
+						"Screen Shake",
+						"2, 0.0030",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -389,12 +384,77 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						37333.3333333333,
+						33333.3333333333,
 						-1,
-						"Play Overlay Animation",
-						"CVG",
+						"Screen Shake",
+						"2, 0.0050",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						34666.6666666667,
+						-1,
+						"Screen Shake",
+						"2, 0.0050",
 						""
 					],
+					[
+						34670.1388888889,
+						-1,
+						"Camera Beat",
+						"0.2",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						36000,
+						-1,
+						"Screen Shake",
+						"2, 0.0050",
+						""
+					],
+					[
+						36916.6666666667,
+						-1,
+						"Change Scroll Speed",
+						"1.05",
+						"0.4"
+					],
+					[
+						37250,
+						-1,
+						"HEALTH DRAIN",
+						"5",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
 					[
 						37583.3333333333,
 						-1,
@@ -403,17 +463,38 @@
 						""
 					],
 					[
-						37336.8055555555,
-						-1,
-						"Screen Shake",
-						"0.1, 0.020",
-						""
-					],
-					[
 						38083.3333333333,
 						-1,
 						"Screen Shake",
 						"0.2, 0.020",
+						""
+					],
+					[
+						37333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						37340.2777777778,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
+					],
+					[
+						37336.8055555555,
+						-1,
+						"Camera Zoom",
+						"1",
+						""
+					],
+					[
+						37343.75,
+						-1,
+						"Screen Shake",
+						"0.1, 0.020",
 						""
 					]
 				],
@@ -436,13 +517,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						40000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						40250,
 						-1,
 						"Stop Overlay Animation",
@@ -455,6 +529,20 @@
 						"Screen Shake",
 						"0.2, 0.020",
 						""
+					],
+					[
+						40006.9444444444,
+						-1,
+						"Camera Beat",
+						"0.15",
+						""
+					],
+					[
+						40000,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -484,13 +572,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						42666.6666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						42916.6666666667,
 						-1,
 						"Stop Overlay Animation",
@@ -503,6 +584,20 @@
 						"Screen Shake",
 						"0.1, 0.020",
 						""
+					],
+					[
+						42673.6111111111,
+						-1,
+						"Camera Beat",
+						"0.15",
+						""
+					],
+					[
+						42666.6666666667,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -523,19 +618,26 @@
 				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [
-					[
-						45333.3333333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
 					[
 						45583.3333333333,
 						-1,
 						"Stop Overlay Animation",
 						"CVG",
 						""
+					],
+					[
+						45336.8055555556,
+						-1,
+						"Camera Beat",
+						"0.15",
+						""
+					],
+					[
+						45333.3333333333,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -556,13 +658,6 @@
 				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [
-					[
-						48000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
 					[
 						48250,
 						-1,
@@ -583,6 +678,27 @@
 						"Screen Shake",
 						"0.2, 0.020",
 						""
+					],
+					[
+						48006.9444444445,
+						-1,
+						"Camera Zoom",
+						"1.2",
+						""
+					],
+					[
+						48010.4166666667,
+						-1,
+						"Camera Beat",
+						"0.15",
+						""
+					],
+					[
+						48000,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -604,13 +720,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						50666.6666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						50916.6666666667,
 						-1,
 						"Stop Overlay Animation",
@@ -623,6 +732,20 @@
 						"Screen Shake",
 						"0.2, 0.020",
 						""
+					],
+					[
+						50673.6111111111,
+						-1,
+						"Camera Beat",
+						"0.15",
+						""
+					],
+					[
+						50666.6666666667,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -652,13 +775,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						53333.3333333334,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						53583.3333333334,
 						-1,
 						"Stop Overlay Animation",
@@ -671,6 +787,20 @@
 						"Screen Shake",
 						"0.1, 0.020",
 						""
+					],
+					[
+						53340.2777777778,
+						-1,
+						"Camera Beat",
+						"0.15",
+						""
+					],
+					[
+						53333.3333333334,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -692,13 +822,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						56000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						56250,
 						-1,
 						"Stop Overlay Animation",
@@ -711,6 +834,20 @@
 						"Screen Shake",
 						"0.1, 0.020",
 						""
+					],
+					[
+						56006.9444444445,
+						-1,
+						"Camera Beat",
+						"0.15",
+						""
+					],
+					[
+						56000,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -721,7 +858,15 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						58583.3333333334,
+						-1,
+						"HEALTH DRAIN",
+						"0",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -753,11 +898,25 @@
 						""
 					],
 					[
+						58673.6111111111,
+						-1,
+						"Camera Zoom",
+						"1",
+						""
+					],
+					[
+						58677.0833333334,
+						-1,
+						"Change Scroll Speed",
+						"1",
+						"0.4"
+					],
+					[
 						58670.1388888889,
 						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -980,20 +1139,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						80250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						80003.4722222222,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						80000,
 						-1,
 						"Camera Follow Pos",
@@ -1005,6 +1150,34 @@
 						-1,
 						"Screen Shake",
 						"5, 0.0025",
+						""
+					],
+					[
+						80013.8888888889,
+						-1,
+						"Camera Zoom",
+						"0.85",
+						""
+					],
+					[
+						80010.4166666667,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"0"
+					],
+					[
+						80003.4722222222,
+						-1,
+						"Screen Flash",
+						"0.7, 0xFFFBC13F",
+						""
+					],
+					[
+						80017.3611111111,
+						-1,
+						"HEALTH DRAIN",
+						"3.2",
 						""
 					]
 				],
@@ -1093,7 +1266,7 @@
 						85333.3333333333,
 						-1,
 						"Flash Camera",
-						"1.5, 0xffffffff",
+						"1.5, 0xFF0059FF",
 						""
 					],
 					[
@@ -1122,6 +1295,13 @@
 						-1,
 						"Screen Shake",
 						"5, 0.0025",
+						""
+					],
+					[
+						85340.2777777778,
+						-1,
+						"Camera Zoom",
+						"0.9",
 						""
 					]
 				],
@@ -1161,6 +1341,13 @@
 						"Screen Shake",
 						"5, 0.0050",
 						""
+					],
+					[
+						87666.6666666666,
+						-1,
+						"Change Scroll Speed",
+						"1.2",
+						"0.4"
 					]
 				],
 				"bpm": 0,
@@ -1251,6 +1438,13 @@
 						"Camera Beat",
 						"0.2",
 						""
+					],
+					[
+						90583.3333333333,
+						-1,
+						"Change Scroll Speed",
+						"1",
+						"0.1"
 					]
 				],
 				"bpm": 0,
@@ -1266,7 +1460,7 @@
 						90666.6666666666,
 						-1,
 						"Flash Camera",
-						"1.5, 0xffffffff",
+						"1, 0xFFB52D42",
 						""
 					],
 					[
@@ -1327,6 +1521,13 @@
 						"REAL TIME EVENTS",
 						"1",
 						"y"
+					],
+					[
+						93000,
+						-1,
+						"Change Scroll Speed",
+						"1.2",
+						"0.3"
 					]
 				],
 				"bpm": 0,
@@ -1389,6 +1590,13 @@
 						"REAL TIME EVENTS",
 						"1",
 						"y"
+					],
+					[
+						95666.6666666666,
+						-1,
+						"Change Scroll Speed",
+						"1.15",
+						"0.3"
 					]
 				],
 				"bpm": 0,
@@ -1418,7 +1626,7 @@
 						96010.4166666666,
 						-1,
 						"Screen Flash",
-						"1.5, 0xffffffff",
+						"1, 0xFFFFFFFF",
 						""
 					],
 					[
@@ -1434,6 +1642,13 @@
 						"REAL TIME EVENTS",
 						"1",
 						"n"
+					],
+					[
+						96005.2083333333,
+						-1,
+						"Camera Zoom",
+						"0.85",
+						""
 					]
 				],
 				"bpm": 0,
@@ -1527,6 +1742,20 @@
 						"Camera Follow Pos",
 						"",
 						""
+					],
+					[
+						100833.333333333,
+						-1,
+						"Change Scroll Speed",
+						"1",
+						"0.4"
+					],
+					[
+						100916.666666667,
+						-1,
+						"HEALTH DRAIN",
+						"2.5",
+						""
 					]
 				],
 				"bpm": 0,
@@ -1538,20 +1767,6 @@
 				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [
-					[
-						101333.333333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						101583.333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
 					[
 						101416.666666667,
 						-1,
@@ -1600,6 +1815,34 @@
 						"SPEEDLINES",
 						"0",
 						"n"
+					],
+					[
+						101336.805555555,
+						-1,
+						"Camera Zoom",
+						"0.9",
+						""
+					],
+					[
+						101333.333333333,
+						-1,
+						"Screen Flash",
+						"0.5, 0xFFFFFFFF",
+						""
+					],
+					[
+						101340.277777778,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
+					],
+					[
+						101343.75,
+						-1,
+						"HEALTH DRAIN",
+						"1.5",
+						""
 					]
 				],
 				"bpm": 0,
@@ -1657,20 +1900,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						104000,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						104250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						104083.333333333,
 						-1,
 						"Camera Zoom",
@@ -1704,6 +1933,13 @@
 						"Camera Zoom",
 						"1.07",
 						""
+					],
+					[
+						104000,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -1761,13 +1997,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						106666.666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						106916.666666667,
 						-1,
 						"Stop Overlay Animation",
@@ -1822,6 +2051,13 @@
 						"Camera Zoom",
 						"1.03",
 						""
+					],
+					[
+						106666.666666667,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -1879,13 +2115,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						109333.333333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						109583.333333333,
 						-1,
 						"Stop Overlay Animation",
@@ -1926,6 +2155,13 @@
 						"Camera Zoom",
 						"1.08",
 						""
+					],
+					[
+						109333.333333333,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -1990,24 +2226,10 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						112250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						112166.666666667,
 						-1,
 						"Camera Zoom",
 						"0.9",
-						""
-					],
-					[
-						112020.833333333,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
 						""
 					],
 					[
@@ -2016,6 +2238,13 @@
 						"Camera Follow Pos",
 						"",
 						""
+					],
+					[
+						112020.833333333,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -2037,18 +2266,18 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						114666.666666667,
-						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						114916.666666667,
 						-1,
 						"Stop Overlay Animation",
 						"CVG",
 						""
+					],
+					[
+						114666.666666667,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -2086,16 +2315,9 @@
 					[
 						117354.166666667,
 						-1,
-						"Play Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						117583.333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					]
 				],
 				"bpm": 0,
@@ -2184,9 +2406,16 @@
 					[
 						121416.666666667,
 						-1,
-						"Play Overlay Animation",
-						"speedlines",
-						"9"
+						"SPEEDLINES",
+						"2",
+						"y"
+					],
+					[
+						122583.333333333,
+						-1,
+						"HEALTH DRAIN",
+						"0",
+						""
 					]
 				],
 				"bpm": 0,
@@ -2203,13 +2432,6 @@
 						-1,
 						"Camera Beat",
 						"0.4",
-						""
-					],
-					[
-						122677.083333333,
-						-1,
-						"Stop Overlay Animation",
-						"speedlines",
 						""
 					],
 					[
@@ -2232,6 +2454,20 @@
 						"Screen Shake",
 						"5, 0.0035",
 						""
+					],
+					[
+						122682.291666667,
+						-1,
+						"Change Scroll Speed",
+						"1.05",
+						"0.2"
+					],
+					[
+						122677.083333333,
+						-1,
+						"SPEEDLINES",
+						"2",
+						"n"
 					]
 				],
 				"bpm": 0,
@@ -2779,6 +3015,312 @@
 						""
 					]
 				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
