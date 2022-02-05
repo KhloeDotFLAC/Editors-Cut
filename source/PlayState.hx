@@ -255,6 +255,9 @@ class PlayState extends MusicBeatState
 	public var realTimeEvents:BGSprite;
 
 	public var isGFLookingLeft:Bool;
+
+	public var dadTrail:FlxTrail;
+	public var bfTrail:FlxTrail;
 	
 	override public function create()
 	{
@@ -480,10 +483,19 @@ class PlayState extends MusicBeatState
 		gfGroup.add(gf);
 
 		dad = new Character(0, 0, SONG.player2);
+		boyfriend = new Boyfriend(0, 0, SONG.player1);
+
+		//Trails
+		dadTrail = new FlxTrail(dad, null, 0, 100, 0.3, 0.001);
+		bfTrail = new FlxTrail(boyfriend, null, 0, 100, 0.3, 0.001);
+		dadTrail.visible = false;
+		bfTrail.visible = false;
+		dadGroup.add(dadTrail);
+		boyfriendGroup.add(bfTrail);
+		//Trails
+
 		startCharacterPos(dad, true);
 		dadGroup.add(dad);
-
-		boyfriend = new Boyfriend(0, 0, SONG.player1);
 		startCharacterPos(boyfriend);
 		boyfriendGroup.add(boyfriend);
 		
@@ -2616,7 +2628,71 @@ class PlayState extends MusicBeatState
 						vignette.alpha = 1;
 						FlxTween.tween(vignette, {alpha: 0}, 0.5, {type:PERSIST}); 
 				}
-				
+			case 'NOTE VISIBILITY':
+				var valuesArray:Array<String> = [value1, value2];
+				var targetsArray = [playerStrums, opponentStrums];
+				for (i in 0...targetsArray.length) {
+					var split:Array<String> = valuesArray[i].split(',');
+					var one:Int = Std.parseInt(split[0].trim());
+					var two:Int = Std.parseInt(split[1].trim());
+					var three:Int = Std.parseInt(split[2].trim());
+					var four:Int = Std.parseInt(split[3].trim());
+					if(Math.isNaN(one)) one = 0;
+					if(Math.isNaN(two)) two = 0;
+					if(Math.isNaN(three)) three = 0;
+					if(Math.isNaN(four)) four = 0;
+
+					switch one
+					{
+						case 0:
+							FlxTween.tween(targetsArray[i].members[0], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+						case 1:
+							FlxTween.cancelTweensOf(targetsArray[i].members[0]);
+							targetsArray[i].members[0].alpha = 1;
+					}
+					switch two
+					{
+						case 0:
+							FlxTween.tween(targetsArray[i].members[1], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+						case 1:
+							FlxTween.cancelTweensOf(targetsArray[i].members[1]);
+							targetsArray[i].members[1].alpha = 1;
+					}
+					switch three
+					{
+						case 0:
+							FlxTween.tween(targetsArray[i].members[2], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+						case 1:
+							FlxTween.cancelTweensOf(targetsArray[i].members[2]);
+							targetsArray[i].members[2].alpha = 1;
+					}
+					switch four
+					{
+						case 0:
+							FlxTween.tween(targetsArray[i].members[3], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+						case 1:
+							FlxTween.cancelTweensOf(targetsArray[i].members[3]);
+							targetsArray[i].members[3].alpha = 1;
+					}
+				}
+			case 'AFTER IMAGE':
+				var valuesArray:Array<String> = [value1, value2];
+				var targetsArray = [bfTrail, dadTrail];
+				for (i in 0...targetsArray.length) {
+					var split:Array<String> = valuesArray[i].split(',');
+					var length:Int = Std.parseInt(split[0].trim());
+					var delay:Int = Std.parseInt(split[1].trim());
+					var alpha:Float = Std.parseFloat(split[2].trim());
+
+					if (valuesArray[i] != null) {
+						targetsArray[i].increaseLength(length);
+						targetsArray[i].delay = delay;
+						targetsArray[i].alpha = alpha;
+						targetsArray[i].visible = true;
+					} else {
+						targetsArray[i].visible = false;
+					}
+				}
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -2777,7 +2853,7 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
+					FlxG.sound.playMusic(Paths.music('editorMenu'));
 
 					cancelFadeTween();
 					CustomFadeTransition.nextCamera = camOther;
@@ -2852,7 +2928,11 @@ class PlayState extends MusicBeatState
 					CustomFadeTransition.nextCamera = null;
 				}
 				MusicBeatState.switchState(new FreeplayState());
-				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+				if (songMisses <= 0 && !usedPractice && !changedDifficulty) {
+					FlxG.sound.playMusic(Paths.music('perfectMenu'));
+				} else {
+					FlxG.sound.playMusic(Paths.music('editorMenu'));
+				}
 				usedPractice = false;
 				changedDifficulty = false;
 				cpuControlled = false;

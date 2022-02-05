@@ -1,6 +1,10 @@
 {
 	"songs": [
-		["Showdown B", "keko", [146, 113, 253]]
+		["Animal", "keko", [146, 113, 253]],
+		["Beathoven", "keko", [146, 113, 253]],
+		["Eruption", "keko", [146, 113, 253]],
+		["God Eater", "keko", [146, 113, 253]],
+        ["Tylenol", "keko", [146, 113, 253]]
 	],
 
 	"weekCharacters": [
@@ -10,11 +14,11 @@
 	],
 	"weekBackground": "stage",
 
-	"storyName": "Musician's cut",
+	"storyName": "Keko's Cut",
 	"weekBefore": "Week 1",
-	"weekName": "B-Side",
-	"startUnlocked": true,
+	"weekName": "Cameos",
+	"startUnlocked": false,
 
-	"hideStoryMode": false,
+	"hideStoryMode": true,
 	"hideFreeplay": false
 }
