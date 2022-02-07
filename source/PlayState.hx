@@ -746,6 +746,8 @@ class PlayState extends MusicBeatState
 		{
 			switch (daSong)
 			{
+				case "showdown":
+					startVideo('showdown-intro');
 				case "monster":
 					var whiteScreen:FlxSprite = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.WHITE);
 					add(whiteScreen);
@@ -2645,33 +2647,29 @@ class PlayState extends MusicBeatState
 					switch one
 					{
 						case 0:
-							FlxTween.tween(targetsArray[i].members[0], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+							targetsArray[i].members[0].alpha = 0;
 						case 1:
-							FlxTween.cancelTweensOf(targetsArray[i].members[0]);
 							targetsArray[i].members[0].alpha = 1;
 					}
 					switch two
 					{
 						case 0:
-							FlxTween.tween(targetsArray[i].members[1], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+							targetsArray[i].members[1].alpha = 0;
 						case 1:
-							FlxTween.cancelTweensOf(targetsArray[i].members[1]);
 							targetsArray[i].members[1].alpha = 1;
 					}
 					switch three
 					{
 						case 0:
-							FlxTween.tween(targetsArray[i].members[2], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+							targetsArray[i].members[2].alpha = 0;
 						case 1:
-							FlxTween.cancelTweensOf(targetsArray[i].members[2]);
 							targetsArray[i].members[2].alpha = 1;
 					}
 					switch four
 					{
 						case 0:
-							FlxTween.tween(targetsArray[i].members[3], {alpha: 0}, 0.5, {ease: FlxEase.circOut, type:PERSIST});
+							targetsArray[i].members[3].alpha = 0;
 						case 1:
-							FlxTween.cancelTweensOf(targetsArray[i].members[3]);
 							targetsArray[i].members[3].alpha = 1;
 					}
 				}
@@ -2683,13 +2681,17 @@ class PlayState extends MusicBeatState
 					var length:Int = Std.parseInt(split[0].trim());
 					var delay:Int = Std.parseInt(split[1].trim());
 					var alpha:Float = Std.parseFloat(split[2].trim());
+					var state:Int = Std.parseInt(split[3].trim());
 
-					if (valuesArray[i] != null) {
+					if (valuesArray[i] != null)
+					{
 						targetsArray[i].increaseLength(length);
 						targetsArray[i].delay = delay;
 						targetsArray[i].alpha = alpha;
 						targetsArray[i].visible = true;
-					} else {
+					} 
+					else if (valuesArray[i] == null) 
+					{
 						targetsArray[i].visible = false;
 					}
 				}

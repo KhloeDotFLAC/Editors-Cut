@@ -95,8 +95,8 @@ class ChartingState extends MusicBeatState
 	    ['REAL TIME EVENTS', "Ah great Premiere Effects\n\nValue 1: Type of the effect\n   0 = Flash\n   1 = Speedlines\n\nValue 2: State of the effect\n   \"y\" = activate it\n   \"n\" = deactivate it"],
 		['HEALTH DRAIN', "Yep. Here it's.\n\nValue 1: The amount of health Keko drain\nValue 2: The amount of health BF gain\n\nLeave it blank for Keko's or BF's default, which is 2.5."],
 		['VIGNETTE', "Activates cliché vignette.\nValue 1: The color of the vignette.\nValue 2: The type of the vignette.\n    0 = Simple vignette\n    1 = A beating vignette\n\nBLACK: 0xFF000000\nWHITE: 0xFFFFFFFF\nRED: 0xFFFF0000\nGREEN:0xFF008000\nBLUE:0xFF0000FF"],
-		['AFTER IMAGE', "Activates a cliché after image.\nValue 1 = Boyfriend., Value 2 = Opponent.\n\n eg. \"5, 7, 0.3\"\n5 = length, 7 = delay, 0.3 = alpha"],
-		['NOTE VISIBILITY', "Hides and unhides the specified note.\nValue 1 = Boyfriend, Value 2 = Opponent.\n\neg. \"1, 1, 1, 0\"\nthat means all notes are gonna be visible, expect the\nfourth."]
+		['AFTER IMAGE', "Activates a cliché after image.\nValue 1 = Boyfriend., Value 2 = Opponent.\n\n eg. \"5, 7, 0.3\"\n5 = length, 7 = delay, 0.3 = alpha\n\n\nThis shit don't work properly...\nfuck my life"],
+		['NOTE VISIBILITY', "Hides and unhides the specified note.\nValue 1 = Boyfriend, Value 2 = Opponent.\n\neg. \"1, 1, 1, 0\"\nthat means all notes are gonna be visible, expect the\nfourth.\n\n\nAnd this one only works on 4k"]
 	];
 
 	var _file:FileReference;
