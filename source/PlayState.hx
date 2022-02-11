@@ -1,5 +1,10 @@
 package;
 
+import haxe.zip.Writer;
+import flixel.tweens.misc.NumTween;
+import openfl.filters.BitmapFilter;
+import flixel.system.FlxAssets.FlxShader;
+import TabiShaders.ChromaticShader;
 import flixel.group.FlxGroup;
 import flixel.input.keyboard.FlxKey;
 import lime.utils.AssetType;
@@ -259,6 +264,9 @@ class PlayState extends MusicBeatState
 	public var dadTrail:FlxTrail;
 	public var bfTrail:FlxTrail;
 	
+	public var gameChromatic = new ChromaticShader(0.0);
+	public var hudChromatic = new ChromaticShader(0.0);
+	
 	override public function create()
 	{
 		#if MODS_ALLOWED
@@ -285,6 +293,10 @@ class PlayState extends MusicBeatState
 		FlxCamera.defaultCameras = [camGame];
 		CustomFadeTransition.nextCamera = camOther;
 		//FlxG.cameras.setDefaultDrawTarget(camGame, true);
+		camHUD.setFilters([new ShaderFilter(hudChromatic)]);
+		camHUD.filtersEnabled = false;
+		camGame.setFilters([new ShaderFilter(gameChromatic)]);
+		camGame.filtersEnabled = false;
 
 		persistentUpdate = true;
 		persistentDraw = true;
@@ -421,7 +433,7 @@ class PlayState extends MusicBeatState
 				bedroomBG = new BGSprite('bedroom/BGNight', -600, -200, 1, 1);
 				add(bedroomBG);
 
-				var fanHeli:BGSprite = new BGSprite('bedroom/fanHeli', 910, 291, 1, 1, ['fanSpin'], true);
+				fanHeli = new BGSprite('bedroom/fanHeli', 910, 291, 1, 1, ['fanSpin'], true);
 					fanHeli.blend = HARDLIGHT;
 					fanHeli.visible = true;
 				add(fanHeli);
@@ -486,10 +498,8 @@ class PlayState extends MusicBeatState
 		boyfriend = new Boyfriend(0, 0, SONG.player1);
 
 		//Trails
-		dadTrail = new FlxTrail(dad, null, 0, 100, 0.3, 0.001);
-		bfTrail = new FlxTrail(boyfriend, null, 0, 100, 0.3, 0.001);
-		dadTrail.visible = false;
-		bfTrail.visible = false;
+		dadTrail = new FlxTrail(dad, null, 0, 0, 0, 0.001);
+		bfTrail = new FlxTrail(boyfriend, null, 0, 0, 0, 0.001);
 		dadGroup.add(dadTrail);
 		boyfriendGroup.add(bfTrail);
 		//Trails
@@ -524,7 +534,6 @@ class PlayState extends MusicBeatState
 			add(speedLines);
 
 			vignette = new BGSprite('bedroom/vignette', 0, 0, 1, 1);
-			vignette.blend = ADD;
 			vignette.alpha = 0;
 			vignette.cameras = [camHUD];
 			add(vignette);
@@ -2515,11 +2524,13 @@ class PlayState extends MusicBeatState
 					dadGroup.color = 0xFF000000;
 					bedroomBG.loadGraphic(Paths.image('bedroom/BGDark'));
 					fogScroll.visible = true;
+					fanHeli.visible = false;
 				} else if (state == 0) {
 					boyfriendGroup.color = 0xFFFFFFFF;
 					gfGroup.color = 0xFFFFFFFF;
 					dadGroup.color = 0xFFFFFFFF;
 					fogScroll.visible = false;
+					fanHeli.visible = true;
 
 					switch (curStage)
 					{
@@ -2614,87 +2625,133 @@ class PlayState extends MusicBeatState
 				if(Math.isNaN(vigType)) vigType = 0;
 								
 				FlxTween.cancelTweensOf(vignette);
-				
 				switch vigType
 				{ 
 					case 0:
+						vignette.blend = ADD;
 						vignette.color = vigColor; 
-						if (vignette.alpha == 1) {
+						if (vignette.alpha == 1)
 							vignette.alpha = 0;
-						} else {
+						else {
 							vignette.alpha = 1;
 						}
-						
 					case 1:
 						vignette.color = vigColor; 
 						vignette.alpha = 1;
-						FlxTween.tween(vignette, {alpha: 0}, 0.5, {type:PERSIST}); 
+						FlxTween.tween(vignette, {alpha: 0}, 0.5, {type:PERSIST});
+					case 2:
+						vignette.blend = NORMAL;
+						vignette.color = vigColor; 
+						if (vignette.alpha == 1)
+							vignette.alpha = 0;
+						else {
+							vignette.alpha = 1;
+						}
 				}
 			case 'NOTE VISIBILITY':
 				var valuesArray:Array<String> = [value1, value2];
 				var targetsArray = [playerStrums, opponentStrums];
-				for (i in 0...targetsArray.length) {
+				for (i in 0...targetsArray.length) 
+				{
 					var split:Array<String> = valuesArray[i].split(',');
-					var one:Int = Std.parseInt(split[0].trim());
-					var two:Int = Std.parseInt(split[1].trim());
-					var three:Int = Std.parseInt(split[2].trim());
-					var four:Int = Std.parseInt(split[3].trim());
-					if(Math.isNaN(one)) one = 0;
-					if(Math.isNaN(two)) two = 0;
-					if(Math.isNaN(three)) three = 0;
-					if(Math.isNaN(four)) four = 0;
+					var notes:Array<Int> = [];
+					for (n in 0...Main.ammo[mania])
+					{
+						notes[n] = Std.parseInt(split[n].trim());
+						if(Math.isNaN(notes[n])) notes[n] = 0;
 
-					switch one
-					{
-						case 0:
-							targetsArray[i].members[0].alpha = 0;
-						case 1:
-							targetsArray[i].members[0].alpha = 1;
-					}
-					switch two
-					{
-						case 0:
-							targetsArray[i].members[1].alpha = 0;
-						case 1:
-							targetsArray[i].members[1].alpha = 1;
-					}
-					switch three
-					{
-						case 0:
-							targetsArray[i].members[2].alpha = 0;
-						case 1:
-							targetsArray[i].members[2].alpha = 1;
-					}
-					switch four
-					{
-						case 0:
-							targetsArray[i].members[3].alpha = 0;
-						case 1:
-							targetsArray[i].members[3].alpha = 1;
+						trace(notes.length);
+
+						if (notes[n] == 0)
+							targetsArray[i].members[n].alpha = 0;
+						else {
+							targetsArray[i].members[n].alpha = 1;
+						}
 					}
 				}
 			case 'AFTER IMAGE':
 				var valuesArray:Array<String> = [value1, value2];
-				var targetsArray = [bfTrail, dadTrail];
+				var targetsArray:Array<FlxTrail> = [bfTrail, dadTrail];
 				for (i in 0...targetsArray.length) {
 					var split:Array<String> = valuesArray[i].split(',');
 					var length:Int = Std.parseInt(split[0].trim());
 					var delay:Int = Std.parseInt(split[1].trim());
 					var alpha:Float = Std.parseFloat(split[2].trim());
-					var state:Int = Std.parseInt(split[3].trim());
+					if(Math.isNaN(length)) length = 0;
+					if(Math.isNaN(delay)) delay = 0;
+					if(Math.isNaN(alpha)) alpha = 0;
+					//var state:Int = Std.parseInt(split[3].trim());
+					targetsArray[i].increaseLength(length);
+					targetsArray[i].delay = delay;
+					targetsArray[i].alpha = alpha;
+				}
+			case 'CHROMATIC':
+				var rgbArray:Array<String> = [value1, value2];
+				var shaderArray:Array<ChromaticShader> = [gameChromatic, hudChromatic];
 
-					if (valuesArray[i] != null)
+				for (i in 0...shaderArray.length) 
+				{
+					var split:Array<String> = rgbArray[i].split(',');
+					var red:Float = Std.parseFloat(split[0].trim()) / 1000;
+					var green:Float = Std.parseFloat(split[1].trim()) / 1000;
+					var blue:Float = Std.parseFloat(split[2].trim()) / 1000;
+					var active:String = split[3].trim().toLowerCase();
+					var type:Int = Std.parseInt(split[4].trim());
+					if(Math.isNaN(red)) red = 0;
+					if(Math.isNaN(green)) green = 0;
+					if(Math.isNaN(blue)) blue = 0;
+					if(Math.isNaN(type)) type = 0;
+
+					FlxTween.cancelTweensOf([shaderArray[i].rOffset, shaderArray[i].gOffset, shaderArray[i].bOffset]);
+
+					switch active
 					{
-						targetsArray[i].increaseLength(length);
-						targetsArray[i].delay = delay;
-						targetsArray[i].alpha = alpha;
-						targetsArray[i].visible = true;
-					} 
-					else if (valuesArray[i] == null) 
+						case 'y':
+							switch i
+							{
+								case 0:
+									camGame.filtersEnabled = true;
+								case 1:
+									camHUD.filtersEnabled = true;
+							}
+						case 'n':
+							switch i
+							{
+								case 0:
+									camGame.filtersEnabled = false;
+								case 1:
+									camHUD.filtersEnabled = false;
+							}
+						
+					}
+					switch type
 					{
-						targetsArray[i].visible = false;
+					case 0:
+						shaderArray[i].rOffset.value = [red];
+						shaderArray[i].gOffset.value = [green];
+						shaderArray[i].bOffset.value = [blue];
+					case 1: 
+						shaderArray[i].rOffset.value = [FlxG.random.float(red * -1, red)];
+						shaderArray[i].gOffset.value = [FlxG.random.float(green * -1, green)];
+						shaderArray[i].bOffset.value = [FlxG.random.float(blue * -1, blue)];
 					}
 				}
+			/* 	FlxTween.cancelTweensOf([daChromatic.rOffset, daChromatic.gOffset, daChromatic.bOffset]);
+				switch typeEffect 
+				{
+					case 0:
+						daChromatic.rOffset.value = [red];
+						daChromatic.gOffset.value = [green];
+						daChromatic.bOffset.value = [blue];
+					case 1:
+						daChromatic.rOffset.value = [red];
+						FlxTween.tween(daChromatic.rOffset, {value: [0]}, 2, {type:PERSIST});
+						daChromatic.gOffset.value = [green];
+						FlxTween.tween(daChromatic.gOffset, {value: [0]}, 2, {type:PERSIST});
+						daChromatic.bOffset.value = [blue];
+						FlxTween.tween(daChromatic.bOffset, {value: [0]}, 2, {type:PERSIST});
+				} */
+			
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}

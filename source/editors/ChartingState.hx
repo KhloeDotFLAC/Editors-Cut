@@ -83,20 +83,21 @@ class ChartingState extends MusicBeatState
 		['Play Animation', "Plays an animation on a Character,\nonce the animation is completed,\nthe animation changes to Idle\n\nValue 1: Animation to play.\nValue 2: Character (Dad, BF, GF)"],
 		['Play BG Animation', "Value 1: Name of the animation\nValue 2: Is it looped?\n0 for false, 1 for true\n\nThat shit obviously only works in the bedroom stage."],
 		['Alt Idle Animation', "Sets a speciied suffix after the idle animation name.\nYou can use this to trigger 'idle-alt' if you set\nValue 2 to -alt\n\nValue 1: Character to set (Dad, BF or GF)\nValue 2: New suffix (Leave it blank to disable)"],
-		['Play Overlay Animation', "Value 1: Name of the XML and animation (Has to be the same)\nValue 2: Name of the blend mode to be applied\n\n0 = Normal\n1 = Add\n2 = Darken\n3 = Differences\n4 = Hardlight\n5 = Invert\n6 = Lighten\n7 = Multiply\n8 = Screen\n9 = Subtract"],
+		['Play Overlay Animation', "Value 1: Name of the XML and animation (Has to be the \nsame)\nValue 2: Name of the blend mode to be applied\n\n0 = Normal\n1 = Add\n2 = Darken\n3 = Differences\n4 = Hardlight\n5 = Invert\n6 = Lighten\n7 = Multiply\n8 = Screen\n9 = Subtract"],
 		['Stop Overlay Animation', "Stops the Play Overlay Animation, duh."],
 		['', "Nothing. Yep, that's right."],
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Monitors Screen', "Value 1: Name of the image\nValue 2: Is it animated? (Single roll/Multiple rolls)\n0 for false, 1 for true\n\nThat shit obviously only works in the bedroom stage."],
 		['', "Nothing. Yep, that's right."],
-		['FULLDARK', "Everything goes dark! Value 1: 1 to activate it, 0 to deactivate it\n\nThat shit obviously only works in the bedroom stage."],
+		['FULLDARK', "Everything goes dark!\n\nValue 1: 1 to activate it, 0 to deactivate it\n\nThat shit obviously only works in the bedroom stage."],
 		['SPEEDLINES', "Neat little anime effect, lol\n\nValue 1: Type of the speedlines\n   0 = Faded middle\n   1 = Normal\n   2 = Mirrored\nValue 2: State of the speedline\n   \"y\" = activate it\n   \"n\" = deactivate it"],
 	    ['REAL TIME EVENTS', "Ah great Premiere Effects\n\nValue 1: Type of the effect\n   0 = Flash\n   1 = Speedlines\n\nValue 2: State of the effect\n   \"y\" = activate it\n   \"n\" = deactivate it"],
 		['HEALTH DRAIN', "Yep. Here it's.\n\nValue 1: The amount of health Keko drain\nValue 2: The amount of health BF gain\n\nLeave it blank for Keko's or BF's default, which is 2.5."],
-		['VIGNETTE', "Activates cliché vignette.\nValue 1: The color of the vignette.\nValue 2: The type of the vignette.\n    0 = Simple vignette\n    1 = A beating vignette\n\nBLACK: 0xFF000000\nWHITE: 0xFFFFFFFF\nRED: 0xFFFF0000\nGREEN:0xFF008000\nBLUE:0xFF0000FF"],
-		['AFTER IMAGE', "Activates a cliché after image.\nValue 1 = Boyfriend., Value 2 = Opponent.\n\n eg. \"5, 7, 0.3\"\n5 = length, 7 = delay, 0.3 = alpha\n\n\nThis shit don't work properly...\nfuck my life"],
-		['NOTE VISIBILITY', "Hides and unhides the specified note.\nValue 1 = Boyfriend, Value 2 = Opponent.\n\neg. \"1, 1, 1, 0\"\nthat means all notes are gonna be visible, expect the\nfourth.\n\n\nAnd this one only works on 4k"]
+		['VIGNETTE', "Activates cliché vignette.\n\nValue 1: The color of the vignette.\nValue 2: The type of the vignette.\n    0 = A additive vignette\n    1 = A beating vignette\n    2 = A simple vignette\n\nBLACK: 0xFF000000\nWHITE: 0xFFFFFFFF\nRED: 0xFFFF0000\nGREEN:0xFF008000\nBLUE:0xFF0000FF"],
+		['AFTER IMAGE', "Activates a cliché after image.\n\nValue 1 = Boyfriend., Value 2 = Opponent.\n\n eg. \"5, 7, 0.3\"\n5 = length, 7 = delay, 0.3 = alpha\n\n\nThis shit don't work properly...\nfuck my life"],
+		['NOTE VISIBILITY', "Hides and unhides the specified note.\n\nValue 1 = Boyfriend, Value 2 = Opponent.\n\neg. \"1, 1, 1, 0\"\nthat means all notes are gonna be visible, expect the\nfourth."],
+		['CHROMATIC', "Activates ChromaticAberration.\n\nValue 1 = on the game, Value 2 = on the hud.\n\neg. \"20,-20,0,y\"\nthe first three values split the red, green and blue val\nues acoordingly. The \"y\" determines whether or not t\nhe shader is activated.\n\n\nFor some reason, using a filter on a camera, fucks up \nwith the blend modes. So, be aware when using it."]
 	];
 
 	var _file:FileReference;
