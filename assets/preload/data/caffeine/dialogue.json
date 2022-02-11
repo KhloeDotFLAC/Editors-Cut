@@ -1,0 +1,32 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Not bad blue boy. Not that it was much of a challenge anyway..."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beep."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Let's see you handling the power of caffeine. Let's go all in!"
+		},
+		{
+			"speed": 0.04,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bap!"
+		}
+	]
+}

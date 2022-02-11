@@ -1,0 +1,24 @@
+{
+	"position": [
+		150,
+		0
+	],
+	"dialogue_pos": "left",
+	"scale": 1.25,
+	"image": "KEKO_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				-1,
+				-1
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_name": "KEKO0",
+			"loop_name": "KEKO LOOP"
+		}
+	]
+}

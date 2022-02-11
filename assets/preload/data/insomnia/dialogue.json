@@ -1,0 +1,32 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "The video is not done..."
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beep, bop bap?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Why not? Let's do it."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bap!"
+		}
+	]
+}

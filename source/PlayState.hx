@@ -755,6 +755,10 @@ class PlayState extends MusicBeatState
 		{
 			switch (daSong)
 			{
+				case "insomnia":
+					startDialogue(dialogueJson);
+				case "caffeine":
+					startDialogue(dialogueJson);
 				case "showdown":
 					startVideo('showdown-intro');
 				case "monster":

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="KEKO_Dialogue.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="KEKO0000" x="2" y="2" width="387" height="613" frameX="0" frameY="-7" frameWidth="387" frameHeight="620"/>
+	<SubTexture name="KEKO LOOP0001" x="2" y="2" width="387" height="613" frameX="0" frameY="-7" frameWidth="387" frameHeight="620"/>
+	<SubTexture name="KEKO LOOP0002" x="1158" y="2" width="372" height="620" frameX="-8" frameY="0" frameWidth="387" frameHeight="620"/>
+	<SubTexture name="KEKO LOOP0003" x="1158" y="2" width="372" height="620" frameX="-8" frameY="0" frameWidth="387" frameHeight="620"/>
+	<SubTexture name="KEKO LOOP0004" x="780" y="2" width="376" height="618" frameX="-6" frameY="-2" frameWidth="387" frameHeight="620"/>
+	<SubTexture name="KEKO LOOP0005" x="780" y="2" width="376" height="618" frameX="-6" frameY="-2" frameWidth="387" frameHeight="620"/>
+	<SubTexture name="KEKO LOOP0006" x="391" y="2" width="387" height="613" frameX="0" frameY="-7" frameWidth="387" frameHeight="620"/>
+	<SubTexture name="KEKO LOOP0007" x="391" y="2" width="387" height="613" frameX="0" frameY="-7" frameWidth="387" frameHeight="620"/>
+</TextureAtlas>
