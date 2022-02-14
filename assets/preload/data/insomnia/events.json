@@ -10,7 +10,50 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						93.75,
+						-1,
+						"Set GF Speed",
+						"2",
+						""
+					],
+					[
+						0,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						375,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						750,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"415"
+					],
+					[
+						1312.5,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"415"
+					],
+					[
+						1125,
+						-1,
+						"Camera Follow Pos",
+						"250",
+						"447"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -19,7 +62,29 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						1875,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						2250,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						2625,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"415"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -28,7 +93,64 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						3187.5,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						3750,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						3375,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						3562.5,
+						-1,
+						"Camera Follow Pos",
+						"875",
+						"560"
+					],
+					[
+						4125,
+						-1,
+						"Camera Follow Pos",
+						"875",
+						"560"
+					],
+					[
+						3937.5,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						4312.5,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						4406.25,
+						-1,
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -792,7 +914,22 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						99000,
+						-1,
+						"Camera Follow Pos",
+						"450",
+						"450"
+					],
+					[
+						99003.90625,
+						-1,
+						"Camera Zoom",
+						"0.8",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -839,7 +976,22 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						102000,
+						-1,
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						102007.8125,
+						-1,
+						"Camera Zoom",
+						"",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -859,20 +1011,72 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						105000,
-						-1,
-						"Add Camera Zoom",
-						"0.5",
-						""
-					],
-					[
-						105011.71875,
+						105007.8125,
 						-1,
 						"Camera Follow Pos",
 						"450",
-						"500"
+						"450"
+					],
+					[
+						105015.625,
+						-1,
+						"Camera Zoom",
+						"0.65",
+						""
+					],
+					[
+						105000,
+						-1,
+						"Screen Flash",
+						"1, 0xFFFFFFFF",
+						""
 					]
 				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false

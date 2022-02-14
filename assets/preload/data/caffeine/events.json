@@ -157,25 +157,11 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						16003.4722222222,
-						-1,
-						"Screen Shake",
-						"0.4, 0.0090",
-						""
-					],
-					[
 						16000,
 						-1,
 						"Camera Beat",
 						"0.1",
 						""
-					],
-					[
-						16062.5,
-						-1,
-						"Camera Follow Pos",
-						"1000",
-						"600"
 					],
 					[
 						16083.3333333333,
@@ -199,18 +185,74 @@
 						""
 					],
 					[
-						16166.6666666667,
-						-1,
-						"Camera Follow Pos",
-						"",
-						""
-					],
-					[
 						16006.9444444444,
 						-1,
 						"Screen Flash",
 						"0.2, 0xFFFFC45E",
 						""
+					],
+					[
+						16003.4722222222,
+						-1,
+						"Screen Shake",
+						"0.4, 0.0090",
+						""
+					],
+					[
+						16500,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						16666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						16750,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						16833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						17166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						17000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						17083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						16013.8888888889,
+						-1,
+						"Camera Follow Pos",
+						"900",
+						"600"
 					],
 					[
 						16333.3333333333,
@@ -228,7 +270,85 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						17333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						17833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						18500,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						18166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						17500,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						17666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						18000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						18416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						17583.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						18083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						18333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -244,6 +364,76 @@
 						"Screen Shake",
 						"0.1, 0.020",
 						""
+					],
+					[
+						18833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						19416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						19166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						19750,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						18670.1388888889,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						19500,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						19833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						19000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						19333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						19666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
 					]
 				],
 				"bpm": 0,
@@ -254,7 +444,85 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						20000,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						20333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						20750,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						21166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						20166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						20500,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						20833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						21083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						20250,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						21000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						20666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -270,6 +538,76 @@
 						"Screen Shake",
 						"0.1, 0.020",
 						""
+					],
+					[
+						21336.8055555556,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						21500,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						21666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						22000,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						22333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						22500,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						22083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						22166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						21833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						22416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
 					]
 				],
 				"bpm": 0,
@@ -280,7 +618,85 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						23500,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						22666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						23166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						23833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						22916.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						23416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						23666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						22833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						23000,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						23333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						23750,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -294,8 +710,85 @@
 						24000,
 						-1,
 						"Screen Shake",
-						"0.1, 0.020",
+						"0.3, 0.0035",
 						""
+					],
+					[
+						24500,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						25083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						24166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						24750,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						24333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						24666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						25000,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						24003.4722222222,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						24006.9444444444,
+						-1,
+						"Camera Beat",
+						"0.1",
+						""
+					],
+					[
+						25166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						24833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
 					]
 				],
 				"bpm": 0,
@@ -306,7 +799,92 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						25500,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						26000,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						26583.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						25333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						25666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						26166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						26500,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						25583.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						26083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						26333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						25833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						26416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -315,7 +893,78 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						26666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						27416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						27666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						26833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						27833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						27000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						27333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						27750,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						27166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						27500,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -324,7 +973,85 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						28000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						28250,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						29000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						28666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						29083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						28333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						28750,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						29166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						28166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						28500,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						28833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -333,7 +1060,78 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						29333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						30083.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						30333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						29500,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						30500,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						29666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						30000,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						30416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						29833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						30166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -342,7 +1140,99 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						30666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						30916.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						31416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						31500,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						31666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						31833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						31000,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						31166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						30833.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						31583.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						31916.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						31333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					],
+					[
+						31750,
+						-1,
+						"Camera Follow Pos",
+						"220",
+						"447"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -456,27 +1346,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						37583.3333333333,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						38083.3333333333,
-						-1,
-						"Screen Shake",
-						"0.2, 0.020",
-						""
-					],
-					[
-						37333.3333333333,
-						-1,
-						"Camera Follow Pos",
-						"",
-						""
-					],
-					[
 						37340.2777777778,
 						-1,
 						"VIGNETTE",
@@ -487,7 +1356,7 @@
 						37336.8055555555,
 						-1,
 						"Camera Zoom",
-						"1",
+						"1.2",
 						""
 					],
 					[
@@ -495,6 +1364,62 @@
 						-1,
 						"Screen Shake",
 						"0.1, 0.020",
+						""
+					],
+					[
+						38250,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						38416.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"465"
+					],
+					[
+						38333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"120",
+						"447"
+					],
+					[
+						38166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						38500,
+						-1,
+						"Camera Follow Pos",
+						"190",
+						"420"
+					],
+					[
+						38583.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"320",
+						"447"
+					],
+					[
+						37333.3333333333,
+						-1,
+						"Camera Follow Pos",
+						"150",
+						"445"
+					],
+					[
+						38083.3333333333,
+						-1,
+						"Screen Shake",
+						"0.3, 0.0035",
 						""
 					]
 				],
@@ -506,7 +1431,15 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						38666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"150",
+						"445"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -516,13 +1449,6 @@
 				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [
-					[
-						40250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
 					[
 						40003.4722222222,
 						-1,
@@ -558,7 +1484,7 @@
 						41833.3333333333,
 						-1,
 						"Screen Shake",
-						"0.2, 0.020",
+						"0.3, 0.0075",
 						""
 					]
 				],
@@ -572,20 +1498,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						42916.6666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						42670.1388888889,
-						-1,
-						"Screen Shake",
-						"0.1, 0.020",
-						""
-					],
-					[
 						42673.6111111111,
 						-1,
 						"Camera Beat",
@@ -598,6 +1510,20 @@
 						"VIGNETTE",
 						"0xFFFBC13F",
 						"1"
+					],
+					[
+						42670.1388888889,
+						-1,
+						"Screen Shake",
+						"0.3, 0.0035",
+						""
+					],
+					[
+						43416.6666666667,
+						-1,
+						"Screen Shake",
+						"0.4, 0.0075",
+						""
 					]
 				],
 				"bpm": 0,
@@ -619,11 +1545,11 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						45583.3333333333,
+						45333.3333333333,
 						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
 					],
 					[
 						45336.8055555556,
@@ -633,11 +1559,18 @@
 						""
 					],
 					[
-						45333.3333333333,
+						45340.2777777778,
 						-1,
-						"VIGNETTE",
-						"0xFFFBC13F",
-						"1"
+						"Screen Shake",
+						"0.3, 0.0035",
+						""
+					],
+					[
+						46208.3333333333,
+						-1,
+						"Screen Shake",
+						"2, 0.0035",
+						""
 					]
 				],
 				"bpm": 0,
@@ -699,6 +1632,90 @@
 						"VIGNETTE",
 						"0xFFFBC13F",
 						"1"
+					],
+					[
+						48916.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"600"
+					],
+					[
+						48753.4722222222,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						49166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"845",
+						"560"
+					],
+					[
+						48013.8888888889,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						48166.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						48583.3333333334,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						48833.3333333334,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						49083.3333333334,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
+					],
+					[
+						48333.3333333334,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						48500,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						49000,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
+					],
+					[
+						49250,
+						-1,
+						"Camera Follow Pos",
+						"800",
+						"560"
 					]
 				],
 				"bpm": 0,
@@ -720,13 +1737,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						50916.6666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						50670.1388888889,
 						-1,
 						"Screen Shake",
@@ -746,6 +1756,13 @@
 						"VIGNETTE",
 						"0xFFFBC13F",
 						"1"
+					],
+					[
+						50677.0833333334,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
 					]
 				],
 				"bpm": 0,
@@ -775,13 +1792,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						53583.3333333334,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						53336.8055555556,
 						-1,
 						"Screen Shake",
@@ -801,6 +1811,13 @@
 						"VIGNETTE",
 						"0xFFFBC13F",
 						"1"
+					],
+					[
+						53343.75,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
 					]
 				],
 				"bpm": 0,
@@ -822,13 +1839,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						56250,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
 						56003.4722222222,
 						-1,
 						"Screen Shake",
@@ -848,6 +1858,13 @@
 						"VIGNETTE",
 						"0xFFFBC13F",
 						"1"
+					],
+					[
+						56010.4166666667,
+						-1,
+						"Camera Follow Pos",
+						"825",
+						"540"
 					]
 				],
 				"bpm": 0,
@@ -860,7 +1877,7 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						58583.3333333334,
+						58604.1666666667,
 						-1,
 						"HEALTH DRAIN",
 						"0",
@@ -877,20 +1894,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						58916.6666666667,
-						-1,
-						"Stop Overlay Animation",
-						"CVG",
-						""
-					],
-					[
-						58666.6666666667,
-						-1,
-						"Camera Beat",
-						"0.2",
-						""
-					],
-					[
 						58750,
 						-1,
 						"Screen Shake",
@@ -898,25 +1901,39 @@
 						""
 					],
 					[
+						58666.6666666667,
+						-1,
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						58670.1388888889,
+						-1,
+						"Camera Beat",
+						"0.2",
+						""
+					],
+					[
 						58673.6111111111,
+						-1,
+						"VIGNETTE",
+						"0xFFFBC13F",
+						"1"
+					],
+					[
+						58677.0833333334,
 						-1,
 						"Camera Zoom",
 						"1",
 						""
 					],
 					[
-						58677.0833333334,
+						58680.5555555556,
 						-1,
 						"Change Scroll Speed",
 						"1",
 						"0.4"
-					],
-					[
-						58670.1388888889,
-						-1,
-						"VIGNETTE",
-						"0xFFFBC13F",
-						"1"
 					]
 				],
 				"bpm": 0,
@@ -3015,6 +4032,276 @@
 						""
 					]
 				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false

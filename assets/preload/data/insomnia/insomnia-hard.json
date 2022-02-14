@@ -3390,84 +3390,84 @@
 				"sectionNotes": [
 					[
 						96000,
-						3,
+						7,
 						1031.25
 					],
 					[
 						97125,
+						6,
+						0
+					],
+					[
+						97312.5,
+						4,
+						0
+					],
+					[
+						96000,
+						1,
+						0
+					],
+					[
+						96093.75,
+						2,
+						0
+					],
+					[
+						96187.5,
+						3,
+						0
+					],
+					[
+						96281.25,
+						0,
+						0
+					],
+					[
+						96562.5,
+						2,
+						0
+					],
+					[
+						96656.25,
+						0,
+						0
+					],
+					[
+						96750,
+						1,
+						0
+					],
+					[
+						96843.75,
+						3,
+						0
+					],
+					[
+						97125,
+						1,
+						0
+					],
+					[
+						97218.75,
 						2,
 						0
 					],
 					[
 						97312.5,
-						0,
-						0
-					],
-					[
-						96000,
-						5,
-						0
-					],
-					[
-						96093.75,
-						6,
-						0
-					],
-					[
-						96187.5,
-						7,
-						0
-					],
-					[
-						96281.25,
-						4,
-						0
-					],
-					[
-						96562.5,
-						6,
-						0
-					],
-					[
-						96656.25,
-						4,
-						0
-					],
-					[
-						96750,
-						5,
-						0
-					],
-					[
-						96843.75,
-						7,
-						0
-					],
-					[
-						97125,
-						5,
-						0
-					],
-					[
-						97218.75,
-						6,
-						0
-					],
-					[
-						97312.5,
-						7,
+						3,
 						0
 					],
 					[
 						97406.25,
-						4,
+						0,
 						0
 					]
 				],
 				"altAnim": false,
 				"bpm": 180,
 				"changeBPM": false,
-				"mustHitSection": false
+				"mustHitSection": true
 			},
 			{
 				"lengthInSteps": 16,
@@ -5071,6 +5071,42 @@
 			},
 			{
 				"lengthInSteps": 16,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"altAnim": false,
+				"bpm": 160,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 160
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 160,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 160,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [],
@@ -5082,10 +5118,10 @@
 		"player2": "sleepykeko",
 		"player3": "gf",
 		"song": "Insomnia",
-		"stage": "bedroomNIGHT",
 		"validScore": true,
-		"needsVoices": true,
+		"stage": "bedroomNIGHT",
 		"sections": 0,
+		"needsVoices": true,
 		"bpm": 160,
 		"speed": 2.4
 	}
