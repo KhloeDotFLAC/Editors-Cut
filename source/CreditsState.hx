@@ -25,7 +25,7 @@ class CreditsState extends MusicBeatState
 
 	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
 		['Editor\'s Cut Team'],
-		['JeffersonB',		'jeffersonb',		'Director,  Main Charter, Video Editor and Raccon Boy',					'https://twitter.com/JeffirsonB',	0xFFC30085],
+		['JeffersonB',		'jeffersonb',		'Director,  Main Charter, Video Editor and Raccoon Boy',					'https://twitter.com/JeffirsonB',	0xFFC30085],
 		['OneSK',			'onesk',		'Co-Director, Programmer, Composer and Main Artist/Animator',				'https://twitter.com/Oni_Ski',		0xFFEEAE6C],
 		['PheSpriter',			'phespriter',		'Co-Artist/Animator and Co-Charter',				'https://twitter.com/PheSpriter',		0xFF7E64E0],
 		['BioSharpz',			'biosharpz',		'Menu Theme Composer',				'https://soundcloud.com/bshrpz',		0xFFFFD373],
