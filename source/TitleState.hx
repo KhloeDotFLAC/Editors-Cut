@@ -360,7 +360,7 @@ class TitleState extends MusicBeatState
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
 			}
-			else if(easterEggEnabled)
+			/* else if(easterEggEnabled)
 			{
 				var finalKey:FlxKey = FlxG.keys.firstJustPressed();
 				if(finalKey != FlxKey.NONE) {
@@ -402,7 +402,7 @@ class TitleState extends MusicBeatState
 						}
 					}
 				}
-			}
+			} */
 		}
 
 		if (pressedEnter && !skippedIntro)
