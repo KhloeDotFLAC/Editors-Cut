@@ -28,8 +28,6 @@ class StoryMenuState extends MusicBeatState
 	// defaults to True
 	public static var weekCompleted:Map<String, Bool> = new Map<String, Bool>();
 
-	var scoreText:FlxText;
-
 	private static var curDifficulty:Int = 1;
 
 	var txtWeekTitle:FlxText;
@@ -38,6 +36,7 @@ class StoryMenuState extends MusicBeatState
 	private static var curWeek:Int = 0;
 
 	var txtTracklist:FlxText;
+	var txtRating:FlxText;
 
 	var grpWeekText:FlxTypedGroup<MenuItem>;
 	var grpWeekCharacters:FlxTypedGroup<MenuCharacter>;
@@ -58,18 +57,11 @@ class StoryMenuState extends MusicBeatState
 		if(curWeek >= WeekData.weeksList.length) curWeek = 0;
 		persistentUpdate = persistentDraw = true;
 
-		scoreText = new FlxText(10, 10, 0, "SCORE: 49324858", 36);
-		scoreText.setFormat("VCR OSD Mono", 32);
+		var storyForeground:FlxSprite = new FlxSprite().loadGraphic(Paths.image('storyFG'));
 
 		txtWeekTitle = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
 		txtWeekTitle.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, RIGHT);
 		txtWeekTitle.alpha = 0.7;
-
-		var rankText:FlxText = new FlxText(0, 10);
-		rankText.text = 'RANK: GREAT';
-		rankText.setFormat(Paths.font("vcr.ttf"), 32);
-		rankText.size = scoreText.size;
-		rankText.screenCenter(X);
 
 		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
 		var bgYellow:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 386, 0xFFF9CF51);
@@ -77,7 +69,6 @@ class StoryMenuState extends MusicBeatState
 		bgSprite.antialiasing = ClientPrefs.globalAntialiasing;
 
 		grpWeekText = new FlxTypedGroup<MenuItem>();
-		add(grpWeekText);
 
 		var blackBarThingie:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, 56, FlxColor.BLACK);
 		add(blackBarThingie);
@@ -126,10 +117,16 @@ class StoryMenuState extends MusicBeatState
 			grpWeekCharacters.add(weekCharacterThing);
 		}
 
+		add(bgYellow);
+		add(bgSprite);
+		add(grpWeekCharacters);
+		add(storyForeground);
+		add(grpWeekText);
+
 		difficultySelectors = new FlxGroup();
 		add(difficultySelectors);
 
-		leftArrow = new FlxSprite(grpWeekText.members[0].x + grpWeekText.members[0].width + 10, grpWeekText.members[0].y + 10);
+		leftArrow = new FlxSprite(434, 600);
 		leftArrow.frames = ui_tex;
 		leftArrow.animation.addByPrefix('idle', "arrow left");
 		leftArrow.animation.addByPrefix('press', "arrow push left");
@@ -160,21 +157,26 @@ class StoryMenuState extends MusicBeatState
 		rightArrow.antialiasing = ClientPrefs.globalAntialiasing;
 		difficultySelectors.add(rightArrow);
 
-		add(bgYellow);
-		add(bgSprite);
-		add(grpWeekCharacters);
-
 		var tracksSprite:FlxSprite = new FlxSprite(FlxG.width * 0.07, bgSprite.y + 425).loadGraphic(Paths.image('Menu_Tracks'));
 		tracksSprite.antialiasing = ClientPrefs.globalAntialiasing;
 		add(tracksSprite);
 
-		txtTracklist = new FlxText(FlxG.width * 0.05, tracksSprite.y + 60, 0, "", 32);
+		var ratingSprite:FlxSprite = new FlxSprite(1010, 471).loadGraphic(Paths.image('Menu_Rating'));
+		ratingSprite.antialiasing = ClientPrefs.globalAntialiasing;
+		add(ratingSprite);
+
+		txtTracklist = new FlxText(tracksSprite.x, tracksSprite.y + 60, tracksSprite.width, "", 32);
 		txtTracklist.alignment = CENTER;
-		txtTracklist.font = rankText.font;
-		txtTracklist.color = 0xFFe55777;
+		txtTracklist.font ="VCR OSD Mono";
+		txtTracklist.color = 0xFFE58C5A;
 		add(txtTracklist);
+
+		txtRating = new FlxText(ratingSprite.x, ratingSprite.y + 60, ratingSprite.width, "", 32);
+		txtRating.alignment = CENTER;
+		txtRating.font = "VCR OSD Mono";
+		txtRating.color = 0xFFE58C5A;
+		add(txtRating);
 		// add(rankText);
-		add(scoreText);
 		add(txtWeekTitle);
 
 		changeWeek();
@@ -193,8 +195,7 @@ class StoryMenuState extends MusicBeatState
 		// scoreText.setFormat('VCR OSD Mono', 32);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 30, 0, 1)));
 		if(Math.abs(intendedScore - lerpScore) < 10) lerpScore = intendedScore;
-
-		scoreText.text = "WEEK SCORE:" + lerpScore;
+		txtRating.text = lerpScore + '';
 
 		// FlxG.watch.addQuick('font', scoreText.font);
 

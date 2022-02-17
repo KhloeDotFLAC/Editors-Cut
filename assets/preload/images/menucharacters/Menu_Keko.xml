@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sleepyKeko Selection.png">
+	<!-- Created with Adobe Animate version 20.5.1.31044 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="M KEKO idle0000" x="12" y="12" width="387" height="613" frameX="0" frameY="-10" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0001" x="12" y="12" width="387" height="613" frameX="0" frameY="-10" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0002" x="414" y="12" width="376" height="618" frameX="-6" frameY="-5" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0003" x="414" y="12" width="376" height="618" frameX="-6" frameY="-5" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0004" x="805" y="12" width="372" height="620" frameX="-8" frameY="-3" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0005" x="805" y="12" width="372" height="620" frameX="-8" frameY="-3" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0006" x="1192" y="12" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0007" x="1192" y="12" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0008" x="1579" y="12" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0009" x="1579" y="12" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0010" x="1579" y="12" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0011" x="1579" y="12" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0012" x="12" y="649" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+	<SubTexture name="M KEKO idle0013" x="399" y="649" width="372" height="622" frameX="-8" frameY="0" frameWidth="387" frameHeight="623"/>
+</TextureAtlas>
