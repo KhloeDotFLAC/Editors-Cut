@@ -401,6 +401,7 @@ class ControlsSubstate extends MusicBeatSubstate {
 		ClientPrefs.keyBinds[1][1],
 		ClientPrefs.keyBinds[2][1],
 		ClientPrefs.keyBinds[3][1],
+		'',
 		'UI',
 		ClientPrefs.keyBinds[4][1],
 		ClientPrefs.keyBinds[5][1],
@@ -836,7 +837,8 @@ class PreferencesSubstate extends MusicBeatSubstate
 				switch(options[curSelected]) {
 					case 'FPS Counter':
 						ClientPrefs.showFPS = !ClientPrefs.showFPS;
-							Main.fpsVar.visible = ClientPrefs.showFPS;
+						if(Main.fpsMem != null)
+							Main.fpsMem.visible = ClientPrefs.showFPS;
 
 					case 'Low Quality':
 						ClientPrefs.lowQuality = !ClientPrefs.lowQuality;
