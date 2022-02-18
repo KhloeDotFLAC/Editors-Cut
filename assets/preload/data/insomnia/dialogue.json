@@ -5,28 +5,49 @@
 			"portrait": "keko",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "The video is not done..."
-		},
-		{
-			"speed": 0.035,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "Beep, bop bap?"
-		},
-		{
-			"speed": 0.05,
-			"portrait": "keko",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "Why not? Let's do it."
+			"text": "Ey! How did... how did you get into my room?! Who are you?"
 		},
 		{
 			"speed": 0.04,
 			"portrait": "bf",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "Bap!"
+			"text": "Beep, bop boop. \\n(The name's BF.mov. GF.mov and I were dragged here by that video track of yours.)"
+		},
+		{
+			"speed": 0.045,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Right.... so you're a talking, transparent video?                         ...am I dreaming?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bep bop, boop.\\n(Not much of a talker, I prefer singing.)"
+		},
+		{
+			"speed": 0.03,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Is that so? What are you style?"
+		},
+		{
+			"speed": 0.035,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bop, beep bup?\\n(Rapping. Up to some free style?)"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Hell yeah, blue boy! I'm kinda sleepy, so let's not get too ahead of ourselves, alright?"
 		}
 	]
 }
