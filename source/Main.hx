@@ -8,6 +8,7 @@ import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
+import FPSMem;
 
 class Main extends Sprite
 {
@@ -18,7 +19,7 @@ class Main extends Sprite
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
-	public static var fpsVar:FPS;
+	public static var fpsMem:FPSMem;
 	public static var ammo:Array<Int> = [4, 6, 7, 9];
 	public static var gfxIndex:Array<Dynamic> = [
 		[0, 1, 2, 3],
@@ -97,10 +98,10 @@ class Main extends Sprite
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 
 		#if !mobile
-		fpsVar = new FPS(10, 3, 0xFFFFFF);
-		addChild(fpsVar);
-		if(fpsVar != null) {
-			fpsVar.visible = ClientPrefs.showFPS;
+		fpsMem = new FPSMem(10, 3, 0xFFFFFF);
+		addChild(fpsMem);
+		if(fpsMem != null) {
+			fpsMem.visible = ClientPrefs.showFPS;
 		}
 		#end
 
