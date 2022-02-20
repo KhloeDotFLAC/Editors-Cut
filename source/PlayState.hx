@@ -1,5 +1,7 @@
 package;
 
+import openfl.filters.BitmapFilterShader;
+import OptionsState.ControlsSubstate;
 import haxe.zip.Writer;
 import flixel.tweens.misc.NumTween;
 import openfl.filters.BitmapFilter;
@@ -942,23 +944,30 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if(foundFile) {
+		if(foundFile) 
+		{
 			inCutscene = true;
 			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
 			bg.scrollFactor.set();
 			bg.cameras = [camHUD];
 			add(bg);
 
-			(new FlxVideo(fileName)).finishCallback = function() {
+			(new FlxVideo(fileName)).finishCallback = function() 
+			{
 				remove(bg);
-				if(endingSong) {
+				if(endingSong) 
+				{
 					endSong();
-				} else {
-					startCountdown();
-				}
+				} 
+				else 
+				{
+					startCountdown();	
+				}	
 			}
 			return;
-		} else {
+		}
+		else 
+		{
 			FlxG.log.warn('Couldnt find video file: ' + fileName);
 		}
 		#end
@@ -1205,7 +1214,13 @@ class PlayState extends MusicBeatState
 							}
 							
 							notice = new Alphabet(0, 0, coolText, true, false, 0.05, textSize);
-							notice.x = FlxG.width * textBorder;
+							if (ClientPrefs.middleScroll)
+							{
+								notice.screenCenter(X);
+							} else {
+								notice.x = FlxG.width * textBorder;
+							}
+								
 							notice.y = 120;
 							if (ClientPrefs.downScroll)
 							{
@@ -2111,7 +2126,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-	if (curStage == 'bedroomDAY' || curStage == 'bedroomNIGHT') {
+		if (curStage == 'bedroomDAY' || curStage == 'bedroomNIGHT') {
 			if (fogScroll.x >= -7093) {
 				fogScroll.x -= 1;
 			} else {

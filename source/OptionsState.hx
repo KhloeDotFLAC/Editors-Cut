@@ -3,34 +3,20 @@ package;
 #if desktop
 import Discord.DiscordClient;
 #end
-import flash.text.TextField;
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.addons.display.FlxGridOverlay;
 import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
-import lime.utils.Assets;
-import flixel.FlxSubState;
-import flash.text.TextField;
 import flixel.FlxG;
 import flixel.FlxSprite;
-import flixel.util.FlxSave;
-import haxe.Json;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxTimer;
 import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
-import Controls;
 
 using StringTools;
 
 // TO DO: Redo the menu creation system for not being as dumb
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Notes', 'Controls', 'Preferences'];
+	var options:Array<String> = ['Controls', 'Preferences'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -91,7 +77,7 @@ class OptionsState extends MusicBeatState
 
 			switch(options[curSelected]) {
 				case 'Controls':
-					openSubState(new ControlsSubstate());
+					openSubState(new ControlsSubstate(false, false));
 
 				case 'Preferences':
 					openSubState(new PreferencesSubstate());
@@ -122,7 +108,7 @@ class OptionsState extends MusicBeatState
 
 
 
-class NotesSubstate extends MusicBeatSubstate
+/* class NotesSubstate extends MusicBeatSubstate
 {
 	private static var curSelected:Int = 0;
 	private static var typeSelected:Int = 0;
@@ -385,7 +371,7 @@ class NotesSubstate extends MusicBeatSubstate
 		}
 		grpNumbers.members[(curSelected * 3) + typeSelected].changeText(Std.string(roundedValue));
 	}
-}
+} */
 
 
 
@@ -412,24 +398,6 @@ class ControlsSubstate extends MusicBeatSubstate {
 		ClientPrefs.keyBinds[9][1],
 		ClientPrefs.keyBinds[10][1],
 		ClientPrefs.keyBinds[11][1],
-		'6 OR 7 KEY',
-		ClientPrefs.keyBinds[12][1],
-		ClientPrefs.keyBinds[13][1],
-		ClientPrefs.keyBinds[14][1],
-		ClientPrefs.keyBinds[15][1],
-		ClientPrefs.keyBinds[16][1],
-		ClientPrefs.keyBinds[17][1],
-		ClientPrefs.keyBinds[18][1],
-		'9 KEY',
-		ClientPrefs.keyBinds[19][1],
-		ClientPrefs.keyBinds[20][1],
-		ClientPrefs.keyBinds[21][1],
-		ClientPrefs.keyBinds[22][1],
-		ClientPrefs.keyBinds[23][1],
-		ClientPrefs.keyBinds[24][1],
-		ClientPrefs.keyBinds[25][1],
-		ClientPrefs.keyBinds[26][1],
-		ClientPrefs.keyBinds[27][1],
 		'',
 		defaultKey];
 
@@ -439,37 +407,85 @@ class ControlsSubstate extends MusicBeatSubstate {
 	var rebindingKey:Int = -1;
 	var nextAccept:Int = 5;
 
-	public function new() {
+	public function new(?isShowdown:Bool = false, ?isOptions:Bool = false) {
 		super();
+
+		if (isShowdown == true) 
+		{
+			optionShit = 
+			[
+				'4 KEY',
+				ClientPrefs.keyBinds[0][1],
+				ClientPrefs.keyBinds[1][1],
+				ClientPrefs.keyBinds[2][1],
+				ClientPrefs.keyBinds[3][1],
+				'',
+				'UI',
+				ClientPrefs.keyBinds[4][1],
+				ClientPrefs.keyBinds[5][1],
+				ClientPrefs.keyBinds[6][1],
+				ClientPrefs.keyBinds[7][1],
+				'',
+				ClientPrefs.keyBinds[8][1],
+				ClientPrefs.keyBinds[9][1],
+				ClientPrefs.keyBinds[10][1],
+				ClientPrefs.keyBinds[11][1],
+				'',
+				'6 OR 7 KEY',
+				ClientPrefs.keyBinds[12][1],
+				ClientPrefs.keyBinds[13][1],
+				ClientPrefs.keyBinds[14][1],
+				ClientPrefs.keyBinds[15][1],
+				ClientPrefs.keyBinds[16][1],
+				ClientPrefs.keyBinds[17][1],
+				ClientPrefs.keyBinds[18][1],
+				'',
+				defaultKey
+			];
+		}
+
+		if  (isOptions == true)
+		{
+			var bg = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
+				bg.alpha = 0.5;
+			add(bg);
+		}
+
 		grpOptions = new FlxTypedGroup<Alphabet>();
 		add(grpOptions);
-
 		controlArray = ClientPrefs.lastControls.copy();
-		for (i in 0...optionShit.length) {
+		for (i in 0...optionShit.length) 
+		{
 			var isCentered:Bool = false;
 			var isDefaultKey:Bool = (optionShit[i] == defaultKey);
-			if(unselectableCheck(i, true)) {
+			if(unselectableCheck(i, true)) 
+			{
 				isCentered = true;
 			}
 
 			var optionText:Alphabet = new Alphabet(0, (10 * i), optionShit[i], (!isCentered || isDefaultKey), false);
 			optionText.isMenuItem = true;
-			if(isCentered) {
+			if(isCentered) 
+			{
 				optionText.screenCenter(X);
 				optionText.forceX = optionText.x;
 				optionText.yAdd = -55;
-			} else {
+			} 
+			else 
+			{
 				optionText.forceX = 200;
 			}
 			optionText.yMult = 60;
 			optionText.targetY = i;
 			grpOptions.add(optionText);
 
-			if(!isCentered) {
+			if(!isCentered) 
+			{
 				addBindTexts(optionText);
 			}
 		}
 		changeSelection();
+		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 	}
 
 	var leaving:Bool = false;
