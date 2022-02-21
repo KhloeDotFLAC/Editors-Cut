@@ -245,7 +245,7 @@ class ClientPrefs {
 		}
 
 		var save:FlxSave = new FlxSave();
-		save.bind('controls', 'vskeko');
+		save.bind('controls', 'controls');
 		if(save != null && save.data.customControls != null) {
 			reloadControls(save.data.customControls);
 		}

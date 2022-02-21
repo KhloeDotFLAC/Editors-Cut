@@ -2727,71 +2727,74 @@ class PlayState extends MusicBeatState
 					}
 				}
 			case 'CHROMATIC':
-				var rgbArray:Array<String> = [value1, value2];
-				var shaderArray:Array<ChromaticShader> = [gameChromatic, hudChromatic];
-
-				for (i in 0...shaderArray.length) 
+				if (ClientPrefs.shaders == true)
 				{
-					var split:Array<String> = rgbArray[i].split(',');
-					var red:Float = Std.parseFloat(split[0].trim()) / 1000;
-					var green:Float = Std.parseFloat(split[1].trim()) / 1000;
-					var blue:Float = Std.parseFloat(split[2].trim()) / 1000;
-					var active:String = split[3].trim().toLowerCase();
-					var type:Int = Std.parseInt(split[4].trim());
-					if(Math.isNaN(red)) red = 0;
-					if(Math.isNaN(green)) green = 0;
-					if(Math.isNaN(blue)) blue = 0;
-					if(Math.isNaN(type)) type = 0;
+					var rgbArray:Array<String> = [value1, value2];
+					var shaderArray:Array<ChromaticShader> = [gameChromatic, hudChromatic];
 
-					FlxTween.cancelTweensOf([shaderArray[i].rOffset, shaderArray[i].gOffset, shaderArray[i].bOffset]);
+					for (i in 0...shaderArray.length) 
+					{
+						var split:Array<String> = rgbArray[i].split(',');
+						var red:Float = Std.parseFloat(split[0].trim()) / 1000;
+						var green:Float = Std.parseFloat(split[1].trim()) / 1000;
+						var blue:Float = Std.parseFloat(split[2].trim()) / 1000;
+						var active:String = split[3].trim().toLowerCase();
+						var type:Int = Std.parseInt(split[4].trim());
+						if(Math.isNaN(red)) red = 0;
+						if(Math.isNaN(green)) green = 0;
+						if(Math.isNaN(blue)) blue = 0;
+						if(Math.isNaN(type)) type = 0;
 
-					switch active
-					{
-						case 'y':
-							switch i
-							{
-								case 0:
-									camGame.filtersEnabled = true;
-								case 1:
-									camHUD.filtersEnabled = true;
-							}
-						case 'n':
-							switch i
-							{
-								case 0:
-									camGame.filtersEnabled = false;
-								case 1:
-									camHUD.filtersEnabled = false;
-							}
-						
-					}
-					switch type
-					{
-					case 0:
-						shaderArray[i].rOffset.value = [red];
-						shaderArray[i].gOffset.value = [green];
-						shaderArray[i].bOffset.value = [blue];
-					case 1: 
-						shaderArray[i].rOffset.value = [FlxG.random.float(red * -1, red)];
-						shaderArray[i].gOffset.value = [FlxG.random.float(green * -1, green)];
-						shaderArray[i].bOffset.value = [FlxG.random.float(blue * -1, blue)];
+						FlxTween.cancelTweensOf([shaderArray[i].rOffset, shaderArray[i].gOffset, shaderArray[i].bOffset]);
+
+						switch active
+						{
+							case 'y':
+								switch i
+								{
+									case 0:
+										camGame.filtersEnabled = true;
+									case 1:
+										camHUD.filtersEnabled = true;
+								}
+							case 'n':
+								switch i
+								{
+									case 0:
+										camGame.filtersEnabled = false;
+									case 1:
+										camHUD.filtersEnabled = false;
+								}
+							
+						}
+						switch type
+						{
+						case 0:
+							shaderArray[i].rOffset.value = [red];
+							shaderArray[i].gOffset.value = [green];
+							shaderArray[i].bOffset.value = [blue];
+						case 1: 
+							shaderArray[i].rOffset.value = [FlxG.random.float(red * -1, red)];
+							shaderArray[i].gOffset.value = [FlxG.random.float(green * -1, green)];
+							shaderArray[i].bOffset.value = [FlxG.random.float(blue * -1, blue)];
+						}
 					}
 				}
-			/* 	FlxTween.cancelTweensOf([daChromatic.rOffset, daChromatic.gOffset, daChromatic.bOffset]);
-				switch typeEffect 
-				{
-					case 0:
-						daChromatic.rOffset.value = [red];
-						daChromatic.gOffset.value = [green];
-						daChromatic.bOffset.value = [blue];
-					case 1:
-						daChromatic.rOffset.value = [red];
-						FlxTween.tween(daChromatic.rOffset, {value: [0]}, 2, {type:PERSIST});
-						daChromatic.gOffset.value = [green];
-						FlxTween.tween(daChromatic.gOffset, {value: [0]}, 2, {type:PERSIST});
-						daChromatic.bOffset.value = [blue];
-						FlxTween.tween(daChromatic.bOffset, {value: [0]}, 2, {type:PERSIST});
-				} */
+				/* 	FlxTween.cancelTweensOf([daChromatic.rOffset, daChromatic.gOffset, daChromatic.bOffset]);
+					switch typeEffect 
+					{
+						case 0:
+							daChromatic.rOffset.value = [red];
+							daChromatic.gOffset.value = [green];
+							daChromatic.bOffset.value = [blue];
+						case 1:
+							daChromatic.rOffset.value = [red];
+							FlxTween.tween(daChromatic.rOffset, {value: [0]}, 2, {type:PERSIST});
+							daChromatic.gOffset.value = [green];
+							FlxTween.tween(daChromatic.gOffset, {value: [0]}, 2, {type:PERSIST});
+							daChromatic.bOffset.value = [blue];
+							FlxTween.tween(daChromatic.bOffset, {value: [0]}, 2, {type:PERSIST});
+					} */
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
