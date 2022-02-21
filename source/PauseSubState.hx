@@ -69,6 +69,21 @@ class PauseSubState extends MusicBeatSubstate
 		blueballedTxt.updateHitbox();
 		add(blueballedTxt);
 
+		var noticeText = new FlxText(0, 0, 0, "6 key configuration available on Controls");
+		noticeText.scrollFactor.set();
+		noticeText.setFormat(Paths.font('vcr.ttf'), 24);
+		noticeText.setPosition(20, FlxG.height - 34); 
+		noticeText.updateHitbox();
+		if (PlayState.mania > 0)
+			noticeText.visible = true;
+		else {
+			noticeText.visible = false;
+		}
+		noticeText.alpha = 0;
+		noticeText.cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
+		FlxTween.tween(noticeText, {alpha: 0.7}, 0.4, {ease: FlxEase.quartInOut});
+		add(noticeText);
+
 		practiceText = new FlxText(20, 15 + 101, 0, "PRACTICE MODE", 32);
 		practiceText.scrollFactor.set();
 		practiceText.setFormat(Paths.font('vcr.ttf'), 32);
