@@ -417,7 +417,7 @@ class PlayState extends MusicBeatState
 					monitorBloom.blend = ADD;
 				add(monitorBloom);
 
-				if (FlxG.random.bool(20))
+				if (Main.oneShot == 1000)
 				{
 					var bulbShine = new BGSprite('bedroom/bulbLight', 399, 498, 1, 1);
 				    bulbShine.blend = ADD;
@@ -443,6 +443,13 @@ class PlayState extends MusicBeatState
 				monitorBloom = new BGSprite('bedroom/monitors/defaultBloom', 264, -119, 1, 1);	
 					monitorBloom.blend = ADD;
 				add(monitorBloom);
+
+				if (Main.oneShot == 1000)
+				{
+					var bulbShine = new BGSprite('bedroom/bulbLight', 399, 498, 1, 1);
+				    bulbShine.blend = ADD;
+					add(bulbShine);
+				}
 		}
 
 		
@@ -840,7 +847,6 @@ class PlayState extends MusicBeatState
 		// Updating Discord Rich Presence.
 		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
 		#end
-		
 		super.create();
 	}
 	
@@ -3931,7 +3937,7 @@ class PlayState extends MusicBeatState
 							return arrayIDs[i];
 						}
 					case 8:
-						if(Paths.formatToSongPath(SONG.song) == 'god-eater' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'kaio-ken' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
@@ -3946,7 +3952,7 @@ class PlayState extends MusicBeatState
 							return arrayIDs[i];
 						}
 					case 11:
-						if(ratingPercent >= 1 && !usedPractice && !cpuControlled) {
+						if(Main.oneShot == 1000) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
@@ -3961,17 +3967,7 @@ class PlayState extends MusicBeatState
 							return arrayIDs[i];
 						}
 					case 14:
-						if(!boyfriendIdled && !usedPractice) {
-							Achievements.unlockAchievement(arrayIDs[i]);
-							return arrayIDs[i];
-						}
-					case 15:
-						if(/*ClientPrefs.framerate <= 60 &&*/ ClientPrefs.lowQuality && !ClientPrefs.globalAntialiasing && !ClientPrefs.imagesPersist) {
-							Achievements.unlockAchievement(arrayIDs[i]);
-							return arrayIDs[i];
-						}
-					case 16:
-						if(Paths.formatToSongPath(SONG.song) == 'test' && !usedPractice) {
+						if(!ClientPrefs.globalAntialiasing && !ClientPrefs.imagesPersist && !ClientPrefs.eventFull && !ClientPrefs.shaders) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
