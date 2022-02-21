@@ -284,7 +284,7 @@ class FreeplayState extends MusicBeatState
 				}
 				trace('Couldn\'t find: ' + poop + '.');
 				FlxG.camera.shake(0.01, 0.2);
-				FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
+				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
 			else
 			{
