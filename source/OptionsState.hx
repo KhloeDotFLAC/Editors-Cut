@@ -704,8 +704,9 @@ class PreferencesSubstate extends MusicBeatSubstate
 
 	static var options:Array<String> = [
 		'GRAPHICS',
-		'Low Quality',
 		'Anti-Aliasing',
+		'Shader Events',
+		'Overlay Events',
 		'Persistent Cached Data',
 		#if !html5
 		'Framerate', //Apparently 120FPS isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
@@ -906,6 +907,10 @@ class PreferencesSubstate extends MusicBeatSubstate
 					
 					case 'Hide Song Length':
 						ClientPrefs.hideTime = !ClientPrefs.hideTime;
+					case 'Overlay Events':
+						ClientPrefs.eventFull = !ClientPrefs.eventFull;
+					case 'Shader Events':
+						ClientPrefs.shaders = !ClientPrefs.shaders;
 				}
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				reloadValues();
@@ -999,6 +1004,11 @@ class PreferencesSubstate extends MusicBeatSubstate
 				daText = "If checked, hides most HUD elements.";
 			case 'Hide Song Length':
 				daText = "If checked, the bar showing how much time is left\nwill be hidden.";
+			//Editor's Cut stuff
+			case 'Shader Events':
+				daText = "OpenFL shaders can cause performance issue on computer with weak GPUs\nIt's rarely used on this mod, but it's there";
+			case 'Overlay Events':
+				daText = "Whether or not to activate some fancy overlay effect.\nLeaving it on may increase memory usage and occasional stuttering, but it looks cool! ;)";
 		}
 		descText.text = daText;
 
@@ -1071,6 +1081,11 @@ class PreferencesSubstate extends MusicBeatSubstate
 						daValue = ClientPrefs.imagesPersist;
 					case 'Hide Song Length':
 						daValue = ClientPrefs.hideTime;
+					//Editor's Cut stuff
+					case 'Shader Events':
+						daValue = ClientPrefs.shaders;
+					case 'Overlay Events':
+						daValue = ClientPrefs.eventFull;
 				}
 				checkbox.daValue = daValue;
 			}

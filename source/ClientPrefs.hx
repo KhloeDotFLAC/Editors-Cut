@@ -26,6 +26,10 @@ class ClientPrefs {
 	public static var ghostTapping:Bool = true;
 	public static var hideTime:Bool = false;
 
+	//Editor's Cut stuff
+	public static var eventFull:Bool = true;
+	public static var shaders:Bool = true;
+
 	public static var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
 		'scrolltype' => 'multiplicative', 
@@ -138,6 +142,11 @@ class ClientPrefs {
 		FlxG.save.data.ghostTapping = ghostTapping;
 		FlxG.save.data.hideTime = hideTime;
 		FlxG.save.data.gameplaySettings = gameplaySettings;
+		
+		//Editor's cut stuff
+		FlxG.save.data.eventFull = eventFull;
+		FlxG.save.data.shaders = shaders;
+
 
 		var achieves:Array<String> = [];
 		for (i in 0...Achievements.achievementsUnlocked.length) {
@@ -150,7 +159,7 @@ class ClientPrefs {
 		FlxG.save.flush();
 
 		var save:FlxSave = new FlxSave();
-		save.bind('controls', 'vskeko'); //Placing this in a separate save so that it can be manually deleted without removing your Score and stuff
+		save.bind('controls', 'controls'); //Placing this in a separate save so that it can be manually deleted without removing your Score and stuff
 		save.data.customControls = lastControls;
 		save.flush();
 		FlxG.log.add("Settings saved!");
@@ -227,9 +236,16 @@ class ClientPrefs {
 				gameplaySettings.set(name, value);
 			}
 		}
+		//Editor's Cut
+		if(FlxG.save.data.eventFull != null) {
+			eventFull = FlxG.save.data.eventFull;
+		}
+		if(FlxG.save.data.shaders != null) {
+			shaders = FlxG.save.data.shaders;
+		}
 
 		var save:FlxSave = new FlxSave();
-		save.bind('controls', 'vskeko');
+		save.bind('controls', 'controls');
 		if(save != null && save.data.customControls != null) {
 			reloadControls(save.data.customControls);
 		}

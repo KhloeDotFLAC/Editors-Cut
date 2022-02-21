@@ -183,7 +183,7 @@ class TitleState extends MusicBeatState
 		add(swagText);
 		FlxTween.tween(swagText, {x: 3}, 5, {ease: FlxEase.expoOut, type: ONESHOT});
 		
-		var editorVersion:FlxText = new FlxText(3, 666, 500, "Editor's Cut v" + "0");
+		var editorVersion:FlxText = new FlxText(3, 666, 500, "Editor's Cut v" + Application.current.meta.get('version'));
 			editorVersion.setFormat("VCR OSD Mono", 16, randomColor, LEFT);
 			editorVersion.alpha = 0.5;
 		add(editorVersion);
@@ -191,7 +191,7 @@ class TitleState extends MusicBeatState
 			psychVersion.setFormat("VCR OSD Mono", 16, randomColor, LEFT);
 			psychVersion.alpha = 0.5;
 		add(psychVersion);
-		var fnfVersion:FlxText = new FlxText(3, 698, 500, "Friday Night Funkin' v" + Application.current.meta.get('version'));
+		var fnfVersion:FlxText = new FlxText(3, 698, 500, "Friday Night Funkin' v" + "0.2.7");
 			fnfVersion.setFormat("VCR OSD Mono", 16, randomColor, LEFT);
 			fnfVersion.alpha = 0.5;
 		add(fnfVersion);

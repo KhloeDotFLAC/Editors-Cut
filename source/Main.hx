@@ -1,5 +1,6 @@
 package;
 
+import flixel.math.FlxRandom;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
@@ -44,7 +45,13 @@ class Main extends Sprite
 	public static var gfxDir:Array<String> = ['LEFT', 'DOWN', 'UP', 'RIGHT', 'SPACE'];
 	public static var charDir:Array<String> = ['LEFT', 'DOWN', 'UP', 'RIGHT', 'UP'];
 	public static var gfxLetter:Array<String> = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
-
+	
+	#if debug
+		public static var oneShot:Int = 1000;
+	#else
+		public static var oneShot:Int = new FlxRandom().int(0, 1000);
+	#end
+	
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	public static function main():Void

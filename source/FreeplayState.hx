@@ -276,26 +276,36 @@ class FreeplayState extends MusicBeatState
 			#else
 			if(!OpenFlAssets.exists(Paths.json(songLowercase + '/' + poop))) {
 			#end
-				poop = songLowercase;
-				curDifficulty = 1;
-				trace('Couldnt find file');
+				if (poop == songLowercase) {
+					curDifficulty = 0;
+				}
+				else if (poop == songLowercase + '-hard') {
+					curDifficulty = 1;
+				}
+				trace('Couldn\'t find: ' + poop + '.');
+				FlxG.camera.shake(0.01, 0.2);
+				FlxG.sound.play(Paths.sound('cancelMenu'));
 			}
-			trace(poop);
+			else
+			{
+				trace(poop);
 
-			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-			PlayState.isStoryMode = false;
-			PlayState.storyDifficulty = curDifficulty;
+				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+				PlayState.isStoryMode = false;
+				PlayState.storyDifficulty = curDifficulty;
 
-			PlayState.storyWeek = songs[curSelected].week;
-			trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
-			if(colorTween != null) {
-				colorTween.cancel();
+				PlayState.storyWeek = songs[curSelected].week;
+				trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
+				if(colorTween != null) {
+					colorTween.cancel();
+				}
+				LoadingState.loadAndSwitchState(new PlayState());
+
+				FlxG.sound.music.volume = 0;
+						
+				destroyFreeplayVocals();
 			}
-			LoadingState.loadAndSwitchState(new PlayState());
-
-			FlxG.sound.music.volume = 0;
-					
-			destroyFreeplayVocals();
+			
 		}
 		else if(controls.RESET)
 		{
