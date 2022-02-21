@@ -107,7 +107,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var editorVersion:FlxText = new FlxText(3, 666, 500, "Editor's Cut v" + "0");
+		var editorVersion:FlxText = new FlxText(3, 666, 500, "Editor's Cut v" + Application.current.meta.get('version'));
 			editorVersion.setFormat("VCR OSD Mono", 16, TitleState.randomColor, LEFT);
 			editorVersion.alpha = 0.5;
 			editorVersion.scrollFactor.set();
@@ -117,7 +117,7 @@ class MainMenuState extends MusicBeatState
 			psychVersion.alpha = 0.5;
 			psychVersion.scrollFactor.set();
 		add(psychVersion);
-		var fnfVersion:FlxText = new FlxText(3, 698, 500, "Friday Night Funkin' v" + Application.current.meta.get('version'));
+		var fnfVersion:FlxText = new FlxText(3, 698, 500, "Friday Night Funkin' v" + "0.2.7");
 			fnfVersion.setFormat("VCR OSD Mono", 16, TitleState.randomColor, LEFT);
 			fnfVersion.alpha = 0.5;
 			fnfVersion.scrollFactor.set();
