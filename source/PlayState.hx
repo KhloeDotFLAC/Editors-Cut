@@ -500,11 +500,13 @@ class PlayState extends MusicBeatState
 		boyfriend = new Boyfriend(0, 0, SONG.player1);
 
 		//Trails
-		dadTrail = new FlxTrail(dad, null, 0, 0, 0, 0.001);
-		bfTrail = new FlxTrail(boyfriend, null, 0, 0, 0, 0.001);
-		dadGroup.add(dadTrail);
-		boyfriendGroup.add(bfTrail);
-		//Trails
+		if (ClientPrefs.eventFull == true)
+		{
+			dadTrail = new FlxTrail(dad, null, 0, 0, 0, 0.001);
+			bfTrail = new FlxTrail(boyfriend, null, 0, 0, 0, 0.001);
+			dadGroup.add(dadTrail);
+			boyfriendGroup.add(bfTrail);
+		}
 
 		startCharacterPos(dad, true);
 		dadGroup.add(dad);
@@ -521,31 +523,35 @@ class PlayState extends MusicBeatState
 		}
 
 		//Fog 'n' speedlines
-		if (curStage == "bedroomDAY" || curStage == "bedroomNIGHT") {
-			fogScroll = new BGSprite('bedroom/fogScroll', -601, -201, 1, 1);
-			fogScroll.setGraphicSize(11782, 1322);
-			fogScroll.updateHitbox();
-			fogScroll.blend = ADD;
-			fogScroll.visible = false;
-			add(fogScroll);
+		if (ClientPrefs.eventFull == true)
+		{
+			if (curStage == "bedroomDAY" || curStage == "bedroomNIGHT") 
+			{
+				fogScroll = new BGSprite('bedroom/fogScroll', -601, -201, 1, 1);
+				fogScroll.setGraphicSize(11782, 1322);
+				fogScroll.updateHitbox();
+				fogScroll.blend = ADD;
+				fogScroll.visible = false;
+				add(fogScroll);
 
-			speedLines = new BGSprite('bedroom/speedLines', 0, 0, 1, 1, ['SLduet', 'SLbf', 'SLkeko'], true);
-			speedLines.blend = ADD;
-			speedLines.visible = false;
-			speedLines.cameras = [camHUD];
-			add(speedLines);
+				speedLines = new BGSprite('bedroom/speedLines', 0, 0, 1, 1, ['SLduet', 'SLbf', 'SLkeko'], true);
+				speedLines.blend = ADD;
+				speedLines.visible = false;
+				speedLines.cameras = [camHUD];
+				add(speedLines);
 
-			vignette = new BGSprite('bedroom/vignette', 0, 0, 1, 1);
-			vignette.alpha = 0;
-			vignette.cameras = [camHUD];
-			add(vignette);
+				vignette = new BGSprite('bedroom/vignette', 0, 0, 1, 1);
+				vignette.alpha = 0;
+				vignette.cameras = [camHUD];
+				add(vignette);
 
-			realTimeEvents = new BGSprite('bedroom/realTimeEvents', 0, 0, 1, 1, ['flash', 'sl'], false);
-			realTimeEvents.blend = NORMAL;
-			realTimeEvents.visible = false;
-			realTimeEvents.cameras = [camHUD];
-			add(realTimeEvents);
+				realTimeEvents = new BGSprite('bedroom/realTimeEvents', 0, 0, 1, 1, ['flash', 'sl'], false);
+				realTimeEvents.blend = NORMAL;
+				realTimeEvents.visible = false;
+				realTimeEvents.cameras = [camHUD];
+				add(realTimeEvents);
 
+			}
 		}
 
 		//Custom cursor stuff
@@ -1130,6 +1136,10 @@ class PlayState extends MusicBeatState
 			Conductor.songPosition -= Conductor.crochet * 5;
 			setOnLuas('startedCountdown', true);
 
+			if (isStoryMode && curSong == 'Showdown') {
+				camHUD.flash(FlxColor.BLACK, 1.5);
+			}
+
 			var swagCounter:Int = 0;
 			
 			startTimer = new FlxTimer().start(Conductor.crochet / 1000, function(tmr:FlxTimer)
@@ -1374,7 +1384,6 @@ class PlayState extends MusicBeatState
 		songLength = FlxG.sound.music.length;
 		FlxTween.tween(timeBar, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
 		FlxTween.tween(timeTxt, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
-
 		#if desktop
 		// Updating Discord Rich Presence (with Time Left)
 		DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength);
@@ -2126,13 +2135,21 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (curStage == 'bedroomDAY' || curStage == 'bedroomNIGHT') {
-			if (fogScroll.x >= -7093) {
-				fogScroll.x -= 1;
-			} else {
-				fogScroll.x = -601;
-			}	
+		if (ClientPrefs.eventFull == true)
+		{
+			if (curStage == 'bedroomDAY' || curStage == 'bedroomNIGHT') 
+			{
+				if (fogScroll.x >= -7093) 
+				{
+					fogScroll.x -= 1;
+				} 
+				else 
+				{
+					fogScroll.x = -601;
+				}	
+			}
 		}
+		
 
 		#if debug
 		if(!endingSong && !startingSong) {
@@ -2430,26 +2447,6 @@ class PlayState extends MusicBeatState
 						}
 				}
 				reloadHealthBarColors();
-			
-			case 'Change Monitors Screen':
-				var image:String = value1.toLowerCase();
-				var animated:Bool = false;
-
-				if (Std.parseFloat(value2) == 0) {
-					animated = false;
-				} else if (Std.parseFloat(value2) == 1) {
-					animated = true;
-				}
-		
-				if (value1 != null) {
-					monitorScreens.loadGraphic(Paths.image('bedroom/monitors/'+image+'Screens'), animated);
-					monitorBloom.loadGraphic(Paths.image('bedroom/monitors/'+image+'Bloom'), animated);
-	
-				} else {
-					monitorScreens.loadGraphic(Paths.image('bedroom/monitors/turnedoffScreens'));
-					monitorBloom.loadGraphic(Paths.image('bedroom/monitors/turnedoffBloom'));
-
-				}
 
 			case 'Play BG Animation':
 				var animation:String = value1;
@@ -2484,42 +2481,46 @@ class PlayState extends MusicBeatState
 				}
 				
 			case 'Play Overlay Animation':
-				var image:String = value1;
-				var blendtype:Int = Std.parseInt(value2);
-				if (Math.isNaN(blendtype)) blendtype = 1;
-				
-				remove(overlayShit);
-				overlayShit = new BGSprite('overlayAnims/' + image, 0, 0, 0, 0, [image], true);
-				switch blendtype 
+				if (ClientPrefs.eventFull == true)
 				{
-					default:
-						overlayShit.blend = NORMAL;
-					case 1:
-						overlayShit.blend = ADD;
-					case 2:
-						overlayShit.blend = DARKEN;
-					case 3:
-						overlayShit.blend = DIFFERENCE;
-					case 4:
-						overlayShit.blend = HARDLIGHT;
-					case 5:
-						overlayShit.blend = INVERT;
-					case 6:
-						overlayShit.blend = LIGHTEN;
-					case 7:
-						overlayShit.blend = MULTIPLY;
-					case 8:
-						overlayShit.blend = SCREEN;
-					case 9:
-						overlayShit.blend = SUBTRACT;
+					var image:String = value1;
+					var blendtype:Int = Std.parseInt(value2);
+					if (Math.isNaN(blendtype)) blendtype = 1;
+					
+					remove(overlayShit);
+					overlayShit = new BGSprite('overlayAnims/' + image, 0, 0, 0, 0, [image], true);
+					switch blendtype 
+					{
+						default:
+							overlayShit.blend = NORMAL;
+						case 1:
+							overlayShit.blend = ADD;
+						case 2:
+							overlayShit.blend = DARKEN;
+						case 3:
+							overlayShit.blend = DIFFERENCE;
+						case 4:
+							overlayShit.blend = HARDLIGHT;
+						case 5:
+							overlayShit.blend = INVERT;
+						case 6:
+							overlayShit.blend = LIGHTEN;
+						case 7:
+							overlayShit.blend = MULTIPLY;
+						case 8:
+							overlayShit.blend = SCREEN;
+						case 9:
+							overlayShit.blend = SUBTRACT;
+					}
+					overlayShit.cameras = [camHUD];
+					add(overlayShit);
+					overlayShit.dance(true);
 				}
-				overlayShit.cameras = [camHUD];
-				add(overlayShit);
-				overlayShit.dance(true);
-			
 			case 'Stop Overlay Animation':
-				remove(overlayShit);
-			
+				if (ClientPrefs.eventFull == true)
+				{
+					remove(overlayShit);
+				}
 			case 'Flash Camera' | 'Screen Flash':
 				var valuesArray:Array<String> = [value1, value2];
 				var targetsArray:Array<FlxCamera> = [camGame, camHUD];
@@ -2534,72 +2535,81 @@ class PlayState extends MusicBeatState
 					}
 				}
 			case 'FULLDARK':
-				var state:Int = Std.parseInt(value1);
-				if(Math.isNaN(state)) state = 1;
+				if (ClientPrefs.eventFull == true)
+				{
+					var state:Int = Std.parseInt(value1);
+					if(Math.isNaN(state)) state = 1;
 
-				if (state == 1) {
-					boyfriendGroup.color = 0xFF000000;
-					gfGroup.color = 0xFF000000;
-					dadGroup.color = 0xFF000000;
-					bedroomBG.loadGraphic(Paths.image('bedroom/BGDark'));
-					fogScroll.visible = true;
-					fanHeli.visible = false;
-				} else if (state == 0) {
-					boyfriendGroup.color = 0xFFFFFFFF;
-					gfGroup.color = 0xFFFFFFFF;
-					dadGroup.color = 0xFFFFFFFF;
-					fogScroll.visible = false;
-					fanHeli.visible = true;
+					if (state == 1) {
+						boyfriendGroup.color = 0xFF000000;
+						gfGroup.color = 0xFF000000;
+						dadGroup.color = 0xFF000000;
+						bedroomBG.loadGraphic(Paths.image('bedroom/BGDark'));
+						fogScroll.visible = true;
+						fanHeli.visible = false;
+					} else if (state == 0) {
+						boyfriendGroup.color = 0xFFFFFFFF;
+						gfGroup.color = 0xFFFFFFFF;
+						dadGroup.color = 0xFFFFFFFF;
+						fogScroll.visible = false;
+						fanHeli.visible = true;
 
-					switch (curStage)
-					{
-						case 'bedroomDAY':
-							bedroomBG.loadGraphic(Paths.image('bedroom/BGDay'));
-						case 'bedroomNIGHT':
-							bedroomBG.loadGraphic(Paths.image('bedroom/BGNight'));
+						switch (curStage)
+						{
+							case 'bedroomDAY':
+								bedroomBG.loadGraphic(Paths.image('bedroom/BGDay'));
+							case 'bedroomNIGHT':
+								bedroomBG.loadGraphic(Paths.image('bedroom/BGNight'));
+						}
 					}
 				}
 			case 'SPEEDLINES':
-				var type:Int = Std.parseInt(value1);
-				var state:String = value2.toLowerCase();
-				if(Math.isNaN(type)) type = 1;
-				if(state == null) state = 'n';
-
-				switch state
+				if (ClientPrefs.eventFull == true)
 				{
-					case 'y':
-						switch type
-						{
-							case 0:
-								speedLines.animation.play('SLduet');
-							case 1:
-								speedLines.animation.play('SLbf');
-							case 2:
-								speedLines.animation.play('SLkeko');
-						}
-						speedLines.visible = true;
-					case 'n':
-						speedLines.visible = false;
+					var type:Int = Std.parseInt(value1);
+					var state:String = value2.toLowerCase();
+					if(Math.isNaN(type)) type = 1;
+					if(state == null) state = 'n';
+	
+					switch state
+					{
+						case 'y':
+							switch type
+							{
+								case 0:
+									speedLines.animation.play('SLduet');
+								case 1:
+									speedLines.animation.play('SLbf');
+								case 2:
+									speedLines.animation.play('SLkeko');
+							}
+							speedLines.visible = true;
+						case 'n':
+							speedLines.visible = false;
+					}
 				}
 			case 'REAL TIME EVENTS':
-				var type:Int = Std.parseInt(value1);
-				var state:String = value2.toLowerCase();
-				if(Math.isNaN(type)) type = 1;
-				if(state == null) state = 'n';
-
-				switch state
+				if (ClientPrefs.eventFull == true)
 				{
-					case 'y':
-						switch type
-						{
-							case 0:
-								realTimeEvents.animation.play('flash');
-							case 1:
-								realTimeEvents.animation.play('sl');
-						}
-						realTimeEvents.visible = true;
-					case 'n':
-						realTimeEvents.visible = false;
+					var type:Int = Std.parseInt(value1);
+					var state:String = value2.toLowerCase();
+					if(Math.isNaN(type)) type = 1;
+					if(state == null) state = 'n';
+
+					switch state
+					{
+						case 'y':
+							switch type
+							{
+								case 0:
+									realTimeEvents.animation.play('flash');
+								case 1:
+									realTimeEvents.animation.play('sl');
+							}
+							realTimeEvents.visible = true;
+						case 'n':
+							realTimeEvents.visible = false;
+					}
 				}
 			case 'HEALTH DRAIN':
 				var kekoAmmo:Float = Std.parseFloat(value1);
@@ -2638,34 +2648,37 @@ class PlayState extends MusicBeatState
 						});
 					}
 			case 'VIGNETTE':
-				var vigColor:Int = Std.parseInt(value1);
-				var vigType:Int = Std.parseInt(value2);
-				if(Math.isNaN(vigColor)) vigColor = 0xFF000000;
-				if(Math.isNaN(vigType)) vigType = 0;
-								
-				FlxTween.cancelTweensOf(vignette);
-				switch vigType
-				{ 
-					case 0:
-						vignette.blend = ADD;
-						vignette.color = vigColor; 
-						if (vignette.alpha == 1)
-							vignette.alpha = 0;
-						else {
+				if (ClientPrefs.eventFull == true)
+				{
+					var vigColor:Int = Std.parseInt(value1);
+					var vigType:Int = Std.parseInt(value2);
+					if(Math.isNaN(vigColor)) vigColor = 0xFF000000;
+					if(Math.isNaN(vigType)) vigType = 0;
+									
+					FlxTween.cancelTweensOf(vignette);
+					switch vigType
+					{ 
+						case 0:
+							vignette.blend = ADD;
+							vignette.color = vigColor; 
+							if (vignette.alpha == 1)
+								vignette.alpha = 0;
+							else {
+								vignette.alpha = 1;
+							}
+						case 1:
+							vignette.color = vigColor; 
 							vignette.alpha = 1;
-						}
-					case 1:
-						vignette.color = vigColor; 
-						vignette.alpha = 1;
-						FlxTween.tween(vignette, {alpha: 0}, 0.5, {type:PERSIST});
-					case 2:
-						vignette.blend = NORMAL;
-						vignette.color = vigColor; 
-						if (vignette.alpha == 1)
-							vignette.alpha = 0;
-						else {
-							vignette.alpha = 1;
-						}
+							FlxTween.tween(vignette, {alpha: 0}, 0.5, {type:PERSIST});
+						case 2:
+							vignette.blend = NORMAL;
+							vignette.color = vigColor; 
+							if (vignette.alpha == 1)
+								vignette.alpha = 0;
+							else {
+								vignette.alpha = 1;
+							}
+					}
 				}
 			case 'NOTE VISIBILITY':
 				var valuesArray:Array<String> = [value1, value2];
@@ -2689,20 +2702,23 @@ class PlayState extends MusicBeatState
 					}
 				}
 			case 'AFTER IMAGE':
-				var valuesArray:Array<String> = [value1, value2];
-				var targetsArray:Array<FlxTrail> = [bfTrail, dadTrail];
-				for (i in 0...targetsArray.length) {
-					var split:Array<String> = valuesArray[i].split(',');
-					var length:Int = Std.parseInt(split[0].trim());
-					var delay:Int = Std.parseInt(split[1].trim());
-					var alpha:Float = Std.parseFloat(split[2].trim());
-					if(Math.isNaN(length)) length = 0;
-					if(Math.isNaN(delay)) delay = 0;
-					if(Math.isNaN(alpha)) alpha = 0;
-					//var state:Int = Std.parseInt(split[3].trim());
-					targetsArray[i].increaseLength(length);
-					targetsArray[i].delay = delay;
-					targetsArray[i].alpha = alpha;
+				if (ClientPrefs.eventFull == true)
+				{
+					var valuesArray:Array<String> = [value1, value2];
+					var targetsArray:Array<FlxTrail> = [bfTrail, dadTrail];
+					for (i in 0...targetsArray.length) {
+						var split:Array<String> = valuesArray[i].split(',');
+						var length:Int = Std.parseInt(split[0].trim());
+						var delay:Int = Std.parseInt(split[1].trim());
+						var alpha:Float = Std.parseFloat(split[2].trim());
+						if(Math.isNaN(length)) length = 0;
+						if(Math.isNaN(delay)) delay = 0;
+						if(Math.isNaN(alpha)) alpha = 0;
+						//var state:Int = Std.parseInt(split[3].trim());
+						targetsArray[i].increaseLength(length);
+						targetsArray[i].delay = delay;
+						targetsArray[i].alpha = alpha;
+					}
 				}
 			case 'CHROMATIC':
 				var rgbArray:Array<String> = [value1, value2];
@@ -2770,7 +2786,6 @@ class PlayState extends MusicBeatState
 						daChromatic.bOffset.value = [blue];
 						FlxTween.tween(daChromatic.bOffset, {value: [0]}, 2, {type:PERSIST});
 				} */
-			
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -2931,14 +2946,21 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
-					FlxG.sound.playMusic(Paths.music('editorMenu'));
+					var blackShit = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+					blackShit.alpha = 0;
+					blackShit.camera = camHUD;
+					add(blackShit);
 
-					cancelFadeTween();
-					CustomFadeTransition.nextCamera = camOther;
-					if(FlxTransitionableState.skipNextTransIn) {
-						CustomFadeTransition.nextCamera = null;
-					}
-					MusicBeatState.switchState(new StoryMenuState());
+					FlxTween.tween(blackShit, {alpha: 1}, 1.4);
+					new FlxTimer().start(1.5, function(tmr:FlxTimer) {
+						FlxG.sound.playMusic(Paths.music('editorMenu'));
+						cancelFadeTween();
+						CustomFadeTransition.nextCamera = camOther;
+						if(FlxTransitionableState.skipNextTransIn) {
+							CustomFadeTransition.nextCamera = null;
+						}
+						MusicBeatState.switchState(new StoryMenuState());
+					});
 
 					// if ()
 					if(!usedPractice) {
@@ -2966,8 +2988,7 @@ class PlayState extends MusicBeatState
 					var winterHorrorlandNext = (Paths.formatToSongPath(SONG.song) == "eggnog");
 					if (winterHorrorlandNext)
 					{
-						var blackShit:FlxSprite = new FlxSprite(-FlxG.width * FlxG.camera.zoom,
-							-FlxG.height * FlxG.camera.zoom).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+						var blackShit:FlxSprite = new FlxSprite(FlxG.width * FlxG.camera.zoom, FlxG.height * FlxG.camera.zoom).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
 						blackShit.scrollFactor.set();
 						add(blackShit);
 						camHUD.visible = false;
@@ -2984,17 +3005,17 @@ class PlayState extends MusicBeatState
 					PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0] + difficulty, PlayState.storyPlaylist[0]);
 					FlxG.sound.music.stop();
 
-					if(winterHorrorlandNext) {
-						new FlxTimer().start(1.5, function(tmr:FlxTimer) {
-							cancelFadeTween();
-							//resetSpriteCache = true;
-							LoadingState.loadAndSwitchState(new PlayState());
-						});
-					} else {
+					var blackShit = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+					blackShit.alpha = 0;
+					blackShit.camera = camHUD;
+					add(blackShit);
+
+					FlxTween.tween(blackShit, {alpha: 1}, 1.4);
+					new FlxTimer().start(1.5, function(tmr:FlxTimer) {
 						cancelFadeTween();
 						//resetSpriteCache = true;
 						LoadingState.loadAndSwitchState(new PlayState());
-					}
+					});
 				}
 			}
 			else
