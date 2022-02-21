@@ -12,14 +12,168 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						416.666666666667,
+						166.666666666667,
+						-1,
+						"NOTE VISIBILITY",
+						"1,1,1,1",
+						"1,1,1,1"
+					],
+					[
+						208.333333333333,
+						-1,
+						"NOTE VISIBILITY",
+						"0,0,0,0",
+						"0,0,0,0"
+					],
+					[
+						250,
+						-1,
+						"NOTE VISIBILITY",
+						"1,1,1,1",
+						"1,1,1,1"
+					],
+					[
+						291.666666666667,
+						-1,
+						"NOTE VISIBILITY",
+						"0,0,0,0",
+						"0,0,0,0"
+					],
+					[
+						333.333333333333,
+						-1,
+						"NOTE VISIBILITY",
+						"1,1,1,1",
+						"1,1,1,1"
+					],
+					[
+						0,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						83.3333333333333,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						187.5,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						229.166666666667,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						270.833333333333,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						312.5,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						354.166666666667,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						375,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						395.833333333333,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						479.166666666667,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						500,
+						-1,
+						"CHROMATIC",
+						"5, -10, -5, y, 1",
+						""
+					],
+					[
+						520.833333333333,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						541.666666666667,
+						-1,
+						"NOTE VISIBILITY",
+						"0,0,0,0",
+						"0,0,0,0"
+					],
+					[
+						458.333333333333,
+						-1,
+						"NOTE VISIBILITY",
+						"0,0,0,0",
+						"0,0,0,0"
+					],
+					[
+						604.166666666667,
+						-1,
+						"NOTE VISIBILITY",
+						"0,0,0,0",
+						"0,0,0,0"
+					],
+					[
+						666.666666666667,
+						-1,
+						"NOTE VISIBILITY",
+						"0,0,0,0",
+						"0,0,0,0"
+					],
+					[
+						562.5,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, n, 1",
+						""
+					],
+					[
+						1083.33333333333,
 						-1,
 						"REAL TIME EVENTS",
 						"0",
 						"y"
 					],
 					[
-						432.291666666667,
+						1100.69444444444,
 						-1,
 						"REAL TIME EVENTS",
 						"0",
@@ -61,7 +215,15 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						5333.33333333333,
+						-1,
+						"NOTE VISIBILITY",
+						"0,0,0,0",
+						"1,1,0,0"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -79,7 +241,15 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						8000,
+						-1,
+						"NOTE VISIBILITY",
+						"1,1,0,0",
+						"1,1,0,0"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -97,7 +267,15 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						10666.6666666667,
+						-1,
+						"NOTE VISIBILITY",
+						"1,1,0,0",
+						"1,1,1,1"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -115,7 +293,15 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						13333.3333333333,
+						-1,
+						"NOTE VISIBILITY",
+						"1,1,1,1",
+						"1,1,1,1"
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -2187,7 +2373,7 @@
 						80003.4722222222,
 						-1,
 						"Screen Flash",
-						"0.7, 0xFFFBC13F",
+						"0.4, 0xFFFBC13F",
 						""
 					],
 					[
@@ -2280,13 +2466,6 @@
 						"600"
 					],
 					[
-						85333.3333333333,
-						-1,
-						"Flash Camera",
-						"1.5, 0xFF0059FF",
-						""
-					],
-					[
 						85458.3333333333,
 						-1,
 						"Screen Shake",
@@ -2319,6 +2498,13 @@
 						-1,
 						"Camera Zoom",
 						"0.9",
+						""
+					],
+					[
+						85333.3333333333,
+						-1,
+						"Screen Flash",
+						"0.4, 0xFFFBC13F",
 						""
 					]
 				],
@@ -2377,13 +2563,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						88000,
-						-1,
-						"Screen Flash",
-						"0.7, 0xffffffff",
-						""
-					],
-					[
 						88083.3333333333,
 						-1,
 						"Screen Shake",
@@ -2409,6 +2588,13 @@
 						-1,
 						"Screen Shake",
 						"1.5, 0.0050",
+						""
+					],
+					[
+						88000,
+						-1,
+						"Screen Flash",
+						"0.4, 0xFFFBC13F",
 						""
 					]
 				],
@@ -2474,25 +2660,11 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						90666.6666666666,
-						-1,
-						"Flash Camera",
-						"1, 0xFFB52D42",
-						""
-					],
-					[
 						90750,
 						-1,
 						"Camera Zoom",
 						"1",
 						""
-					],
-					[
-						90708.3333333333,
-						-1,
-						"Camera Follow Pos",
-						"70",
-						"450"
 					],
 					[
 						90833.3333333333,
@@ -2514,6 +2686,20 @@
 						"REAL TIME EVENTS",
 						"0",
 						"n"
+					],
+					[
+						90666.6666666666,
+						-1,
+						"Screen Flash",
+						"0.4, 0xFFFBC13F",
+						""
+					],
+					[
+						90687.5,
+						-1,
+						"Camera Follow Pos",
+						"70",
+						"450"
 					]
 				],
 				"bpm": 0,
@@ -2557,13 +2743,6 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
-						93333.3333333333,
-						-1,
-						"Screen Flash",
-						"0.7, 0xffffffff",
-						""
-					],
-					[
 						93354.1666666666,
 						-1,
 						"Screen Shake",
@@ -2583,6 +2762,13 @@
 						"REAL TIME EVENTS",
 						"1",
 						"n"
+					],
+					[
+						93333.3333333333,
+						-1,
+						"Screen Flash",
+						"0.4, 0xFFFBC13F",
+						""
 					]
 				],
 				"bpm": 0,
@@ -2640,13 +2826,6 @@
 						"470"
 					],
 					[
-						96010.4166666666,
-						-1,
-						"Screen Flash",
-						"1, 0xFFFFFFFF",
-						""
-					],
-					[
 						96020.8333333333,
 						-1,
 						"SPEEDLINES",
@@ -2665,6 +2844,13 @@
 						-1,
 						"Camera Zoom",
 						"0.85",
+						""
+					],
+					[
+						96010.4166666666,
+						-1,
+						"Screen Flash",
+						"0.4, 0xFFFBC13F",
 						""
 					]
 				],
@@ -2841,13 +3027,6 @@
 						""
 					],
 					[
-						101333.333333333,
-						-1,
-						"Screen Flash",
-						"0.5, 0xFFFFFFFF",
-						""
-					],
-					[
 						101340.277777778,
 						-1,
 						"VIGNETTE",
@@ -2859,6 +3038,13 @@
 						-1,
 						"HEALTH DRAIN",
 						"1.5",
+						""
+					],
+					[
+						101333.333333333,
+						-1,
+						"Screen Flash",
+						"0.4, 0xFFFBC13F",
 						""
 					]
 				],
@@ -4032,6 +4218,15 @@
 						""
 					]
 				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false

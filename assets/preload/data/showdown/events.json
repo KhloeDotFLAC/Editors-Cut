@@ -24,6 +24,13 @@
 						"REAL TIME EVENTS",
 						"0",
 						"n"
+					],
+					[
+						0,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
 					]
 				],
 				"bpm": 0,
@@ -388,13 +395,6 @@
 						""
 					],
 					[
-						25263.1578947368,
-						-1,
-						"Screen Flash",
-						"",
-						"7, 0xFF808080"
-					],
-					[
 						25276.3157894737,
 						-1,
 						"Camera Follow Pos",
@@ -421,6 +421,159 @@
 						"VIGNETTE",
 						"0xFF000000",
 						"2"
+					],
+					[
+						25263.1578947368,
+						-1,
+						"Screen Flash",
+						"",
+						"5, 0xFF808080"
+					],
+					[
+						25302.6315789474,
+						-1,
+						"HEALTH DRAIN",
+						"5",
+						""
+					],
+					[
+						25578.9473684211,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						26368.4210526316,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						25322.3684210526,
+						-1,
+						"CHROMATIC",
+						"5, 0, -5, y, 1",
+						""
+					],
+					[
+						25736.8421052632,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						26052.6315789474,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						26447.3684210526,
+						-1,
+						"CHROMATIC",
+						"5, 0, 0, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						27157.8947368421,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						27315.7894736842,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						27631.5789473684,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						27789.4736842105,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						28105.2631578947,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						28263.1578947369,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						28578.9473684211,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						28894.7368421053,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						28657.8947368421,
+						-1,
+						"CHROMATIC",
+						"5, 0, 0, y, 1",
+						""
+					],
+					[
+						28973.6842105263,
+						-1,
+						"CHROMATIC",
+						"5, 0, 0, y, 1",
+						""
+					],
+					[
+						27868.4210526316,
+						-1,
+						"CHROMATIC",
+						"5, 0, 0, y, 1",
+						""
 					]
 				],
 				"bpm": 0,
@@ -440,7 +593,57 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						30631.5789473684,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						30789.4736842105,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						31105.2631578947,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						31421.052631579,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						31184.2105263158,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						30868.4210526316,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						31500,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -449,7 +652,36 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						32210.5263157895,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						32368.4210526316,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						32526.3157894737,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						32684.2105263158,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -458,79 +690,71 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						32842.1052631579,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						33157.8947368421,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						33315.7894736842,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						33631.5789473684,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						33947.3684210526,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						32921.052631579,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						33394.7368421053,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						33710.5263157895,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						34026.3157894737,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -550,10 +774,371 @@
 				"typeOfSection": 0,
 				"sectionNotes": [
 					[
+						35684.2105263158,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						35842.1052631579,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						36157.8947368421,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						36473.6842105263,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						36236.8421052632,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						36552.6315789474,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						37263.1578947368,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						37421.052631579,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						37578.9473684211,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						37736.8421052632,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						37894.7368421053,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						38210.5263157895,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						38368.4210526316,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						38684.2105263158,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						39000,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						37973.6842105263,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						38447.3684210526,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						38763.1578947368,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						39078.9473684211,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						39631.5789473684,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						39789.4736842105,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						39868.4210526316,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						39710.5263157895,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						40736.8421052632,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						40894.7368421053,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						41210.5263157895,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						41526.3157894737,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						40973.6842105263,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						41289.4736842105,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						41605.2631578947,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
+						42315.7894736842,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						42631.5789473684,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						42473.6842105263,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						42789.4736842105,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					]
+				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [
+					[
 						44052.6315789474,
 						-1,
 						"Camera Zoom",
 						"1",
+						""
+					],
+					[
+						42947.3684210526,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						43263.1578947368,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						43421.0526315789,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						43736.8421052632,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						44062.5,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						43026.3157894737,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						43500,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						43815.7894736842,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						44131.5789473684,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
 						""
 					]
 				],
@@ -571,6 +1156,55 @@
 						-1,
 						"Camera Zoom",
 						"1.2",
+						""
+					],
+					[
+						45394.7368421053,
+						-1,
+						"HEALTH DRAIN",
+						"0",
+						""
+					],
+					[
+						44684.2105263158,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						44851.9736842105,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						45315.7894736842,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						44763.1578947368,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
+						""
+					],
+					[
+						44921.0526315789,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
+					],
+					[
+						45404.6052631579,
+						-1,
+						"CHROMATIC",
+						"5, 0, -10, y, 1",
 						""
 					]
 				],
@@ -624,6 +1258,13 @@
 						"VIGNETTE",
 						"0xFF000000",
 						"2"
+					],
+					[
+						45483.5526315789,
+						-1,
+						"CHROMATIC",
+						"0, 0, 0, y, 1",
+						""
 					]
 				],
 				"bpm": 0,
@@ -707,6 +1348,13 @@
 						-1,
 						"Camera Beat",
 						"0.1",
+						""
+					],
+					[
+						49618.4210526316,
+						-1,
+						"Screen Shake",
+						"0.6, 0.0020",
 						""
 					]
 				],
@@ -808,6 +1456,13 @@
 						"REAL TIME EVENTS",
 						"0",
 						"y"
+					],
+					[
+						54671.0526315789,
+						-1,
+						"Screen Shake",
+						"0.6, 0.0020",
+						""
 					]
 				],
 				"bpm": 0,
@@ -867,6 +1522,13 @@
 						"Camera Follow Pos",
 						"80",
 						"450"
+					],
+					[
+						55608.5526315789,
+						-1,
+						"HEALTH DRAIN",
+						"5",
+						""
 					]
 				],
 				"bpm": 0,
@@ -905,6 +1567,13 @@
 						"SPEEDLINES",
 						"1",
 						"y"
+					],
+					[
+						56921.0526315789,
+						-1,
+						"HEALTH DRAIN",
+						"6",
+						""
 					]
 				],
 				"bpm": 0,
@@ -1047,6 +1716,13 @@
 						"Screen Flash",
 						"1, 0xffffffff",
 						""
+					],
+					[
+						60710.5263157894,
+						-1,
+						"HEALTH DRAIN",
+						"",
+						"2"
 					]
 				],
 				"bpm": 0,
@@ -1192,6 +1868,13 @@
 						"SPEEDLINES",
 						"2",
 						"n"
+					],
+					[
+						65723.6842105263,
+						-1,
+						"HEALTH DRAIN",
+						"2.5",
+						""
 					]
 				],
 				"bpm": 0,
@@ -1475,6 +2158,13 @@
 						"REAL TIME EVENTS",
 						"1",
 						"n"
+					],
+					[
+						80891.447368421,
+						-1,
+						"HEALTH DRAIN",
+						"6.5",
+						""
 					]
 				],
 				"bpm": 0,
@@ -1577,6 +2267,13 @@
 						-1,
 						"Screen Flash",
 						"1, 0xffffffff",
+						""
+					],
+					[
+						85953.947368421,
+						-1,
+						"HEALTH DRAIN",
+						"0",
 						""
 					]
 				],
@@ -2113,6 +2810,13 @@
 						"Camera Follow Pos",
 						"825",
 						"600"
+					],
+					[
+						111078.947368421,
+						-1,
+						"HEALTH DRAIN",
+						"1",
+						""
 					]
 				],
 				"bpm": 0,
@@ -2124,13 +2828,6 @@
 				"altAnim": false,
 				"typeOfSection": 0,
 				"sectionNotes": [
-					[
-						111157.894736842,
-						-1,
-						"Camera Follow Pos",
-						"",
-						""
-					],
 					[
 						111236.842105263,
 						-1,
@@ -2199,6 +2896,13 @@
 						-1,
 						"Screen Shake",
 						"0.6, 0.0035",
+						""
+					],
+					[
+						111157.894736842,
+						-1,
+						"Camera Follow Pos",
+						"",
 						""
 					]
 				],
@@ -2699,6 +3403,13 @@
 						"Camera Follow Pos",
 						"100",
 						"450"
+					],
+					[
+						136500,
+						-1,
+						"HEALTH DRAIN",
+						"2",
+						""
 					]
 				],
 				"bpm": 0,
@@ -2770,6 +3481,13 @@
 						"Play Animation",
 						"snap",
 						"keko"
+					],
+					[
+						146447.368421053,
+						-1,
+						"HEALTH DRAIN",
+						"0",
+						""
 					]
 				],
 				"bpm": 0,
@@ -3090,6 +3808,13 @@
 						"Screen Shake",
 						"1.5, 0.0025",
 						""
+					],
+					[
+						166815.789473684,
+						-1,
+						"HEALTH DRAIN",
+						"3.5",
+						""
 					]
 				],
 				"bpm": 0,
@@ -3377,6 +4102,13 @@
 						"Screen Shake",
 						"1.5, 0.0050",
 						""
+					],
+					[
+						184440.789473685,
+						-1,
+						"HEALTH DRAIN",
+						"",
+						"7.5"
 					]
 				],
 				"bpm": 0,
@@ -3542,6 +4274,33 @@
 						""
 					]
 				],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 0,
+				"changeBPM": false,
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false

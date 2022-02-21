@@ -1,81 +1,81 @@
 {
 	"dialogue": [
 		{
-			"speed": 0.04,
-			"portrait": "keko",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "You're pretty good, lil brat. But, that was just a warm up-"
+			"text": "You're pretty good, lil brat. But, that was just a warm up-",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "keko"
 		},
 		{
-			"speed": 0.04,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "Beep? bop bup, bap.\\n(Show me what you got, weird-ass cat!)"
+			"text": "Beep bop bup, bup!\\n(Show me what you got, weird-ass cat!)",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.025,
-			"portrait": "keko",
+			"expression": "talk",
+			"text": "I'M NOT A CAT!",
 			"boxState": "angry",
-			"expression": "talk",
-			"text": "I'M NOT A CAT!"
-		},
-		{
 			"speed": 0.025,
-			"portrait": "bf",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "Beebo?\\n(A dog?)"
+			"portrait": "keko"
 		},
 		{
+			"expression": "talk",
+			"text": "Beebo?\\n(A dog?)",
+			"boxState": "normal",
+			"speed": 0.025,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "RACCOON.",
+			"boxState": "angry",
 			"speed": 0.03,
-			"portrait": "keko",
-			"boxState": "angry",
-			"expression": "talk",
-			"text": "RACCOON."
+			"portrait": "keko"
 		},
 		{
+			"expression": "talk",
+			"text": "I'm a raccoon.",
+			"boxState": "normal",
 			"speed": 0.035,
-			"portrait": "Keko",
-			"boxState": "normal",
-			"expression": "talk",
-			"text": "I'm a raccoon."
+			"portrait": "Keko"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "Beep! ... bo baa?\\n(Same thing! ... What you got on your hands?)"
+			"text": "Beep! ... bo baa?\\n(Same thing! ... What you got on your hands?)",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "keko",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "It's coffee, I'm getting myself ready..."
+			"text": "It's coffee, I'm getting myself ready...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "keko"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "bap?\\n(For what?)"
+			"text": "bap?\\n(For what?)",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "keko",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "Kick your butt. Let's get                      real!"
+			"text": "Kick your butt. Let's get                      real!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "keko"
 		},
 		{
-			"speed": 0.05,
-			"portrait": "bf",
-			"boxState": "normal",
 			"expression": "talk",
-			"text": "bep poo, bap!\\n(Bring it on squirrel!)"
+			"text": "Bep poo, bap!\\n(Bring it on squirrel!)",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
 		}
 	]
 }
