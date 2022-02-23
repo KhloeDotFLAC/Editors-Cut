@@ -3967,7 +3967,7 @@ class PlayState extends MusicBeatState
 							return arrayIDs[i];
 						}
 					case 12:
-						if(songMisses > 999 && !usedPractice && !cpuControlled) {
+						if(songMisses > 999 && !cpuControlled) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
