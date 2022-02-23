@@ -71,7 +71,7 @@
 				7,
 				41
 			],
-			"loop": true,
+			"loop": false,
 			"fps": 24,
 			"anim": "scared",
 			"indices": [],
@@ -148,7 +148,7 @@
 				-5,
 				50
 			],
-			"loop": true,
+			"loop": false,
 			"fps": 24,
 			"anim": "lowHP",
 			"indices": [],
@@ -159,7 +159,7 @@
 				-5,
 				50
 			],
-			"loop": true,
+			"loop": false,
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],

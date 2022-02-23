@@ -5,7 +5,7 @@
 				0,
 				40
 			],
-			"loop": true,
+			"loop": false,
 			"fps": 24,
 			"anim": "idle",
 			"indices": [],
