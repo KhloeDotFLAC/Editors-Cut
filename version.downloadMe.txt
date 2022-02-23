@@ -1,5 +1,5 @@
 1.0.1;
-- Bruh
-- Bruh 2
-- Bruh 3
-- Bruh 4
+- Added an up-to-date screen!\nLetting you know when your game is... not up-to-date?
+- The \"Toaster Gamer\" achievement now displays its right icon.\nNow you can look at a toaster, in its full glory! 
+- Made most, if not all, achievements possible!\nBecause some weren't, sorry~
+- Unfucked the difficulty labels.\nNow it's "Normal - Hard" instead of "Easy - Normal"
