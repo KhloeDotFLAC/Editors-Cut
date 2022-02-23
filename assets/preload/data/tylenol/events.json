@@ -148,7 +148,50 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						6284.72222222222,
+						-1,
+						"Play Overlay Animation",
+						"kstop",
+						"0"
+					],
+					[
+						6638.88888888889,
+						-1,
+						"Play Overlay Animation",
+						"kelin",
+						"0"
+					],
+					[
+						6775.46296296296,
+						-1,
+						"Play Overlay Animation",
+						"kex",
+						"0"
+					],
+					[
+						6293.98148148148,
+						-1,
+						"Stop Overlay Animation",
+						"kstop",
+						"0"
+					],
+					[
+						6650.46296296296,
+						-1,
+						"Stop Overlay Animation",
+						"kelin",
+						""
+					],
+					[
+						6787.03703703704,
+						-1,
+						"Stop Overlay Animation",
+						"kex",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
@@ -157,7 +200,50 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [],
+				"sectionNotes": [
+					[
+						7388.88888888889,
+						-1,
+						"Play Overlay Animation",
+						"kplay",
+						"0"
+					],
+					[
+						7583.33333333333,
+						-1,
+						"Play Overlay Animation",
+						"solo",
+						"0"
+					],
+					[
+						7805.55555555555,
+						-1,
+						"Play Overlay Animation",
+						"solo2",
+						"0"
+					],
+					[
+						7594.90740740741,
+						-1,
+						"Stop Overlay Animation",
+						"solo",
+						""
+					],
+					[
+						7817.12962962963,
+						-1,
+						"Stop Overlay Animation",
+						"solo2",
+						"0"
+					],
+					[
+						7400.46296296296,
+						-1,
+						"Stop Overlay Animation",
+						"kplay",
+						""
+					]
+				],
 				"bpm": 0,
 				"changeBPM": false,
 				"mustHitSection": false
