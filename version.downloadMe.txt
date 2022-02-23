@@ -1,5 +1,8 @@
 1.0.1;
 - Added an up-to-date screen!\nLetting you know when your game is... not up-to-date?
-- The \"Toaster Gamer\" achievement now displays its right icon.\nNow you can look at a toaster, in its full glory! 
-- Made most, if not all, achievements possible!\nBecause some weren't, sorry~
-- Unfucked the difficulty labels.\nNow it's "Normal - Hard" instead of "Easy - Normal"
+- The Toaster Gamer achievement now displays its right icon.
+Now you can look at a toaster, in its full glory! 
+- Made most, if not all, achievements possible!
+Because some weren't, sorry~
+- Unfucked the difficulty labels.
+Now it's "Normal to Hard" instead of "Easy to Normal"
