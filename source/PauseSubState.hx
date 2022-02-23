@@ -10,6 +10,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.FlxCamera;
+import openfl.utils.Assets as OpenFlAssets;
 
 class PauseSubState extends MusicBeatSubstate
 {
@@ -156,13 +157,28 @@ class PauseSubState extends MusicBeatSubstate
 				if(difficultyChoices[i] == daSelected) {
 					var name:String = PlayState.SONG.song.toLowerCase();
 					var poop = Highscore.formatSong(name, curSelected);
-					PlayState.SONG = Song.loadFromJson(poop, name);
-					PlayState.storyDifficulty = curSelected;
-					CustomFadeTransition.nextCamera = transCamera;
-					MusicBeatState.resetState();
-					FlxG.sound.music.volume = 0;
-					PlayState.changedDifficulty = true;
-					PlayState.cpuControlled = false;
+					if(!OpenFlAssets.exists(Paths.json(name + '/' + poop))) 
+					{
+						if (poop == name) {
+							curSelected = 0;
+						}
+						else if (poop == name + '-hard') {
+							curSelected = 1;
+						}
+						trace('Couldn\'t find: ' + poop + '.');
+						FlxG.camera.shake(0.01, 0.2);
+						FlxG.sound.play(Paths.sound('cancelMenu'));
+					}
+					else
+					{
+						PlayState.SONG = Song.loadFromJson(poop, name);
+						PlayState.storyDifficulty = curSelected;
+						CustomFadeTransition.nextCamera = transCamera;
+						MusicBeatState.resetState();
+						FlxG.sound.music.volume = 0;
+						PlayState.changedDifficulty = true;
+						PlayState.cpuControlled = false;
+					}
 					return;
 				}
 			} 
