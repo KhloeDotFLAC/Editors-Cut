@@ -11,39 +11,39 @@ using StringTools;
 
 class Achievements {
 	public static var achievementsStuff:Array<Dynamic> = [ //Name, Description, Hidden achievement
-		["Alone on a Friday Night?",	"Play on a Friday... Night.",									 false],
-		["And... cut!",					"Beat the first week of Editor's Cut with no misses, on HARD.",	 false],
-		["Insominiac!",					"Beat Insomnia on Hard with no Misses.",						 false],
-		["Caffeinated!",				"Beat Caffeine on Hard with no Misses.",						 false],
-		["The show is done.",			"Beat Showdown on Hard with no Misses.",						 false],
-		["You ANIMAL!",					"Beat Animal on Hard with no Misses.",					   		  true],
-		["get BEAThoeven! ...heh",		"Beat Beathoven on Hard with no Misses.",					   	  true],
-		["You got a sense of humor.",	"Beat Eruption on Hard with no Misses.",					   	  true],
-		["Kaio... what?",              	"Beat Kaio-Ken on Hard with no Misses.",					   	  true],
-		["You're gonna need a tylenol..",	"Beat God-Eater on Hard with no Misses.",				   	  true],
-		["What a funkin' disaster",		"Complete a Song with a rating of 0%.",						   	 false],
-		["The messiah",					"You've only got one shot! ... In a thousand",			 		 false],
-		["BUTTERFINGERS!!!!",			"Complete a Song with 1000 misses.",							 false],
-		["Oversinging Much...?",		"Hold down a note for 20 seconds.",								 false],
-		["Toaster Gamer",				"Have you tried to run the game on a toaster?",					 false]
+		["Alone on a Friday Night?",		"Play on a Friday... Night.",									 false],
+		["And... cut!",						"Beat the first week of Editor's Cut on HARD.",	 				 false],
+		["Insominiac!",						"Beat Insomnia on Hard with no Misses.",						 false],
+		["Caffeinated!",					"Beat Caffeine on Hard with no Misses.",						 false],
+		["The show is done.",				"Beat Showdown on Hard with no Misses.",						 false],
+		["You ANIMAL!",						"Beat Animal on Hard with no Misses.",					   		  true],
+		["get BEAThoeven! ...heh",			"Beat Beathoven on Hard with no Misses.",					   	  true],
+		["You got a sense of humor.",		"Beat Eruption on Hard with no Misses.",					   	  true],
+		["Kaio... what?",              		"Beat Kaio-Ken on Hard with no Misses.",					   	  true],
+		["You're gonna need a tylenol..",	"Beat God-Eater on Hard with no Misses.",				 	  	  true],
+		["What a funkin' disaster",			"Complete a Song with a rating of 0%.",						   	 false],
+		["The messiah",						"You've only got one shot! ... In a thousand",			 		 false],
+		["BUTTERFINGERS!!!!",				"Complete a Song with 1000 misses.",							 false],
+		["Oversinging Much...?",			"Hold down a note for 10 seconds.",								 false],
+		["Toaster Gamer",					"Have you tried to run the game on a toaster?",					 false]
 	];
 
 	public static var achievementsUnlocked:Array<Dynamic> = [ //Save string and Achievement tag + is it unlocked?
-		['friday_night_play', false],	//0
-		['week1_nomiss', false],		//1
-		['insomnia_nomiss', false],		//2
-		['caffeine_nomiss', false],		//3
-		['showdown_nomiss', false],		//4
-		['animal_nomiss', false],		//5
-		['beatho_nomiss', false],		//6
-		['eruption_nomiss', false],		//7
-		['kaio_nomiss', false],			//8
-		['tyle_nomiss', false],			//9
-		['ur_bad', false],				//10
-		['messiah', false],				//11
-		['butter_fingers', false],		//12
-		['oversinging', false],			//13
-		['toastie', false],				//15
+		['friday_night_play', 	false],		//0
+		['week1_nomiss', 		false],		//1
+		['insomnia_nomiss', 	false],		//2
+		['caffeine_nomiss', 	false],		//3
+		['showdown_nomiss', 	false],		//4
+		['animal_nomiss',	 	false],		//5
+		['beatho_nomiss',		false],		//6
+		['eruption_nomiss',	 	false],		//7
+		['kaio_nomiss',			false],		//8
+		['tyle_nomiss',		 	false],		//9
+		['ur_bad',				false],		//10
+		['messiah', 			false],		//11
+		['butter_fingers', 		false],		//12
+		['oversinging', 		false],		//13
+		['toastie', 			false],		//15
 	];
 
 	public static var henchmenDeath:Int = 0;

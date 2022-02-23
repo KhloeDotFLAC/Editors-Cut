@@ -268,6 +268,8 @@ class PlayState extends MusicBeatState
 	
 	public var gameChromatic = new ChromaticShader(0.0);
 	public var hudChromatic = new ChromaticShader(0.0);
+
+	public var bfOversing:Bool = false;
 	
 	override public function create()
 	{
@@ -2205,6 +2207,11 @@ class PlayState extends MusicBeatState
 		setOnLuas('botPlay', PlayState.cpuControlled);
 		callOnLuas('onUpdatePost', [elapsed]);
 		#end
+
+		if (boyfriend.holdTimer > 9.7) {
+			bfOversing = true;
+			trace('Blue boy oversung');
+		}
 	}
 
 	var isDead:Bool = false;
@@ -3965,7 +3972,7 @@ class PlayState extends MusicBeatState
 							return arrayIDs[i];
 						}
 					case 13:
-						if(boyfriend.holdTimer >= 20 && !usedPractice) {
+						if(bfOversing == true && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
