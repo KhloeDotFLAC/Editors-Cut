@@ -1,8 +1,7 @@
 1.0.1;
-- Added an up-to-date screen!\nLetting you know when your game is... not up-to-date?
-- The Toaster Gamer achievement now displays its right icon.
-Now you can look at a toaster, in its full glory! 
-- Made most, if not all, achievements possible!
-Because some weren't, sorry~
-- Unfucked the difficulty labels.
-Now it's "Normal to Hard" instead of "Easy to Normal"
+- Propper credits to PaperKitty! I forgor.
+- Made some "impossible" achievements possible!
+- Added a version notice screen, for future-proofing
+- The two difficulties are now Normal 'n' Hard, as supposed.
+- The "Toaster Gamer" achievement now displays its right icon.
+- Fixed the lag on Tylenol! Thanks Klavier...
