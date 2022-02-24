@@ -33,6 +33,7 @@ class CreditsState extends MusicBeatState
 		[''],
 		['Special Thanks'],
 		['Atsuover',		'atsuover',		'Original composer of Animal',					'https://twitter.com/atsuover',	0xFFBE3E4F],
+		['PaperKitty',		'paperkitty',		'Original composer of Beathoven',					'https://twitter.com/pkzep',	0xFFFFFFFF],
 		['SrPerez',			'srperez',		'Original composer of Eruption, God-Eater and Kaio-Ken',				'https://twitter.com/NewSrPerez',		0xFFFFA562],
 		['Emma Essex (Kitsune²)',			'emmaessex',		'Original composer of Rainbow Tylenol',				'https://twitter.com/heckscaper',		0xFFF5ABF1],
 		[''],
