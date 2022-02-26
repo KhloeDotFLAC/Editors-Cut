@@ -55,6 +55,14 @@ class FreeplayState extends MusicBeatState
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
+		
+		#if ACHIEVEMENTS_ALLOWED
+			if (MainMenuState.menuCheks[2] != true)
+			{
+				MainMenuState.menuCheks[2] = true;
+				trace(MainMenuState.menuCheks);
+			}
+		#end
 
 		for (i in 0...WeekData.weeksList.length) {
 			var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[i]);

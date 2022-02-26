@@ -67,6 +67,16 @@ class CreditsState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 		#end
 
+		#if ACHIEVEMENTS_ALLOWED
+		{
+			if (MainMenuState.menuCheks[4] != true)
+			{
+				MainMenuState.menuCheks[4] = true;
+				trace(MainMenuState.menuCheks);
+			}
+		}
+		#end
+
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		add(bg);
 

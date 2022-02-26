@@ -26,6 +26,13 @@ class OptionsState extends MusicBeatState
 		DiscordClient.changePresence("Options Menu", null);
 		#end
 
+		#if ACHIEVEMENTS_ALLOWED
+		if (MainMenuState.menuCheks[5] != true) {
+			MainMenuState.menuCheks[5] = true;
+			trace(MainMenuState.menuCheks);
+		}
+		#end
+
 		menuBG = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		menuBG.color = 0xFFea71fd;
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
@@ -409,6 +416,12 @@ class ControlsSubstate extends MusicBeatSubstate {
 
 	public function new(?isShowdown:Bool = false, ?isOptions:Bool = false) {
 		super();
+		#if ACHIEVEMENTS_ALLOWED
+		if (MainMenuState.menuCheks[6] != true) {
+			MainMenuState.menuCheks[6] = true;
+			trace(MainMenuState.menuCheks);
+		}
+		#end
 
 		if (isShowdown == true) 
 		{
@@ -737,6 +750,15 @@ class PreferencesSubstate extends MusicBeatSubstate
 	public function new()
 	{
 		super();
+		#if ACHIEVEMENTS_ALLOWED
+		{
+			if (MainMenuState.menuCheks[7] != true)
+			{
+				MainMenuState.menuCheks[7] = true;
+				trace(MainMenuState.menuCheks);
+			}
+		}
+		#end
 		// avoids lagspikes while scrolling through menus!
 		showCharacter = new Character(840, 170, 'bf', true);
 		showCharacter.setGraphicSize(Std.int(showCharacter.width * 0.8));

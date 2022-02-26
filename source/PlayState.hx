@@ -2928,7 +2928,7 @@ class PlayState extends MusicBeatState
 		if(achievementObj != null) {
 			return;
 		} else {
-			var achieve:Int = checkForAchievement([1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14]);
+			var achieve:Int = checkForAchievement([1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15]);
 			if(achieve > -1) {
 				startAchievement(achieve);
 				return;
@@ -3912,71 +3912,71 @@ class PlayState extends MusicBeatState
 			if(!Achievements.achievementsUnlocked[arrayIDs[i]][1]) {
 				switch(arrayIDs[i]) {
 					case 1:
-						if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' && storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week1') && !changedDifficulty && !usedPractice) {
+						if(isStoryMode && storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week1') && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 2:
-						if(Paths.formatToSongPath(SONG.song) == 'insomnia' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(isStoryMode && CoolUtil.difficultyString() == 'HARD' && storyPlaylist.length <= 1 && WeekData.getWeekFileName() == ('week1') && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 3:
-						if(Paths.formatToSongPath(SONG.song) == 'caffeine' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'insomnia' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 4:
-						if(Paths.formatToSongPath(SONG.song) == 'showdown' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'caffeine' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 5:
-						if(Paths.formatToSongPath(SONG.song) == 'animal' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'showdown' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 6:
-						if(Paths.formatToSongPath(SONG.song) == 'beathoven' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'animal' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 7:
-						if(Paths.formatToSongPath(SONG.song) == 'eruption' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'beathoven' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 8:
-						if(Paths.formatToSongPath(SONG.song) == 'kaio-ken' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'eruption' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 9:
-						if(Paths.formatToSongPath(SONG.song) == 'tylenol' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'kaio-ken' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 10:
-						if(ratingPercent < 0.2 && !practiceMode && !cpuControlled) {
-							Achievements.unlockAchievement(arrayIDs[i]);
-							return arrayIDs[i];
-						}
-					case 11:
-						if(Main.oneShot == 1000) {
+						if(Paths.formatToSongPath(SONG.song) == 'tylenol' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 12:
-						if(songMisses > 999 && !cpuControlled) {
+						if(Main.oneShot == 1000) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 13:
-						if(bfOversing == true && !usedPractice) {
+						if(songMisses > 999 && !cpuControlled) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 14:
+						if(bfOversing == true && !usedPractice) {
+							Achievements.unlockAchievement(arrayIDs[i]);
+							return arrayIDs[i];
+						}
+					case 16:
 						if(!ClientPrefs.globalAntialiasing && !ClientPrefs.imagesPersist && !ClientPrefs.eventFull && !ClientPrefs.shaders) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
