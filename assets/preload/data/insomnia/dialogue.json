@@ -33,7 +33,7 @@
 			"portrait": "keko",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "Is that so? What are you style?"
+			"text": "Is that so? What's your style?"
 		},
 		{
 			"speed": 0.035,
@@ -47,7 +47,7 @@
 			"portrait": "keko",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "Hell yeah, blue boy! I'm kinda sleepy, so let's not get too ahead of ourselves, alright?"
+			"text": "Hell yeah, blue boy! I'm kinda sleepy, so lets not get too ahead of ourselves, alright?"
 		}
 	]
 }

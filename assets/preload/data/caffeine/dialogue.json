@@ -2,7 +2,7 @@
 	"dialogue": [
 		{
 			"expression": "talk",
-			"text": "You're pretty good, lil brat. But, that was just a warm up-",
+			"text": "You're pretty good lil brat. But, that was just a warm up-",
 			"boxState": "normal",
 			"speed": 0.04,
 			"portrait": "keko"
@@ -65,7 +65,7 @@
 		},
 		{
 			"expression": "talk",
-			"text": "Kick your butt. Let's get                      real!",
+			"text": "Kick your butt. Let's get real!",
 			"boxState": "normal",
 			"speed": 0.05,
 			"portrait": "keko"

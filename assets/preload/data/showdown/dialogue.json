@@ -5,7 +5,7 @@
 			"portrait": "keko",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "Not bad, blue! I'm actually quite impressed with your free styling."
+			"text": "Not bad, blue! I'm actually quite impressed with your free-styling."
 		},
 		{
 			"speed": 0.04,
@@ -17,16 +17,16 @@
 		{
 			"speed": 0.02,
 			"portrait": "Keko",
-			"boxState": "normal",
+			"boxState": "angry",
 			"expression": "talk",
-			"text": "WHY YOU LITTLE-"
+			"text": "WHY, YOU LITTLE-"
 		},
 		{
 			"speed": 0.05,
 			"portrait": "Keko",
 			"boxState": "normal",
 			"expression": "talk",
-			"text": "-Wait, you actually said the right thing for once? Either way, let's wrap it up with a final showdown!"
+			"text": "-Wait, you actually said the right thing for once? Either way, lets wrap it up with a final showdown!"
 		},
 		{
 			"speed": 0.05,
