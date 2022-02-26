@@ -3929,42 +3929,42 @@ class PlayState extends MusicBeatState
 							return arrayIDs[i];
 						}
 					case 3:
-						if(Paths.formatToSongPath(SONG.song) == 'insomnia' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'insomnia' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 4:
-						if(Paths.formatToSongPath(SONG.song) == 'caffeine' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'caffeine' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 5:
-						if(Paths.formatToSongPath(SONG.song) == 'showdown' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'showdown' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 6:
-						if(Paths.formatToSongPath(SONG.song) == 'animal' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'animal' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 7:
-						if(Paths.formatToSongPath(SONG.song) == 'beathoven' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'beathoven' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 8:
-						if(Paths.formatToSongPath(SONG.song) == 'eruption' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'eruption' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 9:
-						if(Paths.formatToSongPath(SONG.song) == 'kaio-ken' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'kaio-ken' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
 					case 10:
-						if(Paths.formatToSongPath(SONG.song) == 'tylenol' && songMisses < 1 && !changedDifficulty && !usedPractice) {
+						if(Paths.formatToSongPath(SONG.song) == 'tylenol' && CoolUtil.difficultyString() == 'HARD' && songMisses < 1 && !changedDifficulty && !usedPractice) {
 							Achievements.unlockAchievement(arrayIDs[i]);
 							return arrayIDs[i];
 						}
