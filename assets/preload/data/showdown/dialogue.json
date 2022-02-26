@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.035,
+			"portrait": "keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Not bad, blue! I'm actually quite impressed with your free styling."
+		},
+		{
+			"speed": 0.04,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Bep boo paa bop bup.\\n(You're not bad either for a raccoon that can't keep a tone."
+		},
+		{
+			"speed": 0.02,
+			"portrait": "Keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "WHY YOU LITTLE-"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "Keko",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "-Wait, you actually said the right thing for once? Either way, let's wrap it up with a final showdown!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Beep. Bara. boo!\\n(Bring. It. On!)"
+		}
+	]
+}

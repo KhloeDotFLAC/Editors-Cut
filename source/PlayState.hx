@@ -777,7 +777,14 @@ class PlayState extends MusicBeatState
 				case "caffeine":
 					startDialogue(dialogueJson);
 				case "showdown":
-					startVideo('showdown-intro');
+					if (CoolUtil.difficultyString() == 'HARD')
+					{
+						startVideo('showdown-intro');
+					}
+					else
+					{
+						startDialogue(dialogueJson);
+					}
 				case "monster":
 					var whiteScreen:FlxSprite = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.WHITE);
 					add(whiteScreen);
@@ -1144,7 +1151,7 @@ class PlayState extends MusicBeatState
 			Conductor.songPosition -= Conductor.crochet * 5;
 			setOnLuas('startedCountdown', true);
 
-			if (isStoryMode && curSong == 'Showdown') {
+			if (isStoryMode && curSong == 'Showdown' && CoolUtil.difficultyString() == 'HARD') {
 				camHUD.flash(FlxColor.BLACK, 1.5);
 			}
 
